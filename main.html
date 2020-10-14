@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dancheong-main</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="style_main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var i = 1;
+        var e = document.querySelectorAll(".container");
+        while(i<= e.length){
+          $('.slider'+i).slick({
+            infinite:true,
+            speed:300,
+            slidesToShow:1,
+            slidesToScroll:1,
+            prevArrow:$('.prev'+i),
+            nextArrow:$('.next'+i),
+          });
+          i= i+1;
+        }
+      });
+
+      function scroll1(){
+        var menuHeight = document.querySelector('.main1').offsetHeight;
+        var location = document.querySelector('.main1').offsetTop;
+
+        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
+      }
+      function scroll2(){
+        var menuHeight = document.querySelector('.main2').offsetHeight;
+        var location = document.querySelector('.main2').offsetTop;
+
+        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
+      }
+      function scroll3(){
+        var menuHeight = document.querySelector('.main3').offsetHeight;
+        var location = document.querySelector('.main3').offsetTop;
+
+        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
+      }
+      function scroll4(){
+        var menuHeight = document.querySelector('.main4').offsetHeight;
+        var location = document.querySelector('.main4').offsetTop;
+
+        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
+      }
+      function scroll5(){
+        var menuHeight = document.querySelector('.main5').offsetHeight;
+        var location = document.querySelector('.main5').offsetTop;
+
+        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
+      }
+    </script>
+
+  </head>
+  <body>
+      <div class="top">
+          <div class="title">
+              <h1 onclick="scroll1()">Dancheong</h1>
+              <ul class="menu">
+                  <li onclick="scroll2()">홈</li>
+                  <li onclick="scroll3()">제작목적</li>
+                  <li onclick="scroll4()">단청소개</a></li>
+                  <li onclick="scroll5()">자료출처</li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="main">
+          <div class="container">
+              <div class="slider1">
+                  <div class="item">
+                      <img src="pictures/경복궁_광화문.jpg" alt="광화문의 야경">
+                  </div>
+                  <div class="item">
+                      <div class="dividingImg">
+                          <img src="pictures/창덕궁_돈화문.jpg" alt="녹색 기둥에 굵은 노란선이 그어진 창덕궁 돈화문">
+                          <img src="pictures/창덕궁_돈화문2.jpg" alt="가까이서 본 돈화문의 단청">
+                      </div>
+                  </div>
+              </div>
+              <div class="arrow">
+                  <span class="prev1">&#10094;</span>
+                  <span class="next1">&#10095;</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="main2">
+          <div class="container">
+              <div class="backgroundImg">
+                  <div class="dividingImg">
+                      <img src="pictures/경복궁_광화문내부.jpg" alt="봉황 두마리가 날아가는 모습의 천장 단청">
+                      <img src="pictures/경복궁_영추문.jpg" alt=" 하얀 몸체에 갈색 점박이 호양이? 고랑이? 두마리가 그려진 천장 단청">
+                  </div>
+              </div>
+              <div class="slider2">
+                  <div class="item">
+                      <div class="text">
+                          <h2>단청, 丹靑</h2>
+                          <p>
+                            : 붉은 색과 푸른 색의 대비와 조화<br>
+                            절이나 궁의 건물, 또는 누각 등의 벽•기둥•천장 같은 데에 여러 가지 빛깔로 그림과 무늬를 아름답고 장엄하게 그리는 것. 또는, 그 그림이나 무늬<br>
+                            단벽<br><br>
+                            -한국컨텐츠진흥원-
+                          </p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="text">
+                          <h2>Dancheong</h2>
+                          <p>
+                            단청(丹靑) : Contrast and Harmony between red and blue<br>
+                            Drawing pictures and patterns beautifully and magnificently in various colors, such as walls, pillars, and ceilings of temples, palace buildings, or pavilions<br>
+                            or, the drawing or patterns<br>
+                            (=Danbyeog)<br><br>
+                            -Korea Creative Content Agency, KOCCA-
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="arrow">
+                  <span class="prev2">&#10094;</span>
+                  <span class="next2">&#10095;</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="main3">
+          <div class="container">
+              <div class="backgroundImg">
+                  <div class="dividingImg">
+                      <img src="pictures/쌍계사_대웅전3.jpg" alt="초록색 자연과 잘 어우러지는 녹색빛의 단청">
+                      <img src="pictures/창덕궁_대조전.jpg" alt="규칙적으로 배열된 창덕궁의 처마">
+                  </div>
+              </div>
+              <div class="slider3">
+                  <div class="item">
+                      <div class="text">
+                          <h2>제작 목적</h2>
+                          <ul>
+                              <li>제작 목적: CSS 연습</li>
+                              <li>세부 목적</li>
+                                <ol>
+                                  <li>flex와 grid 이용한 화면생성</li>
+                                  <li>선택자 우선순위</li>
+                                  <li>라이브러리 사용법</li>
+                                  <li>positon-absolute&relative</li>
+                                  <li>박스모델 inline, block level, inline-block</li>
+                                </ol>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="text">
+                          <h2>Why did I make it?</h2>
+                          <ul>
+                              <li>Purpose: CSS practice</li>
+                              <li>Detailed purposes</li>
+                                <ol>
+                                  <li>Create a layout using flex and grid</li>
+                                  <li>The priorities of CSS selectors </li>
+                                  <li>How to use a library</li>
+                                  <li>Positon-absolute&relative</li>
+                                  <li>The boxmodel(inline, block level, inline-block)</li>
+                                </ol>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="text">
+                          <p>
+                            안녕하세요. 이 페이지는 CSS연습을 위해 제작했습니다.<br>
+                            flex 속성과 라이브러리를 처음 사용했습니다. 익숙해지니 편하네요.<br>
+                            그동안 애먹었던, position 속성을 드디어! 이해했습니다. 자식 요소에 position:absolute;를 지정하려면, 부모 엘리먼트에도 포지션 속성을 지정해야 한다는 점을 알게 되었습니다.<br>
+                            솔직히 말하자면, 제작기간동안 모니터에 법규를 많이 했습니다. 하지만 언제나 문제는 저였죠.<br>
+                            <br>
+                            아참, 저는 한국에서 태어나 지금까지 쭉 한국에서 살고있는 박듀트입니다.<br>
+                            개발공부를 시작한 지 3주 되었습니다.(21XX년 10월 5일 기준)<br>
+                            부족한 부분이 많지만 곧 채워질 예정입니다:)<br>
+                          </p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="text">
+                          <p>
+                            Hello, this page was created for CSS practice.<br>
+                            I used the flex attributes and library for the first time.<br>
+                            I finally understood the position attributes that I've been having trouble with!<br>
+                            I learned that to specify 'position:absolute' for child elements, I also need to specify position attributes for parent elements.<br>
+                            <br><br>
+                            Oh, I am a Bakdut who was born in South Korea and has lived in South Korea all this time.<br>
+                            It's been three weeks since I started studying.(as of October 5,21XX)<br>
+                            There are many shortcomings, but they will be filled soon:)<br>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="arrow">
+                  <span class="prev3">&#10094;</span>
+                  <span class="next3">&#10095;</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="main4">
+          <div class="container">
+              <div class="backgroundImg">
+                  <div class="dividingImg">
+                      <img src="pictures/쌍계사_대웅전.jpg" alt="빛이 바랬지만 여전히 적,황,녹,현이 알록달록한 쌍계사의 내부 단청">
+                      <img src="pictures/쌍계사_대웅전2.jpg" alt="빛이 바랬지만 고즈넉함이 느껴지는 쌍계사의 외부 단청">
+                  </div>
+              </div>
+              <div class="slider4">
+                  <div class="item">
+                      <div class="text">
+                          <h2>단청의 의미</h2>
+                          <p>
+                            예로부터 우리 조상은  <em>‘백의민족(白衣民族)’</em>이라 불리었다.<br>
+                            백색을 기호했던 특성은 단원 김홍도의 풍속도, 《씨름》에서 도드라진다.
+                            <br><br>
+                            하지만 오방색을 이용한 화려한 색채예술로서 의지적 민족이었음을 상기시킨다.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="text">
+                          <h2>Meaning of dancheong</h2>
+                          <p>
+                            From ancient times, our ancestors were called <em>the White People</em>.<br>
+                            The people who favored the white of monotones.<br><br>
+                            It makes us realize that it was a willful nation that sublimated passionate sensibility as a colorful color art.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="text">
+                          <h2>단청의 목적</h2>
+                          <p>
+                            자연에서 쉽게 구할 수 있는 목재<br>
+                            ▼<br>
+                            하지만 나무는 쉽게 썩고 갈라짐<br>
+                            ▼<br>
+                            건축물의 수명연장이라는 최대의 난관으로 봉착<br>
+                            ▼<br>
+                            그 해결점이 바로 단청(칠)
+                          </p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="text">
+                          <h2>The purpose of dahncheong</h2>
+                          <p>
+                            Wood is easily available in nature<br>
+                            ▼<br>
+                            But trees rot and crack easily<br>
+                            ▼<br>
+                            The biggest difficulty of extending the life of buildings is facing<br>
+                            ▼<br>
+                            The solution is the dancheong<br>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="arrow">
+                  <span class="prev4">&#10094;</span>
+                  <span class="next4">&#10095;</span>
+              </div>
+              <a href="meaning.html">더보기 &#10095;</a>
+          </div>
+      </div>
+
+      <div class="main5">
+          <div class="container">
+              <div class="backgroundImg">
+                  <div class="dividingImg">
+                      <img src="pictures/창덕궁_선정전.jpg" alt="격자무늬와 꽃문양이 규칙적으로 그려진 창덕궁 선정전의 천장">
+                      <img src="pictures/창덕궁_대조전2.jpg" alt="천장에는 연꽃문양이, 벽에는 봉황이 가득 그려진 창덕궁 대조전">
+                  </div>
+              </div>
+              <div class="slider5">
+                  <div class="item">
+                      <div class="text">
+                          <h2>자료의 출처</h2>
+                          <ul>
+                            <li>자료출처: 한국컨텐츠진흥원</li>
+                            <li>사진출처: 문화재청 국가문화유산포털</li>
+                            <li>그림출처: 국립중앙박물관</li>
+                            <li>디자인참고: 애플, 서울옥션</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="text">
+                          <h2>References</h2>
+                          <ul>
+                            <li>Korea Creative Content Agency(KOCCA)</li>
+                            <li>Cultural Heritage Administration, National Cultural Heritage Portal</li>
+                            <li>National Museum of Korea</li>
+                            <li>Design: Apple, SeoulAuction</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="arrow">
+                  <span class="prev5">&#10094;</span>
+                  <span class="next5">&#10095;</span>
+              </div>
+          </div>
+      </div>
+
+        <div class="bottom">
+            <div class="bottomSize">
+                <div class="contact">
+                    홈페이지 만드는 방법: 구글에 검색하거나, 이고잉님의 생활코딩을 참고하거나, 김버그님의 HTML은 재밌다를 참고해주세요.
+                </div>
+                <div class="copyright">
+                    <span class="copyrightLeft">Copyright ⓒ 2020 everything Inc. 모든 권리 보유</span>
+                    <span class="copyrightMiddle">
+                        <span>개인정보 처리방침</span>
+                        <span>웹 사이트 이용 약관</span>
+                        <span>법적 고지</span>
+                    </span>
+                    <span class="copyrightRight">대한민국</span>
+                </div>
+                <div class="companyInfo">
+                    <span>사업자등록번호 : 123-45-67890</span>
+                    <span>대표이사 : Park DueTo</span>
+                    <span>주소 : 포도의 고장, 고구마의 고장</span>
+                    <span>대표전화 : 03-1234-5678</span>
+                </div>
+            </div>
+        </div>
+
+
+  </body>
+
+</html>
