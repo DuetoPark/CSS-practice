@@ -25,49 +25,19 @@
         }
       });
 
-      function scroll1(){
-        var menuHeight = document.querySelector('.main1').offsetHeight;
-        var location = document.querySelector('.main1').offsetTop;
-
-        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
-      }
-      function scroll2(){
-        var menuHeight = document.querySelector('.main2').offsetHeight;
-        var location = document.querySelector('.main2').offsetTop;
-
-        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
-      }
-      function scroll3(){
-        var menuHeight = document.querySelector('.main3').offsetHeight;
-        var location = document.querySelector('.main3').offsetTop;
-
-        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
-      }
-      function scroll4(){
-        var menuHeight = document.querySelector('.main4').offsetHeight;
-        var location = document.querySelector('.main4').offsetTop;
-
-        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
-      }
-      function scroll5(){
-        var menuHeight = document.querySelector('.main5').offsetHeight;
-        var location = document.querySelector('.main5').offsetTop;
-
-        window.scrollTo({top:location - menuHeight*0.5, behavior:'smooth'});
-      }
     </script>
 
   </head>
   <body>
       <div class="top">
           <div class="title">
-              <h1 onclick="scroll1()">Dancheong</h1>
-              <ul class="menu">
-                  <li onclick="scroll2()">홈</li>
-                  <li onclick="scroll3()">제작목적</li>
-                  <li onclick="scroll4()">단청소개</a></li>
-                  <li onclick="scroll5()">자료출처</li>
-              </ul>
+              <h1>Dancheong</h1>
+              <ol class="menu">
+                  <li><a href="#main2">홈</a></li>
+                  <li><a href="#main3">제작목적</a></li>
+                  <li><a href="#main4">단청소개</a></li>
+                  <li><a href="#main5">자료출처</a></li>
+              </ol>
           </div>
       </div>
 
@@ -79,8 +49,8 @@
                   </div>
                   <div class="item">
                       <div class="dividingImg">
-                          <img src="pictures/창덕궁_돈화문.jpg" alt="녹색 기둥에 굵은 노란선이 그어진 창덕궁 돈화문">
-                          <img src="pictures/창덕궁_돈화문2.jpg" alt="가까이서 본 돈화문의 단청">
+                          <img src="pictures/창덕궁_돈화문.jpg" alt="창덕궁 돈화문">
+                          <img src="pictures/창덕궁_돈화문2.jpg" alt="창덕궁 돈화문">
                       </div>
                   </div>
               </div>
@@ -91,13 +61,11 @@
           </div>
       </div>
 
-      <div class="main2">
+      <div id="main2">
           <div class="container">
-              <div class="backgroundImg">
-                  <div class="dividingImg">
-                      <img src="pictures/경복궁_광화문내부.jpg" alt="봉황 두마리가 날아가는 모습의 천장 단청">
-                      <img src="pictures/경복궁_영추문.jpg" alt=" 하얀 몸체에 갈색 점박이 호양이? 고랑이? 두마리가 그려진 천장 단청">
-                  </div>
+              <div class="dividingImg">
+                  <img src="pictures/경복궁_광화문내부.jpg" alt="경복궁 광화문 봉황 단청">
+                  <img src="pictures/경복궁_영추문.jpg" alt="경복궁 영추문 고양이 단청">
               </div>
               <div class="slider2">
                   <div class="item">
@@ -132,45 +100,43 @@
       </div>
 
 
-      <div class="main3">
+      <div id="main3">
           <div class="container">
-              <div class="backgroundImg">
-                  <div class="dividingImg">
-                      <img src="pictures/쌍계사_대웅전3.jpg" alt="초록색 자연과 잘 어우러지는 녹색빛의 단청">
-                      <img src="pictures/창덕궁_대조전.jpg" alt="규칙적으로 배열된 창덕궁의 처마">
-                  </div>
+              <div class="dividingImg">
+                  <img src="pictures/쌍계사_대웅전3.jpg" alt="쌍계사 대웅전">
+                  <img src="pictures/창덕궁_대조전.jpg" alt="창덕궁 대조전">
               </div>
               <div class="slider3">
                   <div class="item">
                       <div class="text">
                           <h2>제작 목적</h2>
-                          <ul>
-                              <li>제작 목적: CSS 연습</li>
-                              <li>세부 목적</li>
-                                <ol>
-                                  <li>flex와 grid 이용한 화면생성</li>
-                                  <li>선택자 우선순위</li>
-                                  <li>라이브러리 사용법</li>
-                                  <li>positon-absolute&relative</li>
-                                  <li>박스모델 inline, block level, inline-block</li>
-                                </ol>
-                          </ul>
+                          <dl>
+                              <dt>제작 목적</dt>
+                              <dd>CSS 연습</dd>
+
+                              <dt>세부 목적</dt>
+                              <dd>flex와 grid 이용한 화면생성</dd>
+                              <dd>선택자 우선순위</dd>
+                              <dd>라이브러리 사용법</dd>
+                              <dd>positon-absolute&relative</dd>
+                              <dd>박스모델 inline, block level, inline-block</dd>
+                          </dl>
                       </div>
                   </div>
                   <div class="item">
                       <div class="text">
                           <h2>Why did I make it?</h2>
-                          <ul>
-                              <li>Purpose: CSS practice</li>
-                              <li>Detailed purposes</li>
-                                <ol>
-                                  <li>Create a layout using flex and grid</li>
-                                  <li>The priorities of CSS selectors </li>
-                                  <li>How to use a library</li>
-                                  <li>Positon-absolute&relative</li>
-                                  <li>The boxmodel(inline, block level, inline-block)</li>
-                                </ol>
-                          </ul>
+                          <dl>
+                              <dt>Purpose</dt>
+                              <dd>Practice CSS</dd>
+
+                              <dt>Detailed purposes</dt>
+                              <dd>Create a layout using flex and grid</dd>
+                              <dd>The priorities of CSS selectors</dd>
+                              <dd>How to use a library</dd>
+                              <dd>positon-absolute&relative</dd>
+                              <dd>The boxmodel(inline, block level, inline-block)</dd>
+                          </dl>
                       </div>
                   </div>
                   <div class="item">
@@ -210,13 +176,11 @@
       </div>
 
 
-      <div class="main4">
+      <div id="main4" class="main4">
           <div class="container">
-              <div class="backgroundImg">
-                  <div class="dividingImg">
-                      <img src="pictures/쌍계사_대웅전.jpg" alt="빛이 바랬지만 여전히 적,황,녹,현이 알록달록한 쌍계사의 내부 단청">
-                      <img src="pictures/쌍계사_대웅전2.jpg" alt="빛이 바랬지만 고즈넉함이 느껴지는 쌍계사의 외부 단청">
-                  </div>
+              <div class="dividingImg">
+                  <img src="pictures/쌍계사_대웅전.jpg" alt="쌍계사 대웅전 세월의 흔적이 있는 단청">
+                  <img src="pictures/쌍계사_대웅전2.jpg" alt="쌍계사 대웅전 세월의 흔적이 있는 단청">
               </div>
               <div class="slider4">
                   <div class="item">
@@ -277,13 +241,11 @@
           </div>
       </div>
 
-      <div class="main5">
+      <div id="main5">
           <div class="container">
-              <div class="backgroundImg">
-                  <div class="dividingImg">
-                      <img src="pictures/창덕궁_선정전.jpg" alt="격자무늬와 꽃문양이 규칙적으로 그려진 창덕궁 선정전의 천장">
-                      <img src="pictures/창덕궁_대조전2.jpg" alt="천장에는 연꽃문양이, 벽에는 봉황이 가득 그려진 창덕궁 대조전">
-                  </div>
+              <div class="dividingImg">
+                  <img src="pictures/창덕궁_선정전.jpg" alt="창덕궁 선정전 단청">
+                  <img src="pictures/창덕궁_대조전2.jpg" alt="창덕궁 대조전 단청">
               </div>
               <div class="slider5">
                   <div class="item">

@@ -13,6 +13,7 @@ li{
 a{
   color:black;
   text-decoration: none;
+  position:relative;
 }
 h1, h2{
   text-align: center;
@@ -27,12 +28,12 @@ h1, h2{
   border-bottom: 1px solid #a1a4a6;
 }
 .menu{
-  position: absolute;
   top:50%;
-  margin-top: -15px;
+  position:absolute;
   display:flex;
   flex-direction: row;
   align-items: center;
+  margin-top: -15px;
   justify-content: space-evenly;
   width:300px;
   height:30px;
@@ -47,42 +48,47 @@ h1, h2{
   margin-top: 18px;
   position: relative;
 }
-
-/*===============================slider================================*/
-h2{
+.text{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color:white;
+  margin-top: 70px;
+}
+.text h2{
   font-size: 40px;
 }
-.container{
-  background-color:orange;
+.text li, dd{
+  margin-left: 20px;
+}
+/*===============================slider================================*/
+.container, .slider1, .slider2, .slider3, .slider4, .slider5, .item, .arrow{
   width:900px;
   height:450px;
+}
+.slider1 .dividingImg, .container{
   position:relative;
+}
+.arrow, .slider2, .slider3, .slider4, .slider5, .dividingImg{
+  position:absolute;
+}
+.container{
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-}
-.slider1, .slider2, .slider3, .slider4, .slider5{
-  width:900px;
-  height:450px;
-  position: absolute;
 }
 .dividingImg{
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
-.item{
-  width:900px;
-  height:450px;
-}
 .arrow{
-  width:900px;
-  height:450px;
-  position:absolute;
   top:0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .arrow  span{
   display:inline-block;
@@ -106,19 +112,8 @@ h2{
 .arrow span:hover{
   background-color: rgba(0, 0, 0, 0.5);
 }
-.text{
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-  color:white;
-  margin-top: 70px;
-}
-.text li{
-  margin-left: 20px;
-}
-a{
+
+#main4 a{
   position: absolute;
   bottom:0;
   right:0;
@@ -126,9 +121,6 @@ a{
   color: white;
   font-weight: bold;
   text-decoration: none;
-}
-.backgroundImg{
-  position: absolute;
 }
 /*==============================bottom====================================*/
 .bottom{
