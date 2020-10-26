@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dancheong-purpose</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="style_info.css">
+
+  </head>
+
+
+  <body>
+    <header>
+      <div class="settingTitle">
+        <h1>Dancheong</h1>
+        <nav>
+          <h1 class="sr-only">메뉴</h1>
+          <ol class="menu">
+            <li><a href="01-main.html" aria-label="메인 페이지로 이동">홈</a></li>
+          </ol>
+        </nav>
+      </div>
+      <nav>
+        <h1 class="sr-only">서브메뉴</h1>
+        <ul class="subMenu">
+            <li><a href="02-meaning.html" aria-label="단청의 의미 페이지로 가기">단청의 의미</a></li>
+            <strong class="sr-only">현재 페이지</strong>
+            <li><a href="03-purpose.html" aria-label="단청의 목적 페이지로 가기">단청의 목적</a></li>
+            <li><a href="04-type.html" aria-label="단청의 종류 페이지로 가기">단청의 종류</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="settingMain">
+      <article>
+        <h2>단청의 목적</h2>
+        <div class="meaning">
+          <div class="meaning-details">
+            <div>
+              <h3>단청의 목적</h3>
+              <p>
+                  우리 조상들은 자연에서 쉽게 구할 수 있는 재료로 집을 지었다. 주로 흙과 돌, 나무를 사용했다.<br>
+                  특히, 나무는 모양 변형이 쉽다는 특성때문에 주로 사용되었다.
+              </p>
+              <p>
+                  하지만 쉽게 썩고 갈라졌으므로, 건물의 수명에 큰 영향을 주었다. 이는, 건축물의 수명은 최대의 난관이 되었다.<br>
+                  이를 해결하고자 나타난 것이 바로 단청이다.
+              </p>
+              <p>
+                  나무 위에 칠을 함으로써 자연환경과 벌레로부터 나무의 변형과 손상, 화재을 막아낼 수 있었다.<br>
+                  시간이 지남에 따라, 유지보수와 더불어 상징적인 의미를 담아내게 되었다.
+              </p>
+            </div>
+
+            <div>
+              <h3>출처</h3>
+              <dl>
+                <dt>사진출처</dt>
+                <dd>문화재청</dd>
+              </dl>
+            </div>
+          </div>
+
+          <span class="sr-only">보조 자료</span>
+          <div class="meaning-photos">
+            <div class="container">
+              <div class="slider1">
+                <div class="item">
+                  <img src="pictures\소나무.jpg"alt="소나무">
+                </div>
+                <div class="item">
+                  <img src="pictures\썩다.jpg"alt="햄버거 썩은 그림">
+                </div>
+                <div class="item">
+                  <img src="pictures\가칠_종묘_정전.jpg"alt="가칠단청 종묘">
+                </div>
+                <div class="item">
+                  <img src="pictures\경복궁_영추문.jpg"alt="경복궁 영추 단벽">
+                </div>
+              </div>
+
+              <div class="arrow" aria-hidden="true">
+                <span class="prev1">&#10094;</span>
+                <span class="next1">&#10095;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+
+    <footer class="settingFooter">
+      <div class="footerSize">
+        <dl class="reference">
+          <dt>웹 페이지 제작 참조</dt>
+          <dd>
+            <strong>
+              구글에 검색하거나, 이고잉님의 생활코딩과 김버그님의 HTML은 재밌다를 참고했습니다.
+            </strong>
+          </dd>
+        </dl>
+
+        <div class="copyright">
+          <span class="sr-only">웹 페이지 정보</span>
+          <span>Copyright &copy; 2020 everything Inc. 모든 권리 보유</span>
+          <ul>
+            <li>개인정보 처리방침</li>
+            <li>웹 사이트 이용 약관</li>
+            <li>법적 고지</li>
+          </ul>
+          <span>대한민국</span>
+        </div>
+
+        <div class="company-Info">
+          <span class="sr-only">회사정보</span>
+          <dl>
+            <dt>사업자등록번호</dt>
+            <dd>: 123-45-67890</dd>
+            <dt>대표이사</dt>
+            <dd>: Park DueTo</dd>
+            <dt>주소</dt>
+            <dd>: 포도의 고장, 고구마의 고장</dd>
+            <dt>대표전화</dt>
+            <dd>: 03-1234-5678</dd>
+          </dl>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          var i = 1;
+          var e = document.querySelectorAll(".container");
+          while(i<= e.length){
+            $('.slider'+i).slick({
+              infinite:true,
+              speed:300,
+              slidesToShow:1,
+              slidesToScroll:1,
+              prevArrow:$('.prev'+i),
+              nextArrow:$('.next'+i),
+            });
+            i= i+1;
+          }
+        });
+    </script>
+  </body>
+</html>

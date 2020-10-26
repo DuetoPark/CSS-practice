@@ -13,41 +13,51 @@ li{
 a{
   color:black;
   text-decoration: none;
-  position:relative;
 }
 h1, h2{
   text-align: center;
   margin-bottom: 20px;
 }
-
-/*===================================menu===============================*/
-.title{
+.sr-only {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+}
+/*===================================header===============================*/
+.settingTitle{
   position: relative;
   height:55px;
   border-top: 1px solid #595959;
   border-bottom: 1px solid #a1a4a6;
 }
-.menu{
+.settingTitle nav{
   top:50%;
   position:absolute;
+  margin-top: -15px;
+}
+.settingMenu{
   display:flex;
   flex-direction: row;
   align-items: center;
-  margin-top: -15px;
   justify-content: space-evenly;
   width:300px;
   height:30px;
   font-size: 15px;
 }
-.menu li{
+.settingMenu li{
   cursor: pointer;
 }
-
-/*===============================main==================================*/
-.main{
-  margin-top: 18px;
-  position: relative;
+.settingMenu-right{
+  position: absolute;
+  right:0;
 }
+/*===============================main==================================*/
+
 .text{
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 30px;
@@ -75,6 +85,8 @@ h1, h2{
   position:absolute;
 }
 .container{
+  position: relative;
+  margin-top: 18px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -122,38 +134,57 @@ h1, h2{
   font-weight: bold;
   text-decoration: none;
 }
-/*==============================bottom====================================*/
-.bottom{
+.slider5 dl{
+  display: grid;
+  grid-template-columns: 80px 1fr;
+}
+/*==============================footer====================================*/
+.settingFooter{
   background-color: #F5F5F7;
   height:100px;
   font-size: 11px;
   color: #a1a4a6;
 }
-.bottomSize{
+.footerSize{
   width:900px;
   margin-left: auto;
   margin-right: auto;
 }
-.contact, .copyright{
+.reference, .copyright{
   padding-top: 9px;
   padding-bottom: 9px;
 }
-.contact{
+.reference{
+  position: relative;
+  display: flex;
+  flex-direction: row;
   border-bottom: 1px solid #a1a4a6;
 }
-.copyright{
+.copyright,
+.copyright ul,
+.company-Info dl{
   display:flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+.copyright{
   justify-content: space-between;
 }
-.copyrightMiddle span, .companyInfo span{
-  padding-right: 5px;
-  padding-left: 5px;
+.copyright li{
+  padding: 0px 5px;
   border-right: 1px solid #a1a4a6;
 }
-.copyrightMiddle > span:last-child, .companyInfo > span:last-child{
-  border:none;
+.company-Info dt{
+  padding-left:5px;
 }
-.companyInfo > span:first-child{
-  padding-left: 0px;
+.company-Info dd{
+  margin:0px;
+  padding: 0px 5px;
+  border-right: 1px solid #a1a4a6;
+}
+.company-Info dl > dt:first-child{
+  padding:0px;
+}
+.copyright ul > li:last-child, .company-Info dl > dd:last-child{
+  border:none;
 }
