@@ -41,7 +41,15 @@ input:focus{
   box-shadow: none;
 }
 
+
+/* Header */
+.page-header{
+  padding: 36px 0 8px 0;
+  border-bottom: 1px solid #000;
+}
+
 .author{
+  display: block;
   margin-bottom: 16px;
   font-size: 14px;
   font-weight: 500;
@@ -59,27 +67,83 @@ input:focus{
   text-transform: uppercase;
 }
 
-.blue{
-  background-color: dodgerblue;
-  color:#ffffff;
+.objective{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.111111111111111;
+  letter-spacing: 0.03em;
 }
 
-.container{
-  background-color: green;
+
+/* Main */
+main{
+  padding-top: 16px;
 }
 
-.container-sm{
-  background-color: dodgerblue;
+.location{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100vw;
+  height: 100vw;
+  padding-bottom: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.111111111111111;
+  letter-spacing: 0.03em;
+  transform: rotate(0.75turn);
 }
 
-.container-md{
-  background-color: orange;
+main .col-sm-6{
+  margin-bottom: 75px;
 }
 
-.container-lg{
-  background-color: gold;
+.author-image{
+  width: 240px;
+  height: 320px;
+  overflow: hidden;
 }
 
-.container-xl{
-  background-color: powderblue;
+.author-image img{
+  position: relative;
+  left: -40px;
+  top: -50px;
+}
+
+.production-period{
+  margin-bottom: 4px;
+}
+
+.page-name{
+  margin-bottom: 24px;
+}
+
+.page-name:last-child{
+  margin-bottom: 0px;
+}
+
+.page-lists .production-period dt{
+  display: none;
+}
+
+.page-lists .production-period dd{
+  font-size: 14px;
+  line-height: 1.428571428571429;
+  letter-spacing: -0.01em;
+  text-align: right;
+}
+
+.page-lists .page-name dt{
+  display: none;
+}
+
+.page-lists .page-name dd{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.428571428571429;
+  letter-spacing: 0.05em;
+  text-align: right;
 }
