@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+
+}
+
+.blue{
+  background-color: dodgerblue;
+  color:#ffffff;
+}
+
+.container{
+  background-color: green;
+}
+
+.container-sm{
+  background-color: dodgerblue;
+}
+
+.container-md{
+  background-color: orange;
+}
+
+.container-lg{
+  background-color: gold;
+}
+
+.container-xl{
+  background-color: powderblue;
+}
