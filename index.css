@@ -42,15 +42,21 @@ input:focus{
 }
 
 
+/* Custom Grid - Max-width: 960px; */
+@media screen and (min-width:1200px) {
+  .container{
+    max-width: 960px;
+  }
+}
+
 /* Header */
-.page-header{
-  padding: 36px 0 8px 0;
+.page-header .container{
   border-bottom: 1px solid #000;
 }
 
 .author{
   display: block;
-  margin-bottom: 16px;
+  margin: 36px 0 16px 0;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.428571428571429;
@@ -68,6 +74,8 @@ input:focus{
 }
 
 .objective{
+  display: block;
+  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.111111111111111;
@@ -77,13 +85,17 @@ input:focus{
 
 /* Main */
 main{
+  /* position: relative; */
   padding-top: 16px;
 }
 
-.location{
+main .container{
+  position: relative;
+}
+
+main .row > div:first-child{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -15px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -95,9 +107,10 @@ main{
   line-height: 1.111111111111111;
   letter-spacing: 0.03em;
   transform: rotate(0.75turn);
+  text-align: right;
 }
 
-main .col-sm-6{
+main .row > div:nth-child(2){
   margin-bottom: 75px;
 }
 
@@ -109,8 +122,8 @@ main .col-sm-6{
 
 .author-image img{
   position: relative;
-  left: -40px;
-  top: -50px;
+  left: -20px;
+  top: -30px;
 }
 
 .production-period{
@@ -125,25 +138,184 @@ main .col-sm-6{
   margin-bottom: 0px;
 }
 
-.page-lists .production-period dt{
+.production-period dt,
+.page-name dt{
   display: none;
 }
 
-.page-lists .production-period dd{
+.production-period dd{
   font-size: 14px;
   line-height: 1.428571428571429;
   letter-spacing: -0.01em;
   text-align: right;
 }
 
-.page-lists .page-name dt{
-  display: none;
-}
-
-.page-lists .page-name dd{
+.page-name dd{
   font-size: 14px;
   font-weight: 500;
   line-height: 1.428571428571429;
   letter-spacing: 0.05em;
   text-align: right;
+}
+
+/* Width >= 576px (Tablet) */
+@media screen and (min-width:576px) {
+  /* Header */
+  .author{
+    margin-bottom: 18px;
+  }
+
+  .title{
+    padding-left: 5px;
+    font-size: 48px;
+    line-height: 1.041666666666667;
+  }
+
+  .objective{
+    padding-left: 5px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+
+  /* Main */
+  main{
+    padding-top: 24px;
+  }
+
+  main .row > div:first-child{
+    top: auto;
+    right: 0;
+    width: 100%;
+    height: 240px;
+    padding-bottom: 0;
+    line-height: 1.666666666666667;
+  }
+
+  .location{
+    overflow: auto;
+  }
+
+  main .row > div:nth-child(2){
+    margin-bottom: 0;
+  }
+
+  .page-lists{
+    margin-top: 261px;
+  }
+
+  .page-name{
+    margin-bottom: 16px;
+  }
+}
+
+/* Width >= 768px (Tablet) */
+@media screen and (min-width:768px) {
+  /* Header */
+  .author{
+    margin-bottom: 24px;
+  }
+
+  .title{
+    padding-left: 9px;
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 1.09375;
+  }
+
+  .objective{
+    padding-left: 9px;
+    margin-bottom: 16px;
+  }
+
+
+  /* Main */
+  main{
+    padding-top: 48px;
+  }
+
+  main .row > div:first-child{
+    transform: rotate(0turn);
+    transform: translateY(-100%);
+    top: -64px;
+    width: 100%;
+    height: auto;
+  }
+
+  main .row > div:nth-child(2){
+    margin-bottom: 0;
+    margin-top: 182px;
+  }
+
+  .author-image{
+    width: 330px;
+    height: 460px;
+  }
+
+  .author-image img{
+    height: 100%;
+  }
+
+  .page-lists{
+    margin-top: 0;
+  }
+}
+
+/* Width >= 992px (Desktop) */
+@media screen and (min-width:992px) {
+  /* Header */
+  .author{
+    margin-bottom: 32px;
+  }
+
+  .title{
+    padding-left: 20px;
+  }
+
+  .objective{
+    padding-left: 20px;
+  }
+
+
+  /* Main */
+  main .row > div:first-child{
+    font-size: 20px;
+  }
+
+  main .row > div:nth-child(2){
+    margin-top: 126px;
+  }
+
+  .author-image{
+    width: 370px;
+    height: 494px;
+  }
+
+  .page-lists{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .production-period{
+    width: 210px;
+  }
+
+  .page-lists > div:first-child dt,
+  .page-lists > div:nth-child(2) dt{
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .production-period dd{
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .production-period dd:last-child{
+    margin-bottom: 0;
+  }
+
+  .page-name dd{
+    text-align: left;
+  }
 }
