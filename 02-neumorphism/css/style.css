@@ -456,7 +456,7 @@ body > header{
 }
 
 
-/* Concave */
+/* Article - Concave */
 .concave header{
   margin-bottom: 20px;
 }
@@ -703,22 +703,14 @@ body > footer ul{
   /* Common CSS */
   /* Title */
   .title{
-    /* margin-bottom: 16px; */
     font-size: 48px;
-    /* font-weight: 700; */
     line-height: 1.041666666666667;
-    /* letter-spacing: 0.05em; */
-    /* text-align: center; */
   }
 
   .convex-title,
   .concave-title{
-    /* margin-bottom: 24px; */
     font-size: 20px;
-    /* font-weight: 500; */
     line-height: 1.5;
-    /* letter-spacing: 0.03em;
-    text-align: center; */
   }
 
   .convex-title::before,
@@ -728,32 +720,19 @@ body > footer ul{
 
   .convex-subtitle,
   .concave-subtitle{
-    /* margin-bottom: 24px; */
     font-size: 18px;
-    /* font-weight: 400; */
     line-height: 1.5;
-    /* letter-spacing: 0.03em; */
   }
 
-  /* .convex-subtitle::before,
-  .concave-subtitle::before{
-    content: '- ';
-  } */
-
   .order{
-    /* display: block; */
-    padding-left: 16px;
-    margin-bottom: 8px;
-    /* font-size: 18px;
-    font-weight: 500;
+    padding-left: 0;
+    font-size: 18px;
     line-height: 1.111111111111111;
-    letter-spacing: 0.05em; */
   }
 
   /* Definition List */
   .shadow-desc{
-    padding-left: 24px;
-    /* margin-bottom: 16px; */
+    padding-left: 0;
   }
 
   .shadow-desc > div::before{
@@ -762,57 +741,27 @@ body > footer ul{
 
   .shadow-desc dt{
     margin-bottom: 8px;
-    font-size: 16px;
-    /* font-weight: 500; */
     line-height: 1.111111111111111;
-    /* letter-spacing: -0.01em; */
   }
 
   .shadow-desc dd,
   .shadow-color dd{
     margin-bottom: 24px;
-    /* font-size: 16px; */
-    /* font-weight: 400; */
     line-height: 1.111111111111111;
-    /* letter-spacing: 0.05em; */
   }
 
   .shadow-color dd{
     margin-bottom: 16px;
   }
 
-  /* .shadow-color::after{
-    content: '';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    color: transparent;
-    transition: color 250ms ease-in-out;
-  } */
-
   /* Element Margin-Bottom */
   body > article{
     margin-bottom: 142px;
   }
 
-  /* body > article:last-of-type{
-    margin-bottom: 36px;
-  } */
-
   pre,
   code{
     padding-left: 24px;
-    /* white-space: pre-line; */
-  }
-
-  .convex li,
-  .concave li{
-    margin-bottom: 30px;
   }
 
   .convex li:nth-of-type(5),
@@ -820,10 +769,6 @@ body > footer ul{
     margin-bottom: 0;
   }
 
-  /* .convex li:last-of-type,
-  .concave li:last-of-type{
-    margin-bottom: 0;
-  } */
 
   /* Header */
   body > header{
@@ -835,19 +780,6 @@ body > footer ul{
   .convex header div.col-12.col-md-6:first-of-type{
     margin-bottom: 24px;
   }
-
-  /* Article - Concave */
-  .concave header{
-    margin-bottom: 20px;
-  }
-
-  /* Footer */
-  body > footer ul{
-    /* display:flex;
-    justify-content:space-between; */
-    /* padding: 16px 0;
-    font-size: 12px; */
-  }
 }
 
 /* >= 768px (Tablet) */
@@ -855,127 +787,55 @@ body > footer ul{
   /* Common CSS */
   /* Title */
   .title{
-    /* margin-bottom: 16px; */
     font-size: 64px;
-    /* font-weight: 700; */
     line-height: 1.09375;
-    /* letter-spacing: 0.05em; */
-    /* text-align: center; */
   }
 
   .convex-title,
   .concave-title{
-    /* margin-bottom: 24px; */
     font-size: 24px;
-    /* font-weight: 500; */
     line-height: 1.25;
-    /* letter-spacing: 0.03em;
-    text-align: center; */
   }
 
   .convex-title::before,
   .concave-title::before{
-    content: '🔥';
-  }
-
-  /* .convex-subtitle,
-  .concave-subtitle{ */
-    /* margin-bottom: 24px; */
-    /* font-size: 18px; */
-    /* font-weight: 400; */
-    /* line-height: 1.5; */
-    /* letter-spacing: 0.03em; */
-  /* } */
-
-  /* .convex-subtitle::before,
-  .concave-subtitle::before{
-    content: '- ';
-  } */
-
-  .order{
-    /* display: block; */
-    padding-left: 16px;
-    margin-bottom: 16px;
-    /* font-size: 18px;
-    font-weight: 500; */
-    /* line-height: 1.111111111111111; */
-    /* letter-spacing: 0.05em; */
-  }
-
-  /* Definition List */
-  .shadow-desc{
-    padding-left: 24px;
-    /* margin-bottom: 16px; */
-  }
-
-  .shadow-desc > div::before{
     content: '👽';
   }
 
+  .order{
+    margin-bottom: 16px;
+  }
+
+  /* Definition List */
+  .shadow-desc > div::before{
+    content: '🔥';
+  }
+
   .shadow-desc dt{
-    margin-bottom: 8px;
     font-size: 14px;
-    /* font-weight: 500; */
     line-height: 1.428571428571429;
-    /* letter-spacing: -0.01em; */
   }
 
   .shadow-desc dd,
   .shadow-color dd{
-    margin-bottom: 24px;
     font-size: 14px;
-    /* font-weight: 400; */
     line-height: 1.428571428571429;
-    /* letter-spacing: 0.05em; */
   }
-
-  .shadow-color dd{
-    margin-bottom: 16px;
-  }
-
-  /* .shadow-color::after{
-    content: '';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    color: transparent;
-    transition: color 250ms ease-in-out;
-  } */
 
   /* Element Margin-Bottom */
   body > article{
     margin-bottom: 240px;
   }
 
-  /* body > article:last-of-type{
-    margin-bottom: 36px;
-  } */
-
   pre,
   code{
     padding-left: 0;
-    /* white-space: pre-line; */
   }
 
   .convex li,
   .concave li{
     margin-bottom: 50px;
   }
-
-  .convex li:nth-of-type(5),
-  .concave li:nth-of-type(5){
-    margin-bottom: 0;
-  }
-
-  /* .convex li:last-of-type,
-  .concave li:last-of-type{
-    margin-bottom: 0;
-  } */
 
   /* Header */
   body > header{
@@ -1005,9 +865,50 @@ body > footer ul{
 
   /* Footer */
   body > footer ul{
-    /* display:flex;
-    justify-content:space-between; */
     padding: 18px 0;
     font-size: 14px;
+  }
+}
+
+/* >= 960px (Desktop) */
+@media screen and (min-width:992px) {
+  /* Common CSS */
+  /* Title */
+  .convex-title::before,
+  .concave-title::before{
+    content: '🐔';
+  }
+
+  /* Definition List */
+  .shadow-desc{
+    margin-bottom: 36px;
+  }
+
+  .shadow-desc > div::before{
+    content: '🐥';
+  }
+
+  /* Element Margin-Bottom */
+  body > article{
+    margin-bottom: 180px;
+  }
+
+  body > article:last-of-type{
+    margin-bottom: 90px;
+  }
+
+  .convex li:nth-of-type(4),
+  .concave li:nth-of-type(4){
+    margin-bottom: 0;
+  }
+
+  /* Header */
+  .convex header{
+    margin-bottom: 48px;
+  }
+
+  /* Article - Concave */
+  .concave header{
+    margin-bottom: 48px;
   }
 }
