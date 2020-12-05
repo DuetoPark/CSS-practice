@@ -84,9 +84,8 @@ li{
   margin-bottom: 20px;
 }
 
-.convex-css,
+pre,
 code{
-  /* text-indent: -9em; */
   white-space: pre-line;
 }
 
