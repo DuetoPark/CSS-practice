@@ -7,31 +7,47 @@
     <meta name="keywords" content="Neumorphism">
     <meta name="description" content="box-shodow">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>Neumorphism - type</title>
+    <title>Neumorphism - Type</title>
   </head>
 
   <body>
     <header>
-      <h1 class="title">Neumorphism</h1>
+      <h1 class="title" aria-label="뉴모피즘의 종류와 제작방법">Neumorphism</h1>
     </header>
 
     <article class="convex">
-      <h1 class="convex-title">볼록버튼 Convex Button</h1>
+      <h1 class="convex-title">
+        볼록버튼 <span lang="en">Convex Button</span>
+      </h1>
+
       <div class="container">
         <header>
-          <h2 class="convex-subtitle">완성본 Finished</h2>
+          <h2 class="convex-subtitle">완성본</h2>
           <div class="row">
             <div class="col-12 col-md-6">
               <button type="button" class="convex-button">
                 Convex
               </button>
+              <span class="sr-only">
+                주로 사각형과 원형입니다.
+                사각형의 뾰족한 꼭지점은 둥글게 깎여있습니다.
+                납작한 버튼이 앞으로 튀어나온 형태이며, 튀어나온 면은 평평합니다.
+                노트북의 키보드와 유사합니다.
+                그림자효과가 있어서 입체적으로 인식됩니다.
+                그림자는 <span lang="en">CSS</span>의 박스섀도우를 이용했습니다.
+              </span>
             </div>
+
             <div class="col-12 col-md-6">
-              <pre class="convex-css">
+              <span class="sr-only">
+                뉴모피즘을 구현하는 CSS코드 입니다.
+                제작방법이 궁금하신 분들은 다음으로 넘어가주세요.
+              </span>
+              <pre class="convex-css" lang="en">
                 <code>
                   .convex-button{
                     display: block;
@@ -55,124 +71,130 @@
         </header>
 
         <section class="convex-order">
-          <h2 class="convex-subtitle">볼록버튼 제작 순서 Order of manufacture</h2>
+          <h2 class="convex-subtitle">볼록버튼 제작 순서</h2>
           <ol class="row">
             <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">1.</h3>
+              <span class="order" aria-label="첫번째">1.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>-5px 5px 10px 좌측하단</dd>
+                  <dd>
+                    <span aria-hidden="true">-5px 5px 10px</span> 좌측하단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="짙은 회색 투명도 20%">
                     rgba(216, 216, 219, <strong>0.2</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="convex-button first">
+              <button type="button" class="convex-button first" aria-hidden="true">
                 Convex
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">2.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="두번째">2.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>5px -5px 10px 우측상단</dd>
+                  <dd>
+                    <span aria-hidden="true">5px -5px 10px</span> 우측상단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="짙은 회색 투명도 20%">
                     rgba(216, 216, 219, <strong>0.2</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="convex-button second">
+              <button type="button" class="convex-button second" aria-hidden="true">
                 Convex
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">3.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="세번째">3.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>-5px -5px 10px 좌측상단</dd>
+                  <dd>
+                    <span aria-hidden="true">-5px -5px 10px</span> 좌측상단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="흰색 투명도 90%">
                     rgba(255, 255, 255, <strong>0.9</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="convex-button third">
+              <button type="button" class="convex-button third" aria-hidden="true">
                 Convex
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">4.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="네번째">4.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>5px 5px 13px 우측하단</dd>
+                  <dd>
+                    <span aria-hidden="true">5px 5px 13px</span> 우측하단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="짙은 회색 투명도 90%">
                     rgba(216, 216, 219, <strong>0.9</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="convex-button fourth">
+              <button type="button" class="convex-button fourth" aria-hidden="true">
                 Convex
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">5.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="다섯번째">5.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>inset 1px 1px 2px 내부 좌측상단</dd>
+                  <dd>
+                    <span aria-hidden="true">inset 1px 1px 2px</span> 내부 좌측상단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="흰색 투명도 30%">
                     rgba(255, 255, 255, <strong>0.3</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="convex-button fifth">
+              <button type="button" class="convex-button fifth" aria-hidden="true">
                 Convex
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">6.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="마지막">6.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>inset -1px -1px 2px 내부 우측하단</dd>
+                  <dd>
+                    <span aria-hidden="true">inset -1px -1px 2px</span> 내부 우측하단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="짙은 회색 투명도 50%">
                     rgba(216, 216, 219, <strong>0.5</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="convex-button sixth">
+              <button type="button" class="convex-button sixth" aria-hidden="true">
                 Convex
               </button>
             </li>
@@ -183,18 +205,33 @@
 
 
     <article class="concave">
-      <h1 class="concave-title">오목버튼 Concave Button</h1>
+      <h1 class="concave-title">
+        오목버튼 <span lang="en">Concave Button</span>
+      </h1>
+
       <div class="container">
         <header>
-          <h2 class="concave-subtitle">완성본 Finished</h2>
+          <h2 class="concave-subtitle">완성본</h2>
           <div class="row">
             <div class="col-12 col-md-6">
               <button type="button" class="concave-button">
                 concave
               </button>
+              <span class="sr-only">
+                오목한 버튼도 사각형과 원형입니다.
+                사각형의 뾰족한 꼭지점은 둥글게 깎여있습니다.
+                얕고 평평하게 파여있는 모양입니다.
+                그림자효과가 있어서 입체적으로 인식됩니다.
+                그림자는 <span lang="en">CSS</span>의 박스섀도우를 이용했습니다.
+              </span>
             </div>
+
             <div class="col-12 col-md-6">
-              <pre class="concave-css">
+              <span class="sr-only">
+                뉴모피즘을 구현하는 CSS코드 입니다.
+                제작방법이 궁금하신 분들은 다음으로 넘어가주세요.
+              </span>
+              <pre class="concave-css" lang="en">
                 <code>
                   .concave-button{
                     display: block;
@@ -218,125 +255,130 @@
         </header>
 
         <section class="concave-order">
-          <h2 class="concave-subtitle">오목버튼 제작 순서 Order of manufacture</h2>
+          <h2 class="concave-subtitle">오목버튼 제작 순서</h2>
           <ol class="row">
             <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">1.</h3>
-
+              <span class="order" aria-label="첫번째">1.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>1px 1px 2px 우측하단</dd>
+                  <dd>
+                    <span aria-hidden="true">1px 1px 2px</span> 우측하단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="흰색 투명도 30%">
                     rgba(255, 255, 255, <strong>0.3</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="concave-button first">
+              <button type="button" class="concave-button first" aria-hidden="true">
                 Concave
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">2.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="두번째">2.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>-1px -1px 2px 좌측상단</dd>
+                  <dd>
+                    <span aria-hidden="true">-1px -1px 2px</span> 좌측상단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="짙은 회색 투명도 50%">
                     rgba(216, 216, 219, <strong>0.5</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="concave-button second">
+              <button type="button" class="concave-button second" aria-hidden="true">
                 Concave
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">3.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="세번째">3.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>-5px -5px 10px 좌측상단</dd>
+                  <dd>
+                    <span aria-hidden="true">-5px -5px 10px</span> 좌측상단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="흰색 투명도 90%">
                     rgba(255, 255, 255, <strong>0.9</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="concave-button third">
+              <button type="button" class="concave-button third" aria-hidden="true">
                 Concave
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">4.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="네번째">4.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>5px 5px 13px 우측하단</dd>
+                  <dd>
+                    <span aria-hidden="true">5px 5px 13px</span> 우측하단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
+                  <dd aria-label="짙은 회색 투명도 90%">
                     rgba(216, 216, 219, <strong>0.9</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="concave-button fourth">
+              <button type="button" class="concave-button fourth" aria-hidden="true">
                 Concave
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">5.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="다섯번째">5.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>inset 1px 1px 2px 내부 좌측상단</dd>
+                  <dd>
+                    <span aria-hidden="true">inset 1px 1px 2px</span> 내부 좌측상단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
-                    rgba(255, 255, 255, 0.3);
+                  <dd aria-label="흰색 투명도 30%">
+                    rgba(255, 255, 255, <strong>0.3</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="concave-button fifth">
+              <button type="button" class="concave-button fifth" aria-hidden="true">
                 Concave
               </button>
             </li>
-            <li class="col-12 col-sm-6 col-md-4">
-              <h3 class="order-title">6.</h3>
 
+            <li class="col-12 col-sm-6 col-md-4">
+              <span class="order" aria-label="마지막">6.</span>
               <dl class="shadow-desc">
                 <div class="">
                   <dt>그림자 위치</dt>
-                  <dd>inset -1px -1px 2px 내부 우측하단</dd>
+                  <dd>
+                    <span aria-hidden="true">inset -1px -1px 2px</span> 내부 우측하단
+                  </dd>
                 </div>
                 <div class="shadow-color">
                   <dt>그림자 색</dt>
-                  <dd>
-                    rgba(216, 216, 219, 0.5);
+                  <dd aria-label="짙은 회색 투명도 50%">
+                    rgba(216, 216, 219, <strong>0.5</strong>);
                   </dd>
                 </div>
               </dl>
-
-              <button type="button" class="concave-button sixth">
+              <button type="button" class="concave-button sixth" aria-hidden="true">
                 Concave
               </button>
             </li>
@@ -344,6 +386,20 @@
         </section>
       </div>
     </article>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <span class="sr-only" lang="en">Page Copyright</span>
+            <ul>
+              <li aria-label="2020년">2020 &copy Copyright</li>
+              <li>포도와 고구마의 고장</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script href="../assets/app.js"></script>
   </body>
