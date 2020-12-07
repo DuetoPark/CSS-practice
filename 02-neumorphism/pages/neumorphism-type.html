@@ -204,7 +204,6 @@
       </div>
     </article>
 
-
     <article class="concave">
       <h1 class="concave-title">
         오목버튼 <span lang="en">Concave Button</span>
@@ -389,9 +388,13 @@
     </article>
 
     <article class="template">
+      <h1 class="concave-title" span lang="en">
+        Template
+      </h1>
+
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-3">
+          <div class="col-12 col-md-3">
             <section class="menu">
               <nav class="convex-button menu-icons">
                 <h1 class="sr-only">Menu</h1>
@@ -434,7 +437,112 @@
               </button>
             </section>
           </div>
-          
+          <div class="col-12 col-md-9">
+            <section class="options">
+              <div>
+                <button type="button" class="convex-button ok-button">
+                  Ok
+                </button>
+              </div>
+              <div>
+                <div class="concave-button gender">
+                  <button type="button" class="">Male</button>
+                  <button type="button" class="">Female</button>
+                </div>
+                <div class="pagenation">
+                  <button type="button" class="convex-button prev-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.86401 17.7279L2.00004 9.86397L9.86401 2" stroke="#A0A5B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="concave-button next-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.86395 2L17.7279 9.86397L9.86395 17.7279" stroke="#A0A5B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="concave-button search-bar">
+                  <span>
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.7436 19.5064L14.7717 13.5345C15.9285 12.1056 16.625 10.29 16.625 8.31251C16.625 3.72926 12.8957 0 8.31247 0C3.72922 0 0 3.72922 0 8.31247C0 12.8957 3.72926 16.625 8.31251 16.625C10.29 16.625 12.1056 15.9285 13.5345 14.7717L19.5064 20.7436C19.677 20.9142 19.901 21 20.125 21C20.349 21 20.573 20.9142 20.7437 20.7436C21.0858 20.4015 21.0858 19.8485 20.7436 19.5064ZM8.31251 14.875C4.6935 14.875 1.75001 11.9315 1.75001 8.31247C1.75001 4.69346 4.6935 1.74997 8.31251 1.74997C11.9315 1.74997 14.875 4.69346 14.875 8.31247C14.875 11.9315 11.9315 14.875 8.31251 14.875Z" fill="#A0A5B9"/>
+                    </svg>
+                  </span>
+                  <form class="search-bar-form" action="#" method="GET">
+                    <input type="text" maxlength="120" placeholder="Search"/>
+                  </form>
+                </div>
+              </div>
+              <div class="controller-bar">
+                <div class="concave-button no-controller">
+                  <span class="convex-button current-progress-rate">23%</span>
+                  <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0H0L8 12L16 0Z" fill="#F0F0F3"/>
+                  </svg>
+                </div>
+                <div class="concave-button is-controller">
+                  <span class="convex-button controller"></span>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-md-9">
+            <section class="convex-button audio-player">
+              <ol class="playlist-desc">
+                <li>
+                  <h1 class="playlist-title">The Balack Keys</h1>
+                </li>
+                <li>
+                  <strong class="playlist-singer">Tighten Up</strong>
+                </li>
+              </ol>
+
+              <ol class="audio-player-controller">
+                <li>
+                  <button type="button" class="repeat-play-button">
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.4558 3.92111C12.1394 3.92111 11.883 4.17752 11.883 4.49389C11.883 4.81027 12.1394 5.06667 12.4558 5.06667C14.3298 5.06667 15.8544 6.59127 15.8544 8.46524C15.8544 10.3394 14.3296 11.864 12.4558 11.864H8.25534C7.93896 11.864 7.68256 12.1204 7.68256 12.4368C7.68256 12.7531 7.93896 13.0095 8.25534 13.0095H12.4558C14.9614 13.0095 17 10.971 17 8.46521C17 5.95967 14.9614 3.92111 12.4558 3.92111Z" fill="#A0A5B9" stroke="#A0A5B9" stroke-width="0.5"/>
+                      <path d="M9.0109 12.4354L11.2106 9.86913C11.4166 9.62913 11.3887 9.2675 11.1486 9.06169C10.9087 8.85588 10.5469 8.88316 10.3411 9.12375L7.82065 12.0641C7.63621 12.2791 7.63678 12.5966 7.82181 12.811L10.3421 15.7323C10.4553 15.8634 10.6151 15.9308 10.7759 15.9308C10.9086 15.9308 11.0417 15.8852 11.1499 15.7916C11.3893 15.585 11.4161 15.2234 11.2095 14.9838L9.0109 12.4354Z" fill="#A0A5B9" stroke="#A0A5B9" stroke-width="0.5"/>
+                      <path d="M9.74463 3.92111H5.54416C3.03856 3.92111 1 5.95967 1 8.46524C1 10.971 3.03856 13.0096 5.54416 13.0096C5.86053 13.0096 6.11694 12.7532 6.11694 12.4368C6.11694 12.1204 5.86053 11.864 5.54416 11.864C3.67016 11.864 2.14559 10.3394 2.14559 8.46527C2.14559 6.59127 3.67019 5.06671 5.54416 5.06671H9.74463C10.061 5.06671 10.3174 4.8103 10.3174 4.49392C10.3174 4.17755 10.061 3.92111 9.74463 3.92111Z" fill="#A0A5B9" stroke="#A0A5B9" stroke-width="0.5"/>
+                      <path d="M10.1784 4.11986L7.65814 1.19861C7.45173 0.959168 7.08973 0.932449 6.8503 1.13904C6.61067 1.34582 6.58395 1.70745 6.79073 1.94689L8.98911 4.49523L6.78939 7.06173C6.58358 7.30192 6.61145 7.66354 6.85164 7.86936C6.9597 7.96195 7.0922 8.0072 7.22414 8.0072C7.38548 8.0072 7.54604 7.93923 7.65945 7.80711L10.1795 4.86676C10.364 4.65179 10.3634 4.33426 10.1784 4.11986Z" fill="#A0A5B9" stroke="#A0A5B9" stroke-width="0.5"/>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="rewind-button">
+                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 10.3567L19 3.64335C19 2.06517 17.2577 1.10874 15.9262 1.95602L10.6515 5.31268C9.41651 6.09858 9.41651 7.90142 10.6515 8.68732L15.9262 12.044C17.2577 12.8913 19 11.9348 19 10.3567Z" fill="#A0A5B9"/>
+                      <path d="M11 10.3567L11 3.64335C11 2.06517 9.2577 1.10874 7.92625 1.95602L2.65151 5.31268C1.41651 6.09858 1.41651 7.90142 2.65151 8.68732L7.92625 12.044C9.2577 12.8913 11 11.9348 11 10.3567Z" fill="#A0A5B9"/>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="concave-button play-button">
+                    <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.89949 1V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.6985 1V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="fast-forward-button">
+                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-4.52704e-07 3.64335L-1.59256e-07 10.3567C-9.02713e-08 11.9348 1.7423 12.8913 3.07375 12.044L8.34849 8.68732C9.58349 7.90141 9.58349 6.09858 8.34849 5.31268L3.07375 1.95602C1.7423 1.10874 -5.21688e-07 2.06517 -4.52704e-07 3.64335Z" fill="#A0A5B9"/>
+                      <path d="M8 3.64335L8 10.3567C8 11.9348 9.7423 12.8913 11.0738 12.044L16.3485 8.68732C17.5835 7.90141 17.5835 6.09858 16.3485 5.31268L11.0738 1.95602C9.7423 1.10874 8 2.06517 8 3.64335Z" fill="#A0A5B9"/>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="shuffle-button">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.8393 10.3529L12.1607 8.12077C12.0277 8.00916 11.842 7.98684 11.6857 8.05916C11.5286 8.13327 11.4286 8.29042 11.4286 8.46363V9.80293H10.6812C10.0616 9.80293 9.49551 9.48864 9.16693 8.96364L6.27583 4.33859C5.61958 3.28769 4.48742 2.66 3.24723 2.66H0.714172V4.44574H3.24723C3.86688 4.44574 4.43296 4.76002 4.76153 5.28503L7.65263 9.91007C8.30978 10.961 9.44194 11.5887 10.6812 11.5887H11.4286V12.928C11.4286 13.1012 11.5286 13.2583 11.6857 13.3324C11.7455 13.3601 11.8107 13.3744 11.875 13.3744C11.9777 13.3744 12.0795 13.3396 12.1607 13.2708L14.8393 11.0387C14.942 10.9538 15 10.8279 15 10.6958C15 10.5637 14.942 10.4378 14.8393 10.3529Z" fill="#A0A5B9"/>
+                      <path d="M14.8393 3.21001L12.1607 0.977848C12.0276 0.867132 11.8419 0.843918 11.6857 0.917133C11.5285 0.989455 11.4285 1.14749 11.4285 1.32071V2.66001H10.6812C9.44102 2.66001 8.30886 3.28769 7.65261 4.33859L7.491 4.59753L8.54369 6.28236L9.16691 5.28503C9.49548 4.76003 10.0616 4.44574 10.6812 4.44574H11.4285V5.78504C11.4285 5.95825 11.5285 6.11629 11.6857 6.18951C11.7455 6.21718 11.8107 6.23147 11.875 6.23147C11.9776 6.23147 12.0794 6.19576 12.1607 6.1279L14.8393 3.89573C14.942 3.81091 15 3.68502 15 3.55287C15 3.42073 14.942 3.29483 14.8393 3.21001Z" fill="#A0A5B9"/>
+                      <path d="M5.38475 7.96631L4.76243 8.96364C4.43385 9.48864 3.86688 9.80293 3.24723 9.80293H0.714172V11.5887H3.24723C4.48653 11.5887 5.61868 10.961 6.27583 9.91008L6.43744 9.65115L5.38475 7.96631Z" fill="#A0A5B9"/>
+                    </svg>
+                  </button>
+                </li>
+              </ol>
+            </section>
+          </div>
         </div>
       </div>
     </article>
