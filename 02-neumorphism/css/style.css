@@ -905,7 +905,10 @@ div.concave-button.search-bar span{
   display: none;
 }
 
-
+/* Article - License */
+.license{
+  font-size: 16px;
+}
 
 /* Footer */
 body > footer .container{
@@ -991,24 +994,18 @@ body > footer ul{
   }
 
 
+
   /* Header */
   body > header{
     padding: 48px 0 16px 0;
   }
 
   /* Article -  Convex */
-  /* Header */
   .convex header div.col-12.col-md-6:first-of-type{
     margin-bottom: 24px;
   }
 
   /* Article - Template */
-  /* Section - menu */
-  /* .menu{
-    margin: 0 auto;
-  } */
-
-
   /* Section - Options */
   section.options{
     flex-direction: row;
@@ -1150,13 +1147,14 @@ body > footer ul{
     margin-bottom: 50px;
   }
 
+
+
   /* Header */
   body > header{
     padding: 72px 0 16px 0;
   }
 
   /* Article -  Convex */
-  /* Header */
   .convex header div.col-12.col-md-6:first-of-type{
     display: flex;
     justify-content: center;
@@ -1176,12 +1174,13 @@ body > footer ul{
     margin-bottom: 0px;
   }
 
-
   /* Article - Template */
   .template .container{
     max-width:720px !important;
   }
 
+  /* Article - Template */
+  /* Section - Options */
   .audio-player{
     display: flex;
     justify-content: space-between;
@@ -1239,6 +1238,11 @@ body > footer ul{
     inset 5px 5px 13px rgba(144, 149, 167, 0.9);
   }
 
+  /* Article - License */
+  .license{
+    font-size: 14px;
+  }
+
   /* Footer */
   body > footer ul{
     padding: 18px 0;
@@ -1278,6 +1282,8 @@ body > footer ul{
     margin-bottom: 0;
   }
 
+
+
   /* Header */
   .convex header{
     margin-bottom: 48px;
@@ -1287,5 +1293,4 @@ body > footer ul{
   .concave header{
     margin-bottom: 48px;
   }
-
 }
