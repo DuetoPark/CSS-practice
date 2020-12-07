@@ -52,9 +52,14 @@ h3{
   margin: 0;
 }
 
+/* Custom Grid System - Fix countainer width */
+@media screen and (min-width:1200px) {
+  .container{
+    max-width: 960px !important;
+  }
+}
 
-/* Common CSS */
-/* Button */
+/* Common CSS - Button */
 .convex-button{
   display: block;
   width: 200px;
@@ -89,7 +94,7 @@ h3{
   inset 5px 5px 13px rgba(216, 216, 219, 0.9);
 }
 
-/* Title */
+/* Common CSS - Title */
 .title{
   margin-bottom: 16px;
   font-size: 36px;
@@ -138,7 +143,8 @@ h3{
   letter-spacing: 0.05em;
 }
 
-/* Definition List */
+
+/* Common CSS -  Definition List */
 .shadow-desc{
   padding-left: 16px;
   margin-bottom: 16px;
@@ -183,7 +189,7 @@ h3{
   transition: color 250ms ease-in-out;
 }
 
-/* Element Margin-Bottom */
+/* Common CSS - Element Margin-Bottom */
 body > article{
   margin-bottom: 108px;
 }
@@ -209,17 +215,6 @@ code{
   margin-bottom: 0;
 }
 
-
-/* Custom Grid System - Fix countainer width */
-@media screen and (min-width:1200px) {
-  .container{
-    max-width: 960px !important;
-  }
-}
-
-@media screen and () {
-
-}
 
 
 /* Header */
@@ -464,7 +459,9 @@ body > header{
 .concave header{
   margin-bottom: 20px;
 }
-/* Article */
+
+/* Article - Concave */
+/* Section - concave-order */
 .concave-order li:first-of-type .shadow-color::after{
   content: '#FFFFFF, 30%';
   background-color: rgba(255, 255, 255, 0.3);
@@ -703,7 +700,7 @@ body > header{
   margin-bottom: 0;
 }
 
-
+/* Article - Template */
 /* Section - Menu */
 .convex-button{
   border-radius: 40px;
@@ -726,10 +723,6 @@ body > header{
   inset -5px -5px 10px rgba(255, 255, 255, 0.9),
   inset 5px 5px 13px rgba(216, 216, 219, 0.9);
 }
-
-/* .menu{
-  margin: 0 auto;
-} */
 
 section.menu > nav.convex-button.menu-icons{
   position: relative;
@@ -776,7 +769,6 @@ nav.convex-button.menu-icons > span{
 /* Section - Options */
 section.options{
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
   justify-content: center;
 }
