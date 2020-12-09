@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'SFCompactDisplay';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/font/FontsFree-Net-SFCompactDisplay-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'SFCompactDisplay';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/font/SF-Compact-Display-Semibold.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'SFCompactDisplay';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../assets/font/FontsFree-Net-SFCompactDisplay-Black.ttf") format('truetype');
+}
