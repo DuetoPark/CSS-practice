@@ -1,3 +1,4 @@
+// Card Edittin Event
 function CardEditEvent(i) {
   this.mainSection = document.querySelector('main');
   this.cards = document.querySelectorAll('.credit-card-list > li')[i];
