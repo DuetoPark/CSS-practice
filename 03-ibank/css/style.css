@@ -46,6 +46,12 @@ dl{
 }
 
 
+@media screen and (min-width:1200px) {
+  .container{
+    max-width: 960px;
+  }
+}
+
 
 /* Body */
 body{
@@ -75,7 +81,7 @@ header.container{
 .page-toggle{
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 100%;
   display: flex;
   align-items: center;
   width: 40px;
@@ -85,7 +91,7 @@ header.container{
   text-transform: uppercase;
   background-color: rgba(0,0,0,0);
   color: #FFFFFF;
-  transform: translateY(-50%);
+  transform: translateY(50%);
   opacity: 1;
   transition: opacity 250ms ease-in-out;
 }
@@ -97,11 +103,11 @@ header.container{
 .user-profile{
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  transform: translateY(-50%);
+  transform: translateY(50%);
 }
 
 .order-details-button{
@@ -165,9 +171,6 @@ header.container{
   opacity: 0.5;
 }
 
-.order-details dd{
-}
-
 
 /* Nav */
 nav.container{
@@ -176,13 +179,14 @@ nav.container{
 
 .menu-group{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .balance{
   display: flex;
-  margin-right: 70px;
+  margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.193333333333333;
 }
@@ -226,6 +230,10 @@ nav.container{
 
 /* Main */
 /* Edit credit card */
+.credit-cards{
+  margin-bottom: 77px;
+}
+
 .credit-card-list{
   margin-bottom: 58px;
 }
@@ -238,7 +246,7 @@ nav.container{
   width: 300px;
   height: 56px;
   padding-left: 16px;
-  margin-bottom: 12px;
+  margin: 0 auto 12px auto;
   border-radius: 8px;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0);
@@ -295,15 +303,15 @@ nav.container{
 
 .control-group-activate{
   position: absolute;
-  top: -3px;
-  right: -26px;
-  transform: translateX(100%);
+  bottom: -13px;
+  right: 0;
+  z-index: 1;
+  transform: translateY(100%);
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  width: 106px;
-  height: 100px;
-  padding: 23px 0 22px 48px;
+  width: 212px;
+  height: 50px;
+  padding: 12px 0 12px 48px;
   border-radius: 8px;
   background-color: #FFFFFF;
   box-shadow: 0px 9px 12px rgba(0, 0, 0, 0.14),
@@ -314,10 +322,10 @@ nav.container{
 .control-group-activate::after{
   content: '';
   position: absolute;
-  top: 12px;
-  left: -4px;
-  width: 23px;
-  height: 38px;
+  top: -4px;
+  right: 12px;
+  width: 38px;
+  height: 23px;
   border-radius: 8px;
   background-color: #FFFFFF;
 }
@@ -364,6 +372,21 @@ nav.container{
   display: flex;
   justify-content: space-between;
   width: 300px;
+  margin: 0 auto;
+}
+
+.payment-amount{
+  position: relative;
+}
+
+.payment-amount::after{
+  content: '/';
+  position: absolute;
+  bottom: 0;
+  right: -39px;
+  font-size: 28px;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 
 .payment-amount dt,
@@ -388,6 +411,7 @@ nav.container{
   position: absolute;
   left: 130px;
   bottom: 0;
+  margin: 0 auto;
 }
 
 
@@ -403,14 +427,12 @@ main{
 }
 
 .card-edit-space > div{
-  display: flex;
-  align-items: center;
   margin-bottom: 66px;
 }
 
 .card-control-group{
-  width: 32px;
-  margin-right: 6px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .card-registration,
@@ -423,16 +445,16 @@ main{
 }
 
 .wallet{
-  display: flex;
+  overflow-x: scroll;
 }
 
 .wallet > li{
   position: relative;
-  width: 354px;
+  width: 358px;
   height: 223px;
   padding: 20px;
   padding-top: 0;
-  margin-right: 24px;
+  margin-bottom: 24px;
   border-radius: 8px;
   background-color: #47494E;
   overflow: hidden;
@@ -529,12 +551,10 @@ main{
   color: #4E5055;
 }
 
-
-
 .decide-group{
   width: 100%;
   display: flex;
-  padding-left: 123px;
+  justify-content: center;
 }
 
 .save-group{
@@ -610,4 +630,87 @@ footer p{
 footer strong{
   font-weight: 600;
   color: #FFFFFF;
+}
+
+/* >=576px (Tablet) */
+@media screen and (min-width: 576px) {
+  /* Nav */
+  .menu-group{
+    flex-direction: row;
+  }
+
+  .balance{
+  margin-bottom: 0;
+  margin-right: 70px;
+  }
+
+
+  /* Main */
+  /* Edit credit card */
+  .control-group-activate{
+    bottom: auto;
+    top: -3px;
+    right: -26px;
+    transform: translateX(100%);
+    flex-direction: column;
+    width: 106px;
+    height: 100px;
+    padding: 23px 0 22px 48px;
+  }
+
+  .control-group-activate::after{
+    right: auto;
+    top: 12px;
+    left: -4px;
+    width: 23px;
+    height: 38px;
+  }
+
+  /* Main */
+  /* Card-edit-space */
+  .card-edit-space > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-control-group{
+    width: 32px;
+    margin: 0 6px 0 0;
+  }
+
+  .wallet{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .wallet > li{
+    flex-shrink: 0;
+  }
+}
+
+/* >=768px (Tablet) */
+@media screen and (min-width:768px) {
+  /* Main */
+  /* Card-edit-space */
+  .wallet{
+    flex-direction: row;
+  }
+
+  .wallet > li{
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
+
+  .decide-group{
+    padding-left: 123px;
+  }
+}
+
+/* >=992px (Desktop) */
+@media screen and (min-width:992px) {
+  .card-edit-space > div{
+    overflow: hidden;
+  }
 }
