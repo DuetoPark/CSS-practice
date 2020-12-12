@@ -634,6 +634,18 @@ footer strong{
 
 /* >=576px (Tablet) */
 @media screen and (min-width: 576px) {
+  /* Header */
+  .page-toggle{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .user-profile{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
   /* Nav */
   .menu-group{
     flex-direction: row;
