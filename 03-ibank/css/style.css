@@ -618,18 +618,47 @@ footer{
   margin-bottom: 41px;
 }
 
-footer p{
+footer p,
+.license{
   font-size: 12px;
   font-weight: 400;
   line-height: 1.193333333333333;
   text-align: center;
   color: #A6A6A6;
+}
+
+footer p{
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 
 footer strong{
   font-weight: 600;
   color: #FFFFFF;
+}
+
+.license{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #A6A6A6;
+  font-size: 14px;
+}
+
+.license-title{
+  font-size: 14px;
+  margin-right: 24px;
+  color: #FFFFFF;
+}
+
+.license a{
+  color: #FFFFFF;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+
+.license a:hover{
+  opacity: 0.5;
 }
 
 /* >=576px (Tablet) */
