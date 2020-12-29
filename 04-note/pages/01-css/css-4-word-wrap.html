@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- 페이지 설명 -->
+    <meta name="author" content="dueto park"/>
+    <meta name="keywords" content="word-wrap, word-break, 줄바꿈"/>
+    <meta name="description" content="word-wrap, 줄바꿈 프로퍼티, 강제 줄바꿈, nomal, break-word ,word-break, break-all, keep-all"/>
+    <meta name="Location" content="포도와 고구마의 고장"/>
+
+    <title>word-wrap | CSS</title>
+
+    <!-- Style -->
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/default/reset-css.css">
+    <link rel="stylesheet" href="../../css/common/grid.min.css">
+    <link rel="stylesheet" href="../../css/common/common.css">
+  </head>
+
+  <body>
+    <header class='note-header'>
+      <div class='container d-flex flex-column justify-content-between align-items-center'>
+        <h1 class='note-header-title'>
+          <a href=''>🔥기초튼튼 이가탄🔥</a>
+        </h1>
+
+        <nav class='note-header-nav'>
+          <h2 class='sr-only note-header-nav-title'>다른 페이지로 이동</h2>
+          <ol class='note-header-nav-list'>
+            <li class='note-header-nav-list-items'><a href=''>html</a></li>
+            <li class='note-header-nav-list-items'><a href=''>css</a></li>
+            <li class='note-header-nav-list-items'><a href=''>javascript</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <main class='note-main'>
+      <section class='container'>
+        <h1 class='main-title'>
+          <strong>😈word-wrap😈</strong>
+        </h1>
+
+        <article class='css-align'>
+          <h1 class='main-article-title'>👻줄바꿈 속성</h1>
+          <p>
+            word-wrap 속성은 긴 텍스트를 강제로 끊어 줄바꿈을 해주는 속성이다.
+            overflow 속성과 비슷하다.
+
+            word-wrap는 주소같은 분자역을 끊을 때 사용한다.
+            (참고, 인터넷 주소는 줄바꿈이 되지 않는다.)
+
+            주로 비아시아 언어의 줄바꿈을 제어한다.
+            아시아언어(한국어, 중국어, 일본어 등등)의 줄바꿈은 word-break속성을 이용한다.
+          </p>
+
+          <h1 class='main-article-subtitle'>✏️word-wrap 속성값</h1>
+          <p>
+            normal
+            기본값, 글자가 길어도 끊어지지 않고 한 줄에 계속 표시
+            break-word
+            강제로 끊어서 줄바꿈 함
+
+            부모요소로부터 자식요소에게 상속된다.
+          </p>
+
+          <h1 class='main-article-subtitle'>✏️word-wrap 이 가능한 요소</h1>
+          <p>
+            인라인 요소
+            블록요소
+            절대적 위치(position: absolute;)의 블록요소
+          </p>
+        </article>
+
+        <article class='css-align'>
+          <h1 class='main-article-title'>✏️word-break</h1>
+          <p>
+            아시아, 비아시아 언어의 줄바꿈 모두를 제어한다.
+          </p>
+
+          <h2 class='main-article-subtitle'>word-break 속성</h2>
+          <p>
+            normal
+            기본값으로, 일반적인 규칙에 따라 줄바꿈 함.
+            break-all
+            문자를 강제로 줄바꿈.
+            아시아 언어에서 사용할 땐 normal속성처럼 행동하며,
+            비아시아 언어에서 사용할 땐 임의대로 줄바꿈 함.
+            hungry
+            hung
+            ry
+            keep-all
+            아시아 언어에서 사용할 땐 normal속성처럼 행동하며,
+            문자 쌍 사이에서 줄바꿈을 금지함.
+          </p>
+
+          <h2 class='main-article-subtitle'>
+            word-break과 word-wrap의 차이
+          </h2>
+          <p>
+            word-break
+            가차없이 단어를 중간에 잘라버림
+            word-wrap
+            단어를 자르진 않음
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class='note-footer'>
+      <div class='container'>
+        <blockquote class='note-footer-reference'
+          cite='https://www.w3schools.com/cssref/css3_pr_word-wrap.asp'
+          cite='https://gist.github.com/rxaviers/7360908'>
+          <strong class='note-footer-reference-name'>
+            자료 출처: "w3school - CSS word-wrap Property", W3C,  2020년 12월 29일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://www.w3schools.com/cssref/css3_pr_word-wrap.asp'>
+              https://www.w3schools.com/cssref/css3_pr_word-wrap.asp
+            </a>
+          </cite>
+
+          <strong class='note-footer-reference-name'>
+            이모티콘 출처: "rxaviers github / gist:7360908 repository", github, 2020년 12월 29일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://gist.github.com/rxaviers/7360908'>
+              https://gist.github.com/rxaviers/7360908
+            </a>
+          </cite>
+        </blockquote>
+      </div>
+    </footer>
+  </body>
+</html>
