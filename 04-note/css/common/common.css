@@ -1,0 +1,145 @@
+body{
+  background-color: #F0F0F3;
+  color: #1F1F1F;
+}
+
+/* Header */
+.note-header{
+  height: 65px;
+  margin-bottom: 16px;
+  border-top: 1px solid #C2C2C2;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.note-header-title > a{
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+/* Navigation */
+.note-header-nav{
+  width: 100%;
+  padding: 0 50px;
+}
+
+.note-header-nav-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-header-nav-list-items{
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.note-header-nav-list-items:first-child::after{
+  content: 'html';
+}
+
+.note-header-nav-list-items:nth-child(2)::after{
+  content: 'css';
+}
+
+.note-header-nav-list-items:last-child::after{
+  content: 'javascript';
+}
+
+.note-header-nav-list-items::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-text-stroke: 1px #000;
+  background-color: #FFFFFF;
+  transition: width 250ms ease-in-out;
+}
+
+.note-header-nav-list-items:hover::after{
+  width: 110%;
+}
+
+.note-header-nav-list-items:last-child{
+  margin-right: 0;
+}
+
+
+/* Main */
+.note-main{
+  margin-bottom: 32px;
+}
+
+.main-title{
+  margin-bottom: 32px;
+}
+
+.main-title,
+.main-title > strong{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/* Article */
+.main-article-title{
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.main-article-subtitle{
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.main-image{
+  width: 100%;
+  padding: 10px;
+}
+
+dfn.main-article-dt{
+  display: block;
+  margin-bottom: 4px;
+}
+
+.main-article-dt{
+  margin-bottom: 4px;
+}
+
+.main-article-dd::before{
+  content: '-';
+  margin-right: 4px;
+}
+
+.main-article-list-items{
+  margin-bottom: 4px;
+}
+
+.main-article-list-items:last-child{
+  margin-bottom: 0;
+}
+
+/* Footer */
+.note-footer-reference-name{
+  display: block;
+}
+
+.note-footer-reference-name,
+.note-footer-reference-url > a{
+  font-size: 12px;
+}
+
+.note-footer-reference a{
+  word-wrap: break-word;
+}
+
+.main-article-pre,
+.main-article-pre > code{
+  white-space: pre-line;
+}
