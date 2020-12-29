@@ -16,7 +16,8 @@ body{
   margin-bottom: 4px;
 }
 
-/* Navigation */
+
+/* Header - Navigation */
 .note-header-nav{
   width: 100%;
   padding: 0 50px;
@@ -65,9 +66,6 @@ body{
   width: 110%;
 }
 
-.note-header-nav-list-items:last-child{
-  margin-right: 0;
-}
 
 
 /* Main */
@@ -88,6 +86,7 @@ body{
 
 
 /* Article */
+/* Article - Title */
 .main-article-title{
   margin-bottom: 16px;
   font-size: 16px;
@@ -103,6 +102,7 @@ body{
   padding: 10px;
 }
 
+/* Article - Definition List */
 dfn.main-article-dt{
   display: block;
   margin-bottom: 4px;
@@ -117,6 +117,7 @@ dfn.main-article-dt{
   margin-right: 4px;
 }
 
+/* Article - List */
 .main-article-list-items{
   margin-bottom: 4px;
 }
@@ -124,6 +125,13 @@ dfn.main-article-dt{
 .main-article-list-items:last-child{
   margin-bottom: 0;
 }
+
+/* Article - Preformatted Text */
+.main-article-pre,
+.main-article-pre > code{
+  white-space: pre-line;
+}
+
 
 /* Footer */
 .note-footer-reference-name{
@@ -135,11 +143,6 @@ dfn.main-article-dt{
   font-size: 12px;
 }
 
-.note-footer-reference a{
+.note-footer-reference-url > a{
   word-wrap: break-word;
-}
-
-.main-article-pre,
-.main-article-pre > code{
-  white-space: pre-line;
 }
