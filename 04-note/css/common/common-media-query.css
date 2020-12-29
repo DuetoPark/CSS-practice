@@ -1,0 +1,163 @@
+/* Custom Grid System */
+@media screen and (min-width: 1200px) {
+  .container{
+    max-width: 960px !important;
+  }
+}
+
+
+/* Tablet Style
+min-width >=576px  */
+@media screen and (min-width:576px) {
+  /* Header */
+  .note-header{
+    margin-bottom: 32px;
+  }
+
+
+  /* Main */
+  .note-main{
+    margin-bottom: 48px;
+  }
+
+  .main-title{
+    margin-bottom: 48px;
+  }
+
+  /* Article */
+  /* Article - Title */
+  .main-article-title{
+    margin-bottom: 24px;
+  }
+
+  .main-article-subtitle{
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .main-image{
+    width: 100%;
+    padding: 30px;
+  }
+
+  /* Article - Definition List */
+  dfn.main-article-dt{
+    margin-bottom: 8px;
+  }
+
+  .main-article-dt{
+    margin-bottom: 8px;
+  }
+
+
+  /* Article - List */
+  .main-article-list-items{
+    margin-bottom: 8px;
+  }
+
+
+  /* Footer */
+  .note-footer-reference-name,
+  .note-footer-reference-url > a{
+    font-size: 13px;
+  }
+}
+
+
+/* Desktop Style
+min-width >=768px  */
+@media screen and (min-width:768px) {
+  /* Header */
+  .note-header{
+    margin-bottom: 48px;
+  }
+
+  .note-header > div.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .note-header-title{
+    flex-shrink: 0;
+  }
+
+  .note-header-title > a{
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+
+  /* Header - Navigation */
+  .note-header-nav{
+    width: 50%;
+    padding: 0 50px;
+  }
+
+
+  /* Main */
+  .note-main{
+    margin-bottom: 72px;
+  }
+
+  .main-title{
+    margin-bottom: 72px;
+  }
+
+  .main-title > strong{
+    font-size: 22px;
+  }
+
+
+  /* Article */
+  /* Article - Title */
+  .main-article-title{
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  .main-article-subtitle{
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+
+  .main-image{
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  /* Article - Definition List */
+  dfn.main-article-dt{
+    margin-bottom: 8px;
+  }
+
+  .main-article-dt{
+    margin-bottom: 8px;
+  }
+
+
+  /* Article - List */
+  .main-article-list-items{
+    margin-bottom: 16px;
+  }
+
+
+  /* Article - Preformatted Text */
+  .main-article-pre{
+    overflow-x: hidden;
+  }
+
+  .main-article-pre,
+  .main-article-pre > code{
+    padding: 0 36px;
+  }
+
+
+  /* Footer */
+  .note-footer-reference-name,
+  .note-footer-reference-url > a{
+    font-size: 13px;
+  }
+}
