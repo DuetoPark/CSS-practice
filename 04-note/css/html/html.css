@@ -70,12 +70,10 @@
 .name-types{
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
-  height: 50px; /* 미디어 쿼리에서 auto로 바꿈 */
 }
 
 .meta-attribute li.main-article-list-items.type{
-  margin-bottom: 0;
+  margin-bottom: 8px;
   margin-right: 8px;
 }
 
@@ -88,4 +86,18 @@
 
 .pre-type > dl > div:last-of-type{
   margin-bottom: 0;
+}
+
+
+/* HTML-3-inline-block.html */
+.block-element-type,
+.inline-element-type{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block-element li.main-article-list-items.type,
+.inline-element li.main-article-list-items.type{
+  margin-bottom: 8px;
+  margin-right: 8px;
 }
