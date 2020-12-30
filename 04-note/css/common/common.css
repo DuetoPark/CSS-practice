@@ -91,17 +91,22 @@ body{
 
 .main-title,
 .main-title > strong{
-  display: block;
   font-size: 18px;
   text-align: center;
+  font-weight: 700;
 }
 
 
 /* Article */
+.note-main .container > article{
+  margin-bottom: 48px;
+}
+
 /* Article - Title */
 .main-article-title{
   margin-bottom: 16px;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .main-article-subtitle{
@@ -116,13 +121,11 @@ body{
 }
 
 /* Article - Definition List */
-dfn.main-article-dt{
-  display: block;
-  margin-bottom: 4px;
-}
-
+dfn.main-article-dt,
 .main-article-dt{
+  display: inline-block;
   margin-bottom: 4px;
+  font-weight: 500;
 }
 
 .main-article-dd::before{
@@ -143,7 +146,6 @@ dfn.main-article-dt{
 .main-article-pre{
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
-  overflow-x: scroll;
 }
 
 .main-article-pre,
@@ -152,15 +154,19 @@ dfn.main-article-dt{
   white-space: pre-line;
 }
 
+.main-article-pre > code{
+  width: 100%;
+  overflow-x: scroll;
+}
+
 
 /* Footer */
 .note-footer-reference{
-  padding: 16px 0;
-  border-top: 1px solid #C2C2C2;
+  padding: 8px 0;
 }
 
-.note-footer-reference-name{
-  display: block;
+.note-footer-reference:first-child{
+  border-top: 1px solid #C2C2C2;
 }
 
 .note-footer-reference-name,
@@ -174,4 +180,35 @@ dfn.main-article-dt{
 
 .note-footer-reference-url:hover > a{
   text-decoration: underline;
+}
+
+
+/* ETC */
+/* 강조효과 */
+.underline{
+  text-decoration: underline;
+}
+
+.type{
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0 5px;
+}
+
+.type::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background-color: #BFDBCF;
+  transition: background-color 250ms ease-in;
+}
+
+.type:hover::before{
+  background-color: #FFFFFF;
 }
