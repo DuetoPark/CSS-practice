@@ -1,0 +1,91 @@
+/* HTML-1-meta.html */
+/* Article - Meta-Definition */
+.meta-definition div:first-of-type{
+  margin-bottom: 18px;
+}
+
+.meta-definition-animation{
+  position: relative;
+  overflow: hidden;
+}
+
+.data-image-group{
+  position: relative;
+  z-index: 2;
+  animation-name: get-in;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.data-image{
+  width: 100px;
+  height: auto;
+}
+
+.text-meta{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.box-image-group{
+  position: relative;
+}
+
+.box-image{
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.text-head{
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 50%;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #FFFFFF;
+}
+
+/* Article - Meta-Attribute */
+.meta-attribute-type{
+  margin-bottom: 30px;
+}
+
+.meta-attribute > dl > div{
+  margin-bottom: 12px; /* 미티어쿼리 변경값*/
+}
+
+.meta-attribute > dl > div:last-of-type{
+  margin-bottom: 0;
+}
+
+.name-types{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 50px; /* 미디어 쿼리에서 auto로 바꿈 */
+}
+
+.meta-attribute li.main-article-list-items.type{
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
+
+/* HTML-2-pre.html */
+/* Article - Pre-Definition */
+.pre-type > dl > div{
+  margin-bottom: 12px; /* 미티어쿼리 변경값*/
+}
+
+.pre-type > dl > div:last-of-type{
+  margin-bottom: 0;
+}
