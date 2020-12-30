@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- 페이지 설명 -->
+    <meta name="author" content="dueto park"/>
+    <meta name="keywords" content="inline element, block element, 인라인 요소, 블록 요소"/>
+    <meta name="description" content="인라인 요소와 블록요소를 이해하고 잘 구분해서 사용하자"/>
+    <meta name="Location" content="포도와 고구마의 고장"/>
+
+    <title>블록 요소, 인라인 요소</title>
+
+    <!-- Style -->
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/default/reset-css.css">
+    <link rel="stylesheet" href="../../css/common/grid.min.css">
+    <link rel="stylesheet" href="../../css/common/common.css">
+    <link rel="stylesheet" href="../../css/common/common-media-query.css">
+  </head>
+
+  <body>
+    <header class='note-header'>
+      <div class='container'>
+        <h1 class='note-header-title'>
+          <a href=''>🔥기초튼튼 이가탄🔥</a>
+        </h1>
+
+        <nav class='note-header-nav'>
+          <h2 class='sr-only note-header-nav-title'>다른 페이지로 이동</h2>
+          <ol class='note-header-nav-list'>
+            <li class='note-header-nav-list-items'><a href=''>html</a></li>
+            <li class='note-header-nav-list-items'><a href=''>css</a></li>
+            <li class='note-header-nav-list-items'><a href=''>javascript</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <main class='note-main'>
+      <section class='container'>
+        <h1 class='main-title'>
+          <strong>👋인라인 요소, 블록 요쇼👋</strong>
+        </h1>
+
+        <article class=''>
+          <h1 class='main-article-title'>🏈HTML5의 블록 요소</h1>
+          <ul>
+            <li>audio, video</li>
+            <li>blockquote</li>
+            <li>dl, dd</li>
+            <li>form</li>
+            <li>h1, h2, h3, h4, h5, h6</li>
+            <li>ol, ul</li>
+            <li>p</li>
+            <li>pre</li>
+            <li>table</li>
+            <li></li>
+          </ul>
+          <p>
+            블록 요소의 내부에는 모든 인라인 요소를 포함할 수 있고,<br/>
+            다른 블록요소 일부 포함할 수 있다.<br/>
+            <strong>🔥p태그는 블록요소이지만 내부에는 인라인 요소만 올 수 있다🔥<br/></strong>
+            하나의 문단을 만드는 태그라서 말 그대로 문장과 문장 사이를 나눈다.<br/>
+            이 안에 블록 요소가 들어가면? p태그는 운다. cry for p...
+          </p>
+        </article>
+
+        <article class=''>
+          <h1 class='main-article-title'>⚾HTML5의 인라인 요소</h1>
+          <ul>
+            <li>a</li>
+            <li>abbr</li>
+            <li>br</li>
+            <li>button</li>
+            <li>cite</li>
+            <li>code</li>
+            <li>dfn</li>
+            <li>em, strong</li>
+            <li>img, input, label, button, textarea</li>
+            <li>q</li>
+            <li>script</li>
+          </ul>
+          <p>
+            인라인 요소 안에 다른 인라인 요소가 포함될 수 있다.<br/>
+          </p>
+          <p>
+            display 속성을 사용하면 인라인 요소과 블록 요소를 마음대로 바꿀 수 있다.<br/>
+            그렇지만 태그 속성을 쇽쌱 바꿔버리면, 태그 중첩으로 인해 효과가 제대로 반영되지 않을 수 있다.<br/><br/>
+
+            태그 속성 쇽샥<br/>
+            어.. 왜 안되지..? (한시간 쇽샥)!
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class='note-footer'>
+      <div class='container'>
+        <blockquote class='note-footer-reference'
+          cite='https://sas-study.tistory.com/122'>
+          <strong class='note-footer-reference-name'>
+            자료 출처: "sas-study.tistory - 인라인 태그 vs 블럭 태그", tistory,  2020년 12월 29일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href="https://sas-study.tistory.com/122">
+              https://sas-study.tistory.com/122
+            </a>
+          </cite>
+        </blockquote>
+
+        <blockquote class='note-footer-reference'
+          cite='https://uxgjs.tistory.com/44'>
+          <strong class='note-footer-reference-name'>
+            자료 출처: "uxgjs.tistory - HTML5 태그의 블록 요소와 인라인 요소", tistory,  2020년 12월 29일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href="https://uxgjs.tistory.com/44">
+              https://uxgjs.tistory.com/44
+            </a>
+          </cite>
+        </blockquote>
+
+        <blockquote class='note-footer-reference'
+          cite='https://gist.github.com/rxaviers/7360908'>
+          <strong class='note-footer-reference-name'>
+            이모티콘 출처: "rxaviers github / gist:7360908 repository", github, 2020년 12월 29일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href="https://gist.github.com/rxaviers/7360908">
+              https://gist.github.com/rxaviers/7360908
+            </a>
+          </cite>
+        </blockquote>
+      </div>
+    </footer>
+  </body>
+</html>
