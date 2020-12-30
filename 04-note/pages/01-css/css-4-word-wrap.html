@@ -47,32 +47,37 @@
         <article class='css-align'>
           <h1 class='main-article-title'>👻줄바꿈 속성</h1>
           <p>
-            word-wrap 속성은 긴 텍스트를 강제로 끊어 줄바꿈을 해주는 속성이다.
-            overflow 속성과 비슷하다.
-
-            word-wrap는 주소같은 분자역을 끊을 때 사용한다.
-            (참고, 인터넷 주소는 줄바꿈이 되지 않는다.)
-
-            주로 비아시아 언어의 줄바꿈을 제어한다.
+            word-wrap 속성은 긴 텍스트를 강제로 끊어 줄바꿈을 해주는 속성이다.<br/>
+            overflow 속성과 비슷하다.<br/>
+            <br/>
+            word-wrap는 주소같은 문자열을 끊을 때 사용한다.<br/>
+            (참고, 인터넷 주소는 줄바꿈이 되지 않는다.)<br/>
+            <br/>
+            주로 비아시아 언어의 줄바꿈을 제어한다.<br/>
             아시아언어(한국어, 중국어, 일본어 등등)의 줄바꿈은 word-break속성을 이용한다.
           </p>
 
           <h1 class='main-article-subtitle'>✏️word-wrap 속성값</h1>
-          <p>
-            normal
-            기본값, 글자가 길어도 끊어지지 않고 한 줄에 계속 표시
-            break-word
-            강제로 끊어서 줄바꿈 함
-
-            부모요소로부터 자식요소에게 상속된다.
-          </p>
+          <dl>
+            <div>
+              <dt class='main-article-dt'>normal</dt>
+              <dd class='main-article-dd'>
+                기본값, 글자가 길어도 끊어지지 않고 한 줄에 계속 표시
+              </dd>
+            </div>
+            <div>
+              <dt class='main-article-dt'>break-word</dt>
+              <dd class='main-article-dd'>강제로 끊어서 줄바꿈 함</dd>
+            </div>
+          </dl>
+          <strong>부모요소로부터 자식요소에게 상속된다.</strong>
 
           <h1 class='main-article-subtitle'>✏️word-wrap 이 가능한 요소</h1>
-          <p>
-            인라인 요소
-            블록요소
-            절대적 위치(position: absolute;)의 블록요소
-          </p>
+          <ul class='main-article-list'>
+            <li class='main-article-list-items'>인라인 요소</li>
+            <li class='main-article-list-items'>블록요소</li>
+            <li class='main-article-list-items'>절대적 위치(position: absolute;)의 블록요소</li>
+          </ul>
         </article>
 
         <article class='css-align'>
@@ -82,30 +87,43 @@
           </p>
 
           <h2 class='main-article-subtitle'>word-break 속성</h2>
-          <p>
-            normal
-            기본값으로, 일반적인 규칙에 따라 줄바꿈 함.
-            break-all
-            문자를 강제로 줄바꿈.
-            아시아 언어에서 사용할 땐 normal속성처럼 행동하며,
-            비아시아 언어에서 사용할 땐 임의대로 줄바꿈 함.
-            hungry
-            hung
-            ry
-            keep-all
-            아시아 언어에서 사용할 땐 normal속성처럼 행동하며,
-            문자 쌍 사이에서 줄바꿈을 금지함.
-          </p>
+          <dl>
+            <div>
+              <dt class='main-article-dt'>normal</dt>
+              <dd class='main-article-dd'>
+                기본값으로, 일반적인 규칙에 따라 줄바꿈 함.
+              </dd>
+            </div>
+            <div>
+              <dt class='main-article-dt'>break-all</dt>
+              <dd class='main-article-dd'>문자를 강제로 줄바꿈.</dd>
+              <dd class='main-article-dd'>
+                아시아 언어에서 사용할 땐 normal속성처럼 행동하며,<br/>
+                비아시아 언어에서 사용할 땐 임의대로 줄바꿈 함.
+              </dd>
+            </div>
+            <div>
+              <dt class='main-article-dt'>keep-all</dt>
+              <dd class='main-article-dd'>
+                아시아 언어에서 사용할 땐 normal속성처럼 행동하며,<br/>
+                문자 쌍 사이에서 줄바꿈을 금지함.
+              </dd>
+            </div>
+          </dl>
 
           <h2 class='main-article-subtitle'>
             word-break과 word-wrap의 차이
           </h2>
-          <p>
-            word-break
-            가차없이 단어를 중간에 잘라버림
-            word-wrap
-            단어를 자르진 않음
-          </p>
+          <dl>
+            <div>
+              <dt class='main-article-dt'>word-break</dt>
+              <dd class='main-article-dd'>가차없이 단어를 중간에 잘라버림</dd>
+            </div>
+            <div>
+              <dt class='main-article-dt'>word-wrap</dt>
+              <dd class='main-article-dd'>단어를 자르진 않음</dd>
+            </div>
+          </dl>
         </article>
       </section>
     </main>
@@ -113,8 +131,7 @@
     <footer class='note-footer'>
       <div class='container'>
         <blockquote class='note-footer-reference'
-          cite='https://www.w3schools.com/cssref/css3_pr_word-wrap.asp'
-          cite='https://gist.github.com/rxaviers/7360908'>
+          cite='https://www.w3schools.com/cssref/css3_pr_word-wrap.asp'>
           <strong class='note-footer-reference-name'>
             자료 출처: "w3school - CSS word-wrap Property", W3C,  2020년 12월 29일 접속,
           </strong>
@@ -123,7 +140,10 @@
               https://www.w3schools.com/cssref/css3_pr_word-wrap.asp
             </a>
           </cite>
+        </blockquote>
 
+        <blockquote class='note-footer-reference'
+          cite='https://gist.github.com/rxaviers/7360908'>
           <strong class='note-footer-reference-name'>
             이모티콘 출처: "rxaviers github / gist:7360908 repository", github, 2020년 12월 29일 접속,
           </strong>

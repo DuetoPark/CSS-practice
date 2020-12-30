@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../../css/common/grid.min.css">
     <link rel="stylesheet" href="../../css/common/common.css">
     <link rel="stylesheet" href="../../css/common/common-media-query.css">
+    <link rel="stylesheet" href="../../css/html/html.css">
+    <link rel="stylesheet" href="../../css/animation/animation.css">
   </head>
 
   <body>
@@ -41,7 +43,7 @@
     <main class='note-main'>
       <section class='container'>
         <h1 class='main-title'>
-          <strong>🎄메타(meta) 태그🎄</strong>
+          <strong class='convex-button'>🎄메타(meta) 태그🎄</strong>
         </h1>
 
         <article class='meta-definition'>
@@ -49,7 +51,7 @@
           <dl>
             <div>
               <dfn class='main-article-dt'>메타 태그란?</dfn>
-              <dd class='main-article-dd'>data에 대한 정보를 나타내는 태그이다.</dd>
+              <dd class='main-article-dd'>data에 대한 <strong class='underline'>정보를 나타내는 태그</strong>이다.</dd>
               <dd class='main-article-dd'>우리가 만든 서비스를 최대한 노출 시키고 싶을 때 이용하는 태그이다.</dd>
             </div>
             <div>
@@ -57,128 +59,132 @@
               <dd class='main-article-dd'>html파일의 &lt;head&gt; 태그 안에 들어간다.</dd>
             </div>
           </dl>
+
+          <section class='meta-definition-animation'>
+            <div class='data-image-group'>
+              <img class='data-image'
+                src='../../assets/images/super-man.png'
+                alt='사람'/>
+              <span class='text-meta'>meta(data)</span>
+            </div>
+            <div class='box-image-group'>
+              <img class='box-image'
+                src='../../assets/images/box.jpg'
+                alt='상자'/>
+              <span class='text-head'>&lt;head&gt;</span>
+            </div>
+          </section>
         </article>
 
 
         <article class='meta-attribute'>
-          <h1 class='main-article-title'>😎메타태그의 attribute에는 뭐가 있을까?</h1>
-          <p>
-            <dl>
-              <div>
-                <dt class='main-article-dt'>charset</dt>
-                <dd class='main-article-dd'>html5 부터 나온 태그, UTF-8로 HTML문서를 인코딩 하자!라는 의미</dd>
-              </div>
-              <div>
-                <dt class='main-article-dt'>name</dt>
-                <dd class='main-article-dd'>데이터의 종류</dd>
-              </div>
-              <div>
-                <dt class='main-article-dt'>content</dt>
-                <dd class='main-article-dd'>데이터의 값</dd>
-              </div>
-              <div>
-                <dt class='main-article-dt'>http-equiv='refresh'</dt>
-                <dd class='main-article-dd'>페이지 새로 고침</dd>
-                <dd class='main-article-dd'>content='시간'과 함께 쓰임</dd>
-              </div>
-            </dl>
-          </p>
+          <h1 class='main-article-title'>
+            😎메타태그의 attribute에는 뭐가 있을까?
+          </h1>
+          <dl class='meta-attribute-type'>
+            <div>
+              <dt class='main-article-dt'>charset</dt>
+              <dd class='main-article-dd'>html5 부터 나온 태그, UTF-8로 HTML문서를 인코딩 하자!라는 의미</dd>
+            </div>
+            <div>
+              <dt class='main-article-dt'>name</dt>
+              <dd class='main-article-dd'>데이터의 종류</dd>
+            </div>
+            <div>
+              <dt class='main-article-dt'>content</dt>
+              <dd class='main-article-dd'>데이터의 값</dd>
+            </div>
+            <div>
+              <dt class='main-article-dt'>http-equiv='refresh'</dt>
+              <dd class='main-article-dd'>페이지 새로 고침</dd>
+              <dd class='main-article-dd'>content='시간'과 함께 쓰임</dd>
+            </div>
+          </dl>
 
           <h2 class='main-article-subtitle'>👻name에는 어떤 값이 들어갈까?</h2>
-          <p>
-            <ul class='main-article-list'>
-              <li class='main-article-list-items'>viewport</li>
-              <li class='main-article-list-items'>author</li>
-              <li class='main-article-list-items'>keyword</li>
-              <li class='main-article-list-items'>description</li>
-              <li class='main-article-list-items'>Location</li>
-              <li class='main-article-list-items'>Reply-To</li>
-            </ul>
-          </p>
+          <ul class='main-article-list'>
+            <li class='main-article-list-items'>viewport</li>
+            <li class='main-article-list-items'>author</li>
+            <li class='main-article-list-items'>keyword</li>
+            <li class='main-article-list-items'>description</li>
+            <li class='main-article-list-items'>Location</li>
+            <li class='main-article-list-items'>Reply-To</li>
+          </ul>
         </article>
 
         <article class='meta-utilize'>
           <h1 class='main-article-title'>🔥좀 더 멋지게 사용하기</h1>
 
           <p>
-            <strong>
-              페이스북, 카카오톡, 트위터에 링크 공유하면 링크 대신 사진과 글귀가 나오게 할 때 meta태그를 정의한다.
-            </strong>
-            <br/>
-
-            <ul class='main-article-list'>
-              <li class='main-article-list-item'>
-                카카오톡, 페이스북
-                <pre class='main-article-pre'>
-                  <code>
-                    < meta property='og:title' content='test'/>
-                    < meta property='og:type' content='article'/>
-                    < meta property='og:url' content='https://hanjungv.github.io/'/>
-                    < meta property='og:description' content='설명을 적어보자!'/>
-                    < meta property='og:image' content='/post_img/201702/16/1.png'/>
-                    < meta property='og:image:width' content='1200' />
-                    < meta property='og:image:height' content='627' />
-                  </code>
-                </pre>
-                <img src='' alt=''/>
-              </li>
-              <li class='main-article-list-item'>
-                트위터
-                <pre class='main-article-pre'>
-                  <code>
-                    < meta name='twitter:card' content='summary'>
-                    < meta name='twitter:url' content='https://hanjungv.github.io/'>
-                    < meta name='twitter:title' content='test'>
-                    < meta name='twitter:description' content='설명을 적어보자!'>
-                    < meta name='twitter:image' content='/post_img/201702/16/1.png'>
-                  </code>
-                </pre>
-                <img src='' alt=''/>
-              </li>
-            </ul>
+            페이스북, 카카오톡, 트위터에 <strong class='underline'>링크 공유하면 링크 대신 사진과 글귀가 나오게 할 때</strong> meta태그를 정의한다.
+            카카오톡, 페이스북
           </p>
+          <pre class='main-article-pre'>
+            <code>
+              < meta property='og:title' content='test'/>
+              < meta property='og:type' content='article'/>
+              < meta property='og:url' content='https://hanjungv.github.io/'/>
+              < meta property='og:description' content='설명을 적어보자!'/>
+              < meta property='og:image' content='/post_img/201702/16/1.png'/>
+              < meta property='og:image:width' content='1200' />
+              < meta property='og:image:height' content='627' />
+            </code>
+          </pre>
+          <img src='' alt=''/>
+
+          <span>트위터</span>
+          <pre class='main-article-pre'>
+            <code>
+              < meta name='twitter:card' content='summary'>
+              < meta name='twitter:url' content='https://hanjungv.github.io/'>
+              < meta name='twitter:title' content='test'>
+              < meta name='twitter:description' content='설명을 적어보자!'>
+              < meta name='twitter:image' content='/post_img/201702/16/1.png'>
+            </code>
+          </pre>
+          <img src='' alt=''/>
         </article>
 
         <article class='meta-tip'>
           <h1 class='main-article-title'>✨팁✨</h1>
 
-          <p>
-            <ul class='main-article-list'>
-              <li class='main-article-list-items'>
-                설명(description)은 간결하고 그 페이지를 명확하게 나타내주는 글로(1~2줄)
-              </li>
-              <li class='main-article-list-items'>
-                가능하다면 페이지마다 다르게하자. 그게 정체성을 더 나타낼 것
-              </li>
-              <li class='main-article-list-items'>
-                description을 수정한다면 바로 웹페이지에 반영되지 않는다. 주기적으로 업데이트가 되는 시점 이후에 반영이 된다.
-              </li>
-            </ul>
-          </p>
+          <ul class='main-article-list'>
+            <li class='main-article-list-items'>
+              설명(description)은 간결하고 그 페이지를 명확하게 나타내주는 글로(1~2줄)
+            </li>
+            <li class='main-article-list-items'>
+              가능하다면 페이지마다 다르게하자. 그게 정체성을 더 나타낼 것
+            </li>
+            <li class='main-article-list-items'>
+              description을 수정한다면 바로 웹페이지에 반영되지 않는다. 주기적으로 업데이트가 되는 시점 이후에 반영이 된다.
+            </li>
+          </ul>
         </article>
-    </section>
+      </section>
     </main>
 
     <footer class='note-footer'>
       <div class='container'>
         <blockquote class='note-footer-reference'
-          cite='https://gist.github.com/rxaviers/7360908'
           cite='https://hanjungv.github.io/2017-02-16-1_HTML_metadata/'>
-          <strong class='note-footer-reference-name'>
-            이모티콘 출처: "rxaviers github / gist:7360908 repository", github, 2020년 12월 29일 접속,
-          </strong>
-          <cite class='note-footer-reference-url'>
-            <a href='https://gist.github.com/rxaviers/7360908'>
-              https://gist.github.com/rxaviers/7360908
-            </a>
-          </cite>
-
           <strong class='note-footer-reference-name'>
             자료 출처: "HANDEVBLOG", github 개인 페이지, 2020년 12월 29일 접속,
           </strong>
           <cite class='note-footer-reference-url'>
             <a href='https://hanjungv.github.io/2017-02-16-1_HTML_metadata/'>
               https://hanjungv.github.io/2017-02-16-1_HTML_metadata/
+            </a>
+          </cite>
+        </blockquote>
+
+        <blockquote class='note-footer-reference'
+          cite='https://gist.github.com/rxaviers/7360908'>
+          <strong class='note-footer-reference-name'>
+            이모티콘 출처: "rxaviers github / gist:7360908 repository", github, 2020년 12월 29일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://gist.github.com/rxaviers/7360908'>
+              https://gist.github.com/rxaviers/7360908
             </a>
           </cite>
         </blockquote>

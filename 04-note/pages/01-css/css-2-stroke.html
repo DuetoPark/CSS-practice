@@ -47,49 +47,52 @@
         <article class='css-align'>
           <h1 class='main-article-title'>🍆텍스트 외곽선 넣는 방법</h1>
           <p>
-            css를 사용하여 텍스트에 외곽선, stroke 효과를 주는 방법
+            css를 사용하여 텍스트에 외곽선(stroke 효과)을 주는 방법이다.
+          </p>
 
+          <h2 class='main-article-subtitle'>
             외곽선은 텍스트를 강조하는 효과적인 방법
+          </h2>
           <pre class='main-article-pre'>
             <code>
               -webkit-text-fill-color: white;//투명도 가능
               -webkit-text-stroke: 1px #000;
             </code>
           </pre>
-
-
+          <strong>
             대신, 표준방법이 아니라서 웹킷 및 모질라 계열의 브라우저에서만 적용된다.
+          </strong>
 
+          <h2 class='main-article-subtitle'>
             웹 크로스 브아우징 방법
-            text-shadow를 이용한다.
-            <pre class='main-article-pre'>
-              <code>
-                .text-stroke {
-                  color: #f00;
-                  text-shadow:
-                  -1px -1px 0 #000,
-                  1px -1px 0 #000,
-                  -1px 1px 0 #000,
-                  1px 1px 0 #000;
-                }
-              </code>
-            </pre>
+          </h2>
+          <p>text-shadow를 이용한다.</p>
+          <pre class='main-article-pre'>
+            <code>
+              .text-stroke {
+                color: #f00;
+                text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+              }
+            </code>
+          </pre>
 
-            애니메이션 설정하면, 색만 바뀌고 두께는 안바뀐다.
-            <pre class='main-article-pre'>
-              <code>
-                /* Only the color will change, not the width */
-                @keyframes colorchange {
-                  0% {
-                    -webkit-text-stroke: 10px red;
-                  }
-                  100% {
-                    -webkit-text-stroke: 20px green;
-                  }
-                }
-              </code>
-            </pre>
-          </p>
+          <h2 class='main-article-subtitle'>
+            애니메이션 설정
+          </h2>
+          <p>색만 바뀌고 두께는 변하지 않는다.</p>
+          <pre class='main-article-pre'>
+            <code>
+              /* Only the color will change, not the width */
+              @keyframes colorchange {
+                0% {-webkit-text-stroke: 10px red;}
+                100% {-webkit-text-stroke: 20px green;}
+              }
+            </code>
+          </pre>
         </article>
       </section>
     </main>
@@ -97,9 +100,7 @@
     <footer class='note-footer'>
       <div class='container'>
         <blockquote class='note-footer-reference'
-          cite='https://webisfree.com/2017-09-01/css-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%99%B8%EA%B3%BD%EC%84%A0-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0-stroke/'
-          cite='https://css-tricks.com/adding-stroke-to-web-text/'
-          cite='https://gist.github.com/rxaviers/7360908'>
+          cite='https://webisfree.com/2017-09-01/css-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%99%B8%EA%B3%BD%EC%84%A0-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0-stroke/'>
           <strong class='note-footer-reference-name'>
             자료 출처: "webisfree-css-텍스트-외곽선-처리하기", 개인 페이지,  2020년 12월 29일 접속,
           </strong>
@@ -108,7 +109,10 @@
               https://webisfree.com/2017-09-01/css-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%99%B8%EA%B3%BD%EC%84%A0-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0-stroke
             </a>
           </cite>
+        </blockquote>
 
+        <blockquote class='note-footer-reference'
+          cite='https://css-tricks.com/adding-stroke-to-web-text/'>
           <strong class='note-footer-reference-name'>
             자료 출처: "CSS-TRICKS-Adding stroke to Web Text", CSS-TRICKS,  2020년 12월 29일 접속,
           </strong>
@@ -117,7 +121,10 @@
               https://css-tricks.com/adding-stroke-to-web-text/
             </a>
           </cite>
+        </blockquote>
 
+        <blockquote class='note-footer-reference'
+          cite='https://gist.github.com/rxaviers/7360908'>
           <strong class='note-footer-reference-name'>
             이모티콘 출처: "rxaviers github / gist:7360908 repository", github, 2020년 12월 29일 접속,
           </strong>
