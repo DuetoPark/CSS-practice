@@ -1,0 +1,40 @@
+/* Tablet Style
+min-width >=576px  */
+@media screen and (min-width:576px) {
+  /* CSS-1-link.html */
+  /* Article - Css-Align */
+  .css-align-order{
+    margin-bottom: 24px; /* 미디어쿼리 36 */
+  }
+
+  .css-align-order > ol{
+    margin-bottom: 24px; /* 미디어쿼리 36 */
+  }
+
+
+  /* Article - Reason-For-Recomment */
+  .reason-for-recomment > div{
+    margin-left: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Desktop Style
+min-width >=768px  */
+@media screen and (min-width:768px) {
+  /* CSS-1-link.html */
+  /* Article - Css-Align */
+  .css-align-order{
+    margin-bottom: 32px;
+  }
+
+  .css-align-order > ol{
+    margin-bottom: 32px; /* 미디어쿼리 36 */
+  }
+
+
+  /* Article - Reason-For-Recomment */
+  .reason-for-recomment > div{
+    margin-bottom: 32px;
+  }
+}
