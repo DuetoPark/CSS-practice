@@ -146,17 +146,13 @@ dfn.main-article-dt,
 .main-article-pre{
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
-}
-
-.main-article-pre,
-.main-article-pre > code{
   padding: 0 20px;
-  white-space: pre-line;
 }
 
 .main-article-pre > code{
   width: 100%;
-  overflow-x: scroll;
+  font-size: 13px;
+  white-space: pre-line;
 }
 
 
