@@ -1,0 +1,68 @@
+/* Tablet Style
+min-width >=576px  */
+@media screen and (min-width:576px) {
+  /* HTML-1-meta.html */
+  /* animation */
+  .data-image{
+    width: 130px; /* 미티어쿼리 변경값*/
+  }
+
+  .box-image{
+    width: 400px; /* 미티어쿼리 변경값*/
+  }
+
+  /* Article - Meta-Attribute */
+  .meta-attribute > dl > div{
+    margin-bottom: 24px; /* 미티어쿼리 변경값*/
+  }
+
+  .meta-attribute li.main-article-list-items.type{
+    margin-bottom: 0;  /* 미티어쿼리 변경값*/
+  }
+
+
+  /* HTML-2-pre.html */
+  /* Article - Pre-Type */
+  .pre-type > dl > div{
+    margin-bottom: 24px; /* 미티어쿼리 변경값*/
+  }
+
+
+  /* HTML-3-inline-block.html */
+  /* Article - Block-Element */
+  .block-element > p{
+    margin-bottom: 16px; /* 미티어쿼리 변경값*/
+  }
+
+  .p-tag-image{
+    width: 400px; /* 미티어쿼리 변경값*/
+  }
+}
+
+/* Desktop Style
+min-width >=768px  */
+@media screen and (min-width:768px) {
+  /* HTML-1-meta.html */
+  /* Article - Meta-Attribute */
+  .meta-attribute-type{
+    margin-bottom: 48px; /* 미티어쿼리 변경값*/
+  }
+
+  .meta-attribute > dl > div{
+    margin-bottom: 32px; /* 미티어쿼리 변경값*/
+  }
+
+
+  /* HTML-2-pre.html */
+  /* Article - Pre-Type */
+  .pre-type > dl > div{
+    margin-bottom: 32px; /* 미티어쿼리 변경값*/
+  }
+
+
+  /* HTML-3-inline-block.html */
+  /* Article - Block-Element */
+  .block-element > p{
+    margin-bottom: 16px; /* 미티어쿼리 변경값*/
+  }
+}
