@@ -160,6 +160,24 @@ dfn.main-article-dt,
 }
 
 
+/* Article - Table */
+.main-article-table{
+  margin-bottom: 30px;
+  white-space: nowrap;
+}
+
+.main-article-table:last-child{
+  margin-bottom: 0;
+}
+
+.main-article-table td,
+.main-article-table th,
+.main-article-table tr{
+  padding: 5px 10px;
+  border: 1px solid #F3A14B;
+}
+
+
 /* Footer */
 .note-footer-reference{
   padding: 8px 0;
@@ -211,4 +229,9 @@ dfn.main-article-dt,
 
 .type:hover::before{
   background-color: #FFFFFF;
+}
+
+.order{
+  padding: 0 4px;
+  color: #1E90FF;
 }
