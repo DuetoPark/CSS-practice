@@ -1,0 +1,47 @@
+/* CSS-1-link.html */
+/* Article - Css-Align */
+.css-align-order{
+  margin-bottom: 30px;
+}
+
+.css-align-order > ol{
+  margin-bottom: 8px;
+}
+
+.css-align-type{
+  display: flex;
+}
+
+.css-align-type li.main-article-list-items.type{
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
+.css-align-type li.main-article-list-items.type:last-child{
+  margin-right: 0;
+}
+
+
+/* Article - Reason-For-Recomment */
+.reason-for-recomment > div{
+  margin-left: 32px;
+  margin-bottom: 30px;
+}
+
+.reason-for-recomment .main-article-subtitle{
+  margin-left: -16px;
+}
+
+.import-pros-and-cons li.main-article-list-items::before{
+  content: '-';
+}
+
+
+/* Article - Selector-Priority */
+.selector-priority{
+  overflow-x: scroll;
+}
+
+.align-center{
+  text-align: center;
+}
