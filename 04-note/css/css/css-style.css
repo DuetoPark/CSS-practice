@@ -1,11 +1,11 @@
 /* CSS-1-link.html */
 /* Article - Css-Align */
 .css-align-order{
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .css-align-order > ol{
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .css-align-type{
@@ -24,12 +24,12 @@
 
 /* Article - Reason-For-Recomment */
 .reason-for-recomment > div{
-  margin-left: 32px;
-  margin-bottom: 30px;
+  margin-left: 8px;
+  margin-bottom: 16px;
 }
 
-.reason-for-recomment .main-article-subtitle{
-  margin-left: -16px;
+.reason-for-recomment > div:last-child{
+  margin-bottom: 0;
 }
 
 .import-pros-and-cons li.main-article-list-items::before{
