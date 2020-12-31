@@ -1,6 +1,6 @@
 /* HTML-1-meta.html */
 /* Article - Meta-Definition */
-.meta-definition div:first-of-type{
+.meta-definition > dl > div:first-of-type{
   margin-bottom: 18px;
 }
 
@@ -12,7 +12,9 @@
 
 .data-image-group{
   position: relative;
-  z-index: 2;
+  top: 0;
+  left: 0;
+  z-index: 1;
   animation-name: get-in;
   animation-duration: 2000ms;
   animation-timing-function: ease-in-out;
@@ -20,7 +22,7 @@
 }
 
 .data-image{
-  width: 100px;
+  width: 100px; /* 미티어쿼리 변경값*/
   height: auto;
 }
 
@@ -37,17 +39,18 @@
 
 .box-image-group{
   position: relative;
+  top: 0;
+  left: 0;
 }
 
 .box-image{
-  width: 300px;
+  width: 300px; /* 미티어쿼리 변경값*/
   height: auto;
   margin: 0 auto;
 }
 
 .text-head{
   position: absolute;
-  z-index: 2;
   bottom: 20px;
   left: 50%;
   font-size: 18px;
@@ -74,13 +77,18 @@
 }
 
 .meta-attribute li.main-article-list-items.type{
-  margin-bottom: 8px;
+  margin-bottom: 8px;  /* 미티어쿼리 변경값*/
   margin-right: 8px;
 }
 
+.meta-attribute li.main-article-list-items.type:last-child{
+  margin-right: 0;
+}
+
+
 
 /* HTML-2-pre.html */
-/* Article - Pre-Definition */
+/* Article - Pre-Type */
 .pre-type > dl > div{
   margin-bottom: 12px; /* 미티어쿼리 변경값*/
 }
@@ -88,6 +96,7 @@
 .pre-type > dl > div:last-of-type{
   margin-bottom: 0;
 }
+
 
 
 /* HTML-3-inline-block.html */
@@ -103,7 +112,16 @@
   margin-right: 8px;
 }
 
+.block-element li.main-article-list-items.type:last-child,
+.inline-element li.main-article-list-items.type:last-child{
+  margin-right: 0;
+}
+
 /* Article - Block-Element */
+.block-element > p{
+  margin-bottom: 8px; /* 미티어쿼리 변경값*/
+}
+
 /* animation */
 .block-element-animation,
 .p-tag-image-group{
@@ -142,7 +160,7 @@
 }
 
 .p-tag-image{
-  width: 300px;
+  width: 300px; /* 미티어쿼리 변경값*/
   height: auto;
   margin: 0 auto;
 }
