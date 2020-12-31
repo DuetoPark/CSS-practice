@@ -17,6 +17,24 @@ min-width >=576px  */
     margin-left: 16px;
     margin-bottom: 24px;
   }
+
+  .selector-priority{
+    overflow-x: hidden;
+  }
+
+
+
+  /* CSS-2-stroke.html */
+  .stroke > p,
+  .stroke-cross-browsing > p,
+  .stroke-animation > p{
+    margin-bottom: 24px;
+  }
+
+  .stroke .main-article-pre,
+  .stroke-cross-browsing .main-article-pre{
+    margin-bottom: 24px;
+  }
 }
 
 /* Desktop Style
@@ -35,6 +53,20 @@ min-width >=768px  */
 
   /* Article - Reason-For-Recomment */
   .reason-for-recomment > div{
+    margin-bottom: 32px;
+  }
+
+
+
+  /* CSS-2-stroke.html */
+  .stroke > p,
+  .stroke-cross-browsing > p,
+  .stroke-animation > p{
+    margin-bottom: 32px;
+  }
+
+  .stroke .main-article-pre,
+  .stroke-cross-browsing .main-article-pre{
     margin-bottom: 32px;
   }
 }

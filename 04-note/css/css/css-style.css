@@ -45,3 +45,23 @@
 .align-center{
   text-align: center;
 }
+
+
+
+/* CSS-2-stroke.html */
+/* Article - Stroke */
+.stroke > p,
+.stroke-cross-browsing > p,
+.stroke-animation > p{
+  margin-bottom: 16px;
+}
+
+.stroke .main-article-pre,
+.stroke-cross-browsing .main-article-pre{
+  margin-bottom: 8px;
+}
+
+.can-i-use-image{
+  width: 100%;
+  border-radius: 10px;
+}
