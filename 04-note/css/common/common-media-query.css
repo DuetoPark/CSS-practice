@@ -25,6 +25,10 @@ min-width >=576px  */
   }
 
   /* Article */
+  .note-main .container > article{
+    margin-bottom: 64px;
+  }
+
   /* Article - Title */
   .main-article-title{
     margin-bottom: 24px;
@@ -36,7 +40,6 @@ min-width >=576px  */
   }
 
   .main-image{
-    width: 100%;
     padding: 30px;
     margin-bottom: 48px;
   }
@@ -57,7 +60,25 @@ min-width >=576px  */
   }
 
 
+  /* Article - Preformatted Text */
+  .main-article-pre{
+    padding: 0 40px;
+  }
+
+  /* Article - Table */
+  .main-article-table td,
+  .main-article-table th,
+  .main-article-table tr{
+    padding: 8px 12px;
+  }
+
+
   /* Footer */
+  .note-footer-reference{
+    padding: 16px 0;
+  }
+
+
   .note-footer-reference-name,
   .note-footer-reference-url > a{
     font-size: 13px;
@@ -74,26 +95,19 @@ min-width >=768px  */
   }
 
   .note-header > div.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row; /* 미디어쿼리 작성 */
+    justify-content: space-between; /* 미디어쿼리 작성 */
     align-items: center;
   }
 
-  .note-header-title{
-    flex-shrink: 0;
-  }
-
   .note-header-title > a{
-    font-size: 24px;
-    margin-bottom: 0;
+    margin-bottom: 0; /* 미디어쿼리 작성 */
   }
 
 
   /* Header - Navigation */
   .note-header-nav{
     width: 50%;
-    padding: 0 50px;
   }
 
 
@@ -112,14 +126,16 @@ min-width >=768px  */
 
 
   /* Article */
+  .note-main .container > article{
+    margin-bottom: 88px;
+  }
+
   /* Article - Title */
   .main-article-title{
-    margin-bottom: 24px;
     font-size: 18px;
   }
 
   .main-article-subtitle{
-    margin-bottom: 16px;
     font-size: 18px;
   }
 
@@ -130,15 +146,6 @@ min-width >=768px  */
     margin-bottom: 72px;
   }
 
-  /* Article - Definition List */
-  dfn.main-article-dt{
-    margin-bottom: 8px;
-  }
-
-  .main-article-dt{
-    margin-bottom: 8px;
-  }
-
 
   /* Article - List */
   .main-article-list-items{
@@ -146,16 +153,12 @@ min-width >=768px  */
   }
 
 
-  /* Article - Preformatted Text */
-  .main-article-pre{
-    overflow-x: hidden;
+  /* Article - Table */
+  .main-article-table td,
+  .main-article-table th,
+  .main-article-table tr{
+    padding: 10px 15px;
   }
-
-  .main-article-pre,
-  .main-article-pre > code{
-    padding: 0 36px;
-  }
-
 
   /* Footer */
   .note-footer-reference-name,
