@@ -44,8 +44,9 @@
           <strong>🍕글자 안에 이미지🍕</strong>
         </h1>
 
-        <article class='css-align'>
+        <article class='background-clip'>
           <h1 class='main-article-title'>⚾글자 안에 이미지 넣는 방법</h1>
+
           <p>
             그림 위에 글자를 배치하기는 많이 해봤지만,<br/>
             글자 안에 이미지를 배치하는 건 안해봤다.<br/>
@@ -53,30 +54,62 @@
             background image와 text의 color를 이용하면 되지 않을까?<br/>
             <br/>
             아니었다.<br/>
-            background-clip, -webkit-background-clip, color 세가지 프로퍼티를 이용한다.<br/>
+            <br/>
+            웹 크로스 브라우징 적용
           </p>
+
           <pre class='main-article-pre'>
             <code>
               background-clip: text;
               -webkit-background-clip: text;
               color: transparent;
+              -webkit-text-fill-color:transparent;
             </code>
           </pre>
+        </article>
 
+        <article class='background-clip-type-desc'>
+          <h2 class='main-article-subtitle'>🐛background-clip의 종류</h2>
+          <ul class='main-article-list background-clip-type'>
+            <li class='main-article-list-items type'>border-box</li>
+            <li class='main-article-list-items type'>padding-box</li>
+            <li class='main-article-list-items type'>content-box</li>
+            <li class='main-article-list-items type'>text</li>
+          </ul>
 
-          <h2 class='main-article-subtitle'>background-clip의 value</h2>
-          <ol class='main-article-list'>
-            <li class='main-article-list-items'>border-box</li>
-            <li class='main-article-list-items'>padding-box</li>
-            <li class='main-article-list-items'>content-box</li>
-            <li class='main-article-list-items'>text</li>
-          </ol>
-
-          <div class=''>
-            <img src='' alt='border-box 배경이 테두리의 바깥 경계까지 차지'>
-            <img src='' alt='padding-box 배경이 안쪽 여백의 바깥 경계까지 차지'>
-            <img src='' alt='content-box 배경을 콘텐츠 상자에 맞춤'>
-            <img src='' alt='text 배경을 전경 텍스트 위에만 그림'>
+          <div class='background-clip-image-group'>
+            <div>
+              <p class='background-clip-desc'>
+                배경이 테두리의 바깥 경계까지 차지
+              </p>
+              <img class='background-clip-image'
+                src='../../assets/images/background-clip-border-box.png'
+                alt='border-box'>
+            </div>
+            <div>
+              <p class='background-clip-desc'>
+                배경이 안쪽 여백의 바깥 경계까지 차지
+              </p>
+              <img class='background-clip-image'
+                src='../../assets/images/background-clip-padding-box.png'
+                alt='padding-box'>
+            </div>
+            <div>
+              <p class='background-clip-desc'>
+                배경을 콘텐츠 상자에 맞춤
+              </p>
+              <img class='background-clip-image'
+                src='../../assets/images/background-clip-content-box.png'
+                alt='content-box'>
+            </div>
+            <div>
+              <p class='background-clip-desc'>
+                배경을 전경 텍스트 위에만 그림
+              </p>
+              <img class='background-clip-image'
+                src='../../assets/images/background-clip-text.png'
+                alt='text'>
+            </div>
           </div>
         </article>
       </section>
