@@ -65,3 +65,66 @@
   width: 100%;
   border-radius: 10px;
 }
+
+
+/* CSS-3-background-clip.html */
+/* Article - Background-Clip */
+.background-clip > p{
+  margin-bottom: 8px;
+}
+
+/* Article - Background-Clip-Type-Desc */
+.background-clip-type{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.background-clip-type li.main-article-list-items.type{
+  margin: 0 8px 8px 0;
+}
+
+.background-clip-type li.main-article-list-items.type:last-child{
+  margin-right: 0;
+}
+
+.background-clip-image-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.background-clip-image-group > div{
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.background-clip-desc{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: keep-all;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  opacity: 0;
+  transition: opacity 250ms ease-out;
+}
+
+.background-clip-desc:hover{
+  opacity: 1;
+}
+
+.background-clip-image{
+  width: 150px;
+  height: auto;
+}

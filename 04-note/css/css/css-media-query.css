@@ -35,6 +35,27 @@ min-width >=576px  */
   .stroke-cross-browsing .main-article-pre{
     margin-bottom: 24px;
   }
+
+
+
+  /* CSS-3-background-clip.html */
+  /* Article - Background-Clip */
+  .background-clip > p{
+    margin-bottom: 16px;
+  }
+
+  /* Article - Background-Clip-Type-Desc */
+  .background-clip-type{
+    margin-bottom: 24px;
+  }
+
+  .background-clip-image-group > div{
+    margin-bottom: 24px;
+  }
+
+  .background-clip-image{
+    width: 230px;
+  }
 }
 
 /* Desktop Style
@@ -68,5 +89,26 @@ min-width >=768px  */
   .stroke .main-article-pre,
   .stroke-cross-browsing .main-article-pre{
     margin-bottom: 32px;
+  }
+
+
+
+  /* CSS-3-background-clip.html */
+  /* Article - Background-Clip */
+  .background-clip > p{
+    margin-bottom: 32px;
+  }
+
+  /* Article - Background-Clip-Type-Desc */
+  .background-clip-type{
+    margin-bottom: 32px;
+  }
+
+  .background-clip-image-group > div{
+    margin-bottom: 32px;
+  }
+
+  .background-clip-image{
+    width: 250px;
   }
 }
