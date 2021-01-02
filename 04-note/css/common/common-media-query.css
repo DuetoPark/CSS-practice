@@ -45,6 +45,10 @@ min-width >=576px  */
   }
 
   /* Article - Definition List */
+  .main-article-dl > div{
+    margin-bottom: 24px;
+  }
+
   dfn.main-article-dt{
     margin-bottom: 8px;
   }
@@ -144,6 +148,12 @@ min-width >=768px  */
     padding: 0;
     margin: 0 auto;
     margin-bottom: 72px;
+  }
+
+
+  /* Article - Definition List */
+  .main-article-dl > div{
+    margin-bottom: 32px;
   }
 
 
