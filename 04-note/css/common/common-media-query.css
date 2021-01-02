@@ -14,6 +14,34 @@ min-width >=576px  */
     margin-bottom: 32px;
   }
 
+  /* Header - Toggle-Button */
+  .toggle-button-group{
+    bottom: -4px;
+  }
+
+  .toggle-button-title{
+    font-size: 13px;
+    margin-right: 8px;
+  }
+
+  .toggle-button{
+    width: 36px;
+    height: 20px;
+  }
+
+  .toggle-button::after{
+    left: 3px;
+    width: 14px;
+    height: 14px;
+  }
+
+  button.toggle-button.new-style::after{
+    left: 3px;
+    transform: translate(16px,-50%);
+    width: 14px;
+    height: 14px;
+  }
+
 
   /* Main */
   .note-main{
