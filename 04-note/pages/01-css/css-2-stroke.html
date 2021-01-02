@@ -37,6 +37,11 @@
             <li class='note-header-nav-list-items'><a href=''>javascript</a></li>
           </ol>
         </nav>
+
+        <div class='toggle-button-group'>
+          <strong class='toggle-button-title'>Day/Night Switch</strong>
+          <button class='toggle-button' type='button'></button>
+        </div>
       </div>
     </header>
 
@@ -52,7 +57,7 @@
             텍스드에 외곽선을 넣는 이유는 텍스트를 강조하기 위함이다.<br/>
             css의 stroke 속성를 이용한다.
           </p>
-          <pre class='main-article-pre'>
+          <pre class='main-article-pre background-white-radius'>
             <code>
               -webkit-text-fill-color: white;//투명도 가능
               -webkit-text-stroke: 1px #000;
@@ -67,11 +72,11 @@
         </article>
 
         <article class='stroke-cross-browsing'>
-          <h2 class='main-article-subtitle'>
+          <h1 class='main-article-title'>
             🌏웹 크로스 브라우징 방법
-          </h2>
+          </h1>
           <p>text-shadow를 이용한다.</p>
-          <pre class='main-article-pre'>
+          <pre class='main-article-pre background-white-radius'>
             <code>
               .text-stroke {
                 color: #f00;
@@ -93,7 +98,7 @@
             🔇애니메이션 설정
           </h2>
           <p>색만 바뀌고 두께는 변하지 않는다.</p>
-          <pre class='main-article-pre'>
+          <pre class='main-article-pre background-white-radius'>
             <code>
               /* Only the color will change, not the width */
               @keyframes colorchange {
@@ -145,5 +150,7 @@
         </blockquote>
       </div>
     </footer>
+
+    <script src='../../assets/app/app.js'></script>
   </body>
 </html>

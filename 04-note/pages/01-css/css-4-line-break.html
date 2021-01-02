@@ -37,6 +37,11 @@
             <li class='note-header-nav-list-items'><a href=''>javascript</a></li>
           </ol>
         </nav>
+
+        <div class='toggle-button-group'>
+          <strong class='toggle-button-title'>Day/Night Switch</strong>
+          <button class='toggle-button' type='button'></button>
+        </div>
       </div>
     </header>
 
@@ -51,7 +56,7 @@
           <p>
             페이지를 만들다보니 내 페이지를 어지럽히는 몇몇 친구들이 있었다.
           </p>
-          <ul class='main-article-list'>
+          <ul class='main-article-list background-white-radius'>
             <li class='main-article-list-items hyphen'>줄바꿈 되지 않고 터져 나가는 url</li>
             <li class='main-article-list-items hyphen'>댕강 썰리는 한국어 단어</li>
             <li class='main-article-list-items hyphen'>그대로 노출되는 연속 스페이스</li>
@@ -91,7 +96,7 @@
                 </dd>
                 <dd class='main-article-dd'>
                   (단어의 길이>요소의 너비), 요소의 너비를 뚫고 나감
-                  <p class='overflow-wrap-normal'>
+                  <p class='overflow-wrap-normal background-white-square'>
                     overflowoverflow overflowoverflowoverflowoverflow overflow overflowoverflow
                   </p>
                 </dd>
@@ -103,7 +108,7 @@
                 </dd>
                 <dd class='main-article-dd'>
                   (단어의 길이>요소의 너비), break point가 아니어도 단어 중간을 쇽샥 잘라버림
-                  <p class='overflow-wrap-break-word'>
+                  <p class='overflow-wrap-break-word background-white-square'>
                     overflowoverflow overflowoverflowoverflowoverflow overflow overflowoverflow
                   </p>
                 </dd>
@@ -154,7 +159,7 @@
                 </dd>
                 <dd class='main-article-dd'>
                   아시아 언어의 기본 설정값<br/>
-                  <p class='word-break-normal'>
+                  <p class='word-break-normal background-white-square'>
                     엄마는이계인 엄마는이계인엄마는이계인엄마는이계인 엄마는이계인엄마는이계인엄마는이계인
                   </p>
                 </dd>
@@ -166,7 +171,7 @@
                 </dd>
                 <dd class='main-article-dd'>
                   (단어의 길이>요소의 너비), 요소의 너비를 뚫고 나감
-                  <p class='word-break-keep-all'>
+                  <p class='word-break-keep-all background-white-square'>
                     엄마는이계인 엄마는이계인엄마는이계인엄마는이계인 엄마는이계인엄마는이계인엄마는이계인
                   </p>
                 </dd>
@@ -181,7 +186,7 @@
                 </dd>
                 <dd class='main-article-dd'>
                   break point(탭, 엔터)는 축약<br/>
-                  <p class='word-break-break-all'>
+                  <p class='word-break-break-all background-white-square'>
                     엄마는이계인 엄마는이계인엄마는이계인엄마는이계인 엄마는이계인엄마는이계인엄마는이계인
                   </p>
                 </dd>
@@ -238,7 +243,7 @@
               <dd class='main-article-dd'>
                 한 줄이 너무 길어서 넘칠 경우 자동으로 줄 바꿈
                 <div>
-                  <pre>
+                  <pre class='background-white-square'>
                     <code class='white-space-normal'>
                       ⊂_ヽ
                       　 ＼＼ Λ＿Λ
@@ -267,7 +272,7 @@
               <dd class='main-article-dd'>
                 한 줄이 너무 길어서 요소 옆구리 터져도 줄 바꿈 안 함
                 <div>
-                  <pre>
+                  <pre class='background-white-square'>
                     <code class='white-space-nowrap'>
                       ⊂_ヽ
                       　 ＼＼ Λ＿Λ
@@ -296,7 +301,7 @@
               <dd class='main-article-dd'>
                 한 줄이 너무 길어서 요소 옆구리 터져도 줄 바꿈 안 함
                 <div>
-                  <pre>
+                  <pre class='background-white-square'>
                     <code class='white-space-pre'>
                       ⊂_ヽ
                       　 ＼＼ Λ＿Λ
@@ -323,7 +328,7 @@
               <dd class='main-article-dd'>연속 스페이스 그대로 유지</dd>
               <dd class='main-article-dd'>줄 바꿈은 엔터와 &lt;br&gt; 요소에서 일어나고, 한 줄이 너무 길어서 넘칠 경우 자동으로 줄 바꿈
                 <div>
-                  <pre>
+                  <pre class='background-white-square'>
                     <code class='white-space-pre-wrap'>
                       ⊂_ヽ
                       　 ＼＼ Λ＿Λ
@@ -351,7 +356,7 @@
               <dd class='main-article-dd'>
                 줄 바꿈은 개행 문자와 &lt;br&gt; 요소에서 일어나며, 자동 줄바꿈이 된다.
                 <div>
-                  <pre>
+                  <pre class='background-white-square'>
                     <code class='white-space-pre-line'>
                       ⊂_ヽ
                       　 ＼＼ Λ＿Λ
@@ -510,5 +515,7 @@
         </blockquote>
       </div>
     </footer>
+
+    <script src='../../assets/app/app.js'></script>
   </body>
 </html>
