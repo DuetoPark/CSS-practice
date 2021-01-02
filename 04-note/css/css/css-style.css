@@ -128,3 +128,151 @@
   width: 150px;
   height: auto;
 }
+
+
+/* CSS-4-Line-Break.html */
+/* Article - Main-title */
+.line-break > p{
+  margin-bottom: 8px; /* 미디어쿼리 변형 */
+}
+
+.line-break ul.main-article-list{
+  margin-bottom: 8px; /* 미디어쿼리 변형 */
+  padding: 10px 20px; /* 미디어쿼리 변형 */
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+.line-break-type{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.line-break-type li.main-article-list-items.type{
+  margin-right: 4px;
+}
+
+.line-break-type li.main-article-list-items.type:last-child{
+  margin-right: 0;
+}
+
+
+/* Article - Overflow-Wrap */
+.overflow-wrap > p{
+  margin-bottom: 8px; /* 미디어쿼리 변형 */
+}
+
+.overflow-wrap > p:last-of-type{
+  margin-bottom: 24px; /* 미디어쿼리 변형 */
+}
+
+.overflow-wrap > div{
+  margin-bottom: 12px; /* 미디어쿼리 변형 */
+}
+
+.overflow-wrap > div:last-child{
+  margin-bottom: 0;
+}
+
+/* Section - Overflow-Wrap-animation */
+.overflow-wrap .main-article-dd,
+.word-break .main-article-dd{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.overflow-wrap-normal,
+.overflow-wrap-break-word,
+.word-break-normal,
+.word-break-keep-all,
+.word-break-break-all{
+  width: 220px;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+}
+
+.overflow-wrap-normal{
+  overflow-wrap: normal;
+}
+
+.overflow-wrap-break-word{
+  overflow-wrap: break-word;
+}
+
+.word-break-normal{
+  word-break: normal;
+}
+
+.word-break-keep-all{
+  word-break: keep-all;
+}
+
+.word-break-break-all{
+  word-break: break-all;
+}
+
+.white-space .main-article-dl dd div{
+  overflow-x: scroll;
+}
+
+.white-space .main-article-dl pre{
+  width: 220px;
+  padding: 10px 20px; /* 미디어쿼리 변형 */
+  background-color: #FFFFFF;
+}
+
+.white-space-normal{
+  white-space: normal;
+}
+
+.white-space-nowrap{
+  white-space: nowrap;
+}
+
+.white-space-pre{
+  white-space: pre;
+}
+
+.white-space-pre-wrap{
+  white-space: pre-wrap;
+}
+
+.white-space-pre-line{
+  white-space: pre-line;
+}
+
+
+/* Article - Word-Break */
+.word-break > p{
+  margin-bottom: 8px; /* 미디어쿼리 변형 */
+}
+
+
+/* Article - Hyphens */
+.hyphens{
+  margin-bottom: 48px; /* 미디어쿼리 변형 */
+}
+
+.hyphens > p{
+  margin-bottom: 8px; /* 미디어쿼리 변형 */
+}
+
+
+/* Article - White-Space */
+.white-space > p{
+  margin-bottom: 8px; /* 미디어쿼리 변형 */
+}
+
+.white-space > dl.main-article-dl{
+  margin-bottom: 24px; /* 미디어쿼리 변형 */
+}
+
+.white-space > div{
+  margin-bottom: 24px; /* 미디어쿼리 변형 */
+}
+
+.white-space > div:last-of-type{
+  margin-bottom: 0;
+  overflow-x: scroll;
+}
