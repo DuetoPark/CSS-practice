@@ -139,8 +139,6 @@
 .line-break ul.main-article-list{
   margin-bottom: 8px; /* 미디어쿼리 변형 */
   padding: 10px 20px; /* 미디어쿼리 변형 */
-  border-radius: 10px;
-  background-color: #FFF;
 }
 
 .line-break-type{
@@ -189,7 +187,6 @@
 .word-break-break-all{
   width: 220px;
   padding: 10px 20px;
-  background-color: #FFFFFF;
 }
 
 .overflow-wrap-normal{
@@ -219,7 +216,6 @@
 .white-space .main-article-dl pre{
   width: 220px;
   padding: 10px 20px; /* 미디어쿼리 변형 */
-  background-color: #FFFFFF;
 }
 
 .white-space-normal{
