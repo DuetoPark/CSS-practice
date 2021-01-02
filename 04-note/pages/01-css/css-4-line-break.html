@@ -50,9 +50,9 @@
             페이지를 만들다보니 내 페이지를 어지럽히는 몇몇 친구들이 있었다.
           </p>
           <ul class='main-article-list'>
-            <li class='main-article-list-items'>줄바꿈 되지 않고 터져 나가는 url</li>
-            <li class='main-article-list-items'>댕강 썰리는 한국어 단어</li>
-            <li class='main-article-list-items'>그대로 노출되는 연속 스페이스</li>
+            <li class='main-article-list-items hyphen'>줄바꿈 되지 않고 터져 나가는 url</li>
+            <li class='main-article-list-items hyphen'>댕강 썰리는 한국어 단어</li>
+            <li class='main-article-list-items hyphen'>그대로 노출되는 연속 스페이스</li>
           </ul>
           <p>
             궁금했다. 나. 이것도 처리 가능한지. css의 속성으로. 미안한 해석. 구글번역 사용했다.<br/>
@@ -69,10 +69,12 @@
           <h1 class='main-article-title'>🙏overflow-wrap(word-wrap)</h1>
           <p>
             overflow-wrap(word-wrap) 속성은 <strong class='underline'>띄어쓰기가 없는 긴 텍스트를 어떻게 처리할 지 지정</strong>하는 속성이다.<br/>
-            <br/>
+          </p>
+          <p>
             overflow-wrap(word-wrap)는 주소같은 문자열을 끊을 때 사용한다.<br/>
             (참고, &lt;cite&gt; 태그에 입력한 url은 별다른 스타일을 주지 않으면, 기본적으로 줄바꿈이 되지 않는다.)<br/>
-            <br/>
+          </p>
+          <p>
             주로 <strong class='underline'>비아시아 언어의 줄바꿈</strong>을 제어한다.<br/>
             아시아언어(한국어, 중국어, 일본어 등등)의 줄바꿈은 word-break속성을 이용한다.
           </p>
@@ -83,13 +85,25 @@
               <div>
                 <dt class='main-article-dt type'>normal</dt>
                 <dd class='main-article-dd'>
-                  기본값, break point(단어의 끝, 띄어쓰기 전)에서 줄바꿈. 매우 젠틀한 편.
+                  (문장의 길이>요소의 너비), break point(엔터, 띄어쓰기)에서 줄바꿈
+                </dd>
+                <dd class='main-article-dd'>
+                  (단어의 길이>요소의 너비), 요소의 너비를 뚫고 나감
+                  <p class='overflow-wrap-normal'>
+                    overflowoverflow overflowoverflowoverflowoverflow overflow overflowoverflow
+                  </p>
                 </dd>
               </div>
               <div>
                 <dt class='main-article-dt type'>break-word</dt>
                 <dd class='main-article-dd'>
-                  단어의 길이가 요소의 너비를 넘기는 경우, break point가 아니어도 거침없이 댕강 잘라버림. 단어 해체 쇼!
+                  (문장의 길이>요소의 너비), break point(엔터, 띄어쓰기)에서 줄바꿈
+                </dd>
+                <dd class='main-article-dd'>
+                  (단어의 길이>요소의 너비), break point가 아니어도 단어 중간을 쇽샥 잘라버림
+                  <p class='overflow-wrap-break-word'>
+                    overflowoverflow overflowoverflowoverflowoverflow overflow overflowoverflow
+                  </p>
                 </dd>
               </div>
               <div>
@@ -109,9 +123,9 @@
           <div>
             <h2 class='main-article-subtitle'>👋overflow-wrap(word-wrap)이 가능한 요소</h1>
             <ul class='main-article-list'>
-              <li class='main-article-list-items'>인라인 요소</li>
-              <li class='main-article-list-items'>블록요소</li>
-              <li class='main-article-list-items'>절대적 위치(position: absolute;)의 블록요소</li>
+              <li class='main-article-list-items hyphen'>인라인 요소</li>
+              <li class='main-article-list-items hyphen'>블록요소</li>
+              <li class='main-article-list-items hyphen'>절대적 위치(position: absolute;)의 블록요소</li>
             </ul>
           </div>
         </article>
@@ -128,28 +142,46 @@
               <div>
                 <dt class='main-article-dt type'>normal</dt>
                 <dd class='main-article-dd'>
-                  기본값으로, 일반적인 규칙에 따라 줄바꿈 함.
+                  (문장의 길이>요소의 너비), break point(엔터, 띄어쓰기)에서 줄바꿈 없음
+                </dd>
+                <dd class='main-article-dd'>
+                  break point(탭, 엔터)는 축약
+                </dd>
+                <dd class='main-article-dd'>
+                   (단어의 길이>요소의 너비), break point가 아니어도 단어 중간을 쇽샥 잘라버림
+                </dd>
+                <dd class='main-article-dd'>
+                  아시아 언어의 기본 설정값<br/>
+                  <p class='word-break-normal'>
+                    엄마는이계인 엄마는이계인엄마는이계인엄마는이계인 엄마는이계인엄마는이계인엄마는이계인
+                  </p>
                 </dd>
               </div>
               <div>
                 <dt class='main-article-dt type'>keep-all</dt>
                 <dd class='main-article-dd'>
-                  overflow-wrap: normal;과 같음
+                  (문장의 길이>요소의 너비), break point(엔터, 띄어쓰기)에서 줄바꿈
                 </dd>
                 <dd class='main-article-dd'>
-                  break point(단어의 끝, 띄어쓰기 전)에서 줄바꿈
+                  (단어의 길이>요소의 너비), 요소의 너비를 뚫고 나감
+                  <p class='word-break-keep-all'>
+                    엄마는이계인 엄마는이계인엄마는이계인엄마는이계인 엄마는이계인엄마는이계인엄마는이계인
+                  </p>
                 </dd>
               </div>
               <div>
                 <dt class='main-article-dt type'>break-all</dt>
                 <dd class='main-article-dd'>
-                  overflow-wrap: break-word;와 같음
+                  (문장의 길이>요소의 너비), break point(엔터, 띄어쓰기)에서 줄바꿈 없음
                 </dd>
                 <dd class='main-article-dd'>
-                  단어의 길이가 요소의 너비를 넘기면 거침없이 댕강 잘라버림.
+                   (단어의 길이>요소의 너비), break point가 아니어도 단어 중간을 쇽샥 잘라버림
                 </dd>
                 <dd class='main-article-dd'>
-                  또다시 시작되는 단어 해체 쇼!
+                  break point(탭, 엔터)는 축약<br/>
+                  <p class='word-break-break-all'>
+                    엄마는이계인 엄마는이계인엄마는이계인엄마는이계인 엄마는이계인엄마는이계인엄마는이계인
+                  </p>
                 </dd>
               </div>
             </dl>
@@ -157,7 +189,7 @@
         </article>
 
         <aside class='hyphens'>
-          <h2 class='main-article-title'>🍍hyphens</h2>
+          <h2 class='main-article-title'>hyphens</h2>
           <p>
             텍스트 해체쇼로 인해, 여러 줄에 걸치는 단어에 붙임표를 추가하는 방식
           </p>
@@ -165,7 +197,7 @@
             <div>
               <dt class='main-article-dt type'>none</dt>
               <dd class='main-article-dd'>
-                단어의 길이가 요소의 너비 이상으로 튀어나가도 단어를 댕강 자르지 않음.
+                단어의 길이가 요소의 너비 이상으로 튀어나가도 단어를 쇽샥 자르지 않음.
               </dd>
               <dd class='main-article-dd'>
                 줄바꿈은 공백 문자에서만 발생
@@ -191,7 +223,7 @@
 
         <article class='white-space'>
           <h1 class='main-article-title'>
-            👀white-space
+            🍍white-space
           </h1>
           <p>
             문단의 여백 및 줄바꿈 처리하는 법을 지정한다.
@@ -202,7 +234,28 @@
               <dd class='main-article-dd'>연속 스페이스를 하나로 합침</dd>
               <dd class='main-article-dd'>엔터는 스페이스처럼 처리</dd>
               <dd class='main-article-dd'>
-                한 줄이 너무 길어서 넘칠 경우 자동으로 줄바꿈
+                한 줄이 너무 길어서 넘칠 경우 자동으로 줄 바꿈
+                <div>
+                  <pre>
+                    <code class='white-space-normal'>
+                      ⊂_ヽ
+                      　 ＼＼ Λ＿Λ
+                      　　 ＼( ‘ㅅ’ ) 두둠칫
+                      　　　 >　⌒ヽ
+                      　　　/ 　 へ＼
+                      　　 /　　/　＼＼
+                      　　 ﾚ　ノ　　 ヽ_つ
+                      　　/　/두둠칫
+                      　 /　/|
+                      　(　(ヽ
+                      　|　|、＼
+                      　| 丿 ＼ ⌒)
+                      　| |　　) /
+                      `ノ )　　Lﾉ
+                      내 동년배들 네이버 웹툰 댓글에 이런거 달고 그랬읍니다
+                    </code>
+                  </pre>
+                </div>
               </dd>
             </div>
             <div>
@@ -210,7 +263,28 @@
               <dd class='main-article-dd'>연속 스페이스를 하나로 합침</dd>
               <dd class='main-article-dd'>줄 바꿈은 &lt;br&gt; 요소에서만 일어남</dd>
               <dd class='main-article-dd'>
-                한 줄이 너무 길어서 요소 옆구리 터져도 앞만 보고 달려감
+                한 줄이 너무 길어서 요소 옆구리 터져도 줄 바꿈 안 함
+                <div>
+                  <pre>
+                    <code class='white-space-nowrap'>
+                      ⊂_ヽ
+                      　 ＼＼ Λ＿Λ
+                      　　 ＼( ‘ㅅ’ ) 두둠칫
+                      　　　 >　⌒ヽ
+                      　　　/ 　 へ＼
+                      　　 /　　/　＼＼
+                      　　 ﾚ　ノ　　 ヽ_つ
+                      　　/　/두둠칫
+                      　 /　/|
+                      　(　(ヽ
+                      　|　|、＼
+                      　| 丿 ＼ ⌒)
+                      　| |　　) /
+                      `ノ )　　Lﾉ
+                      내 동년배들 네이버 웹툰 댓글에 이런거 달고 그랬읍니다
+                    </code>
+                  </pre>
+                </div>
               </dd>
             </div>
             <div>
@@ -218,20 +292,85 @@
               <dd class='main-article-dd'>연속 스페이스 그대로 유지</dd>
               <dd class='main-article-dd'>줄 바꿈은 엔터와 &lt;br&gt; 요소에서만 일어남</dd>
               <dd class='main-article-dd'>
-                한 줄이 너무 길어서 요소 옆구리 터져도 앞만 보고 달려감
+                한 줄이 너무 길어서 요소 옆구리 터져도 줄 바꿈 안 함
+                <div>
+                  <pre>
+                    <code class='white-space-pre'>
+                      ⊂_ヽ
+                      　 ＼＼ Λ＿Λ
+                      　　 ＼( ‘ㅅ’ ) 두둠칫
+                      　　　 >　⌒ヽ
+                      　　　/ 　 へ＼
+                      　　 /　　/　＼＼
+                      　　 ﾚ　ノ　　 ヽ_つ
+                      　　/　/두둠칫
+                      　 /　/|
+                      　(　(ヽ
+                      　|　|、＼
+                      　| 丿 ＼ ⌒)
+                      　| |　　) /
+                      `ノ )　　Lﾉ
+                      내 동년배들 네이버 웹툰 댓글에 이런거 달고 그랬읍니다
+                    </code>
+                  </pre>
+                </div>
               </dd>
             </div>
             <div>
               <dt class='main-article-dt type'>pre-wrap</dt>
               <dd class='main-article-dd'>연속 스페이스 그대로 유지</dd>
-              <dd class='main-article-dd'>줄 바꿈은 엔터와 &lt;br&gt; 요소에서 일어나고, 자동 줄바꿈이 된다.
+              <dd class='main-article-dd'>줄 바꿈은 엔터와 &lt;br&gt; 요소에서 일어나고, 한 줄이 너무 길어서 넘칠 경우 자동으로 줄 바꿈
+                <div>
+                  <pre>
+                    <code class='white-space-pre-wrap'>
+                      ⊂_ヽ
+                      　 ＼＼ Λ＿Λ
+                      　　 ＼( ‘ㅅ’ ) 두둠칫
+                      　　　 >　⌒ヽ
+                      　　　/ 　 へ＼
+                      　　 /　　/　＼＼
+                      　　 ﾚ　ノ　　 ヽ_つ
+                      　　/　/두둠칫
+                      　 /　/|
+                      　(　(ヽ
+                      　|　|、＼
+                      　| 丿 ＼ ⌒)
+                      　| |　　) /
+                      `ノ )　　Lﾉ
+                      내 동년배들 네이버 웹툰 댓글에 이런거 달고 그랬읍니다
+                    </code>
+                  </pre>
+                </div>
               </dd>
             </div>
             <div>
               <dt class='main-article-dt type'>pre-line</dt>
               <dd class='main-article-dd'>연속 스페이스를 병합</dd>
-              <dd class='main-article-dd'>줄 바꿈은 개행 문자와 &lt;br&gt; 요소에서 일어나며, 자동 줄바꿈이 된다.</dd>
-              <dd class='main-article-dd'>아마도 가장 많이 쓸 속성값</dd>
+              <dd class='main-article-dd'>
+                줄 바꿈은 개행 문자와 &lt;br&gt; 요소에서 일어나며, 자동 줄바꿈이 된다.
+                <div>
+                  <pre>
+                    <code class='white-space-pre-line'>
+                      ⊂_ヽ
+                      　 ＼＼ Λ＿Λ
+                      　　 ＼( ‘ㅅ’ ) 두둠칫
+                      　　　 >　⌒ヽ
+                      　　　/ 　 へ＼
+                      　　 /　　/　＼＼
+                      　　 ﾚ　ノ　　 ヽ_つ
+                      　　/　/두둠칫
+                      　 /　/|
+                      　(　(ヽ
+                      　|　|、＼
+                      　| 丿 ＼ ⌒)
+                      　| |　　) /
+                      `ノ )　　Lﾉ
+                      내 동년배들 네이버 웹툰 댓글에 이런거 달고 그랬읍니다
+                    </code>
+                  </pre>
+                </div>
+              </dd>
+              <dd class='main-article-dd'>아마도 가장 많이 쓸 것 같은 속성값</dd>
             </div>
             <div>
               <dt class='main-article-dt type'>break-spaces</dt>
@@ -242,20 +381,22 @@
           <div class='white-space-attribute-difference'>
             <h3 class='main-article-subtitle'>👙break-spaces와 pre-wrap의 차이</h3>
             <ul class='main-article-list'>
-              <li class='main-article-list-items'>
+              <li class='main-article-list-items hyphen'>
                 연속 공백이 줄의 끝에 위치하더라도 공간을 차지합니다.
               </li>
-              <li class='main-article-list-items'>
+              <li class='main-article-list-items hyphen'>
                 연속 공백의 중간과 끝에서도 자동으로 줄을 바꿀 수 있습니다.
               </li>
-              <li class='main-article-list-items'>
+              <li class='main-article-list-items hyphen'>
                 유지한 연속 공백은 pre-wrap과 달리 요소 바깥으로 넘치지 않으며, 공간도 차지하므로 박스의 본질 크기(min-content, max-content)에 영향을 줍니다.
               </li>
             </ul>
           </div>
 
           <div>
-            <h2 class='main-article-subtitle'>🍋한눈에 보는 white-space 속성값(MDN에 작성된 표 그대로 가져옴)</h2>
+            <h2 class='main-article-subtitle'>
+              🍋한눈에 보는 white-space 속성값(MDN에 작성된 표 그대로 가져옴)
+            </h2>
             <table class='main-article-table'>
               <thead>
                 <tr>
