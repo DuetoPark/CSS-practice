@@ -102,6 +102,11 @@ body{
   margin-bottom: 48px;
 }
 
+.note-main .container > article:last-child{
+  margin-bottom: 0;
+}
+
+
 /* Article - Title */
 .main-article-title{
   margin-bottom: 16px;
@@ -238,4 +243,9 @@ dfn.main-article-dt,
 .order{
   padding: 0 4px;
   color: #1E90FF;
+}
+
+.hyphen::before{
+  content: '-';
+  margin-right: 4px;
 }
