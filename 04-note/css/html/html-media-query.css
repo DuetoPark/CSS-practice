@@ -12,20 +12,12 @@ min-width >=576px  */
   }
 
   /* Article - Meta-Attribute */
-  .meta-attribute > dl > div{
-    margin-bottom: 24px; /* 미티어쿼리 변경값*/
-  }
-
   .meta-attribute li.main-article-list-items.type{
     margin-bottom: 0;  /* 미티어쿼리 변경값*/
   }
 
 
   /* HTML-2-pre.html */
-  /* Article - Pre-Type */
-  .pre-type > dl > div{
-    margin-bottom: 24px; /* 미티어쿼리 변경값*/
-  }
 
 
   /* HTML-3-inline-block.html */
@@ -48,16 +40,8 @@ min-width >=768px  */
     margin-bottom: 48px; /* 미티어쿼리 변경값*/
   }
 
-  .meta-attribute > dl > div{
-    margin-bottom: 32px; /* 미티어쿼리 변경값*/
-  }
-
 
   /* HTML-2-pre.html */
-  /* Article - Pre-Type */
-  .pre-type > dl > div{
-    margin-bottom: 32px; /* 미티어쿼리 변경값*/
-  }
 
 
   /* HTML-3-inline-block.html */

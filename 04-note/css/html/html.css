@@ -63,14 +63,6 @@
   margin-bottom: 30px;
 }
 
-.meta-attribute > dl > div{
-  margin-bottom: 12px; /* 미티어쿼리 변경값*/
-}
-
-.meta-attribute > dl > div:last-of-type{
-  margin-bottom: 0;
-}
-
 .name-types{
   display: flex;
   flex-wrap: wrap;
@@ -86,17 +78,7 @@
 }
 
 
-
 /* HTML-2-pre.html */
-/* Article - Pre-Type */
-.pre-type > dl > div{
-  margin-bottom: 12px; /* 미티어쿼리 변경값*/
-}
-
-.pre-type > dl > div:last-of-type{
-  margin-bottom: 0;
-}
-
 
 
 /* HTML-3-inline-block.html */
