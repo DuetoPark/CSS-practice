@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- 페이지 설명 -->
+    <meta name="author" content="dueto park"/>
+    <meta name="keywords" content="자바스크립트, javascript, 토글, toggle"/>
+    <meta name="description" content="자바스트립트 토글 이벤트 방법을 배워봅시다!"/>
+    <meta name="Location" content="포도와 고구마의 고장"/>
+
+    <title>토글(Toggle) | Javascript</title>
+
+    <!-- Style -->
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/default/reset-css.css">
+    <link rel="stylesheet" href="../../css/common/grid.min.css">
+    <link rel="stylesheet" href="../../css/common/common.css">
+    <link rel="stylesheet" href="../../css/common/common-media-query.css">
+    <link rel="stylesheet" href="../../css/javascript/javascript.css">
+    <link rel="stylesheet" href="../../css/javascript/javascript-media-query.css">
+  </head>
+
+  <body>
+    <header class='note-header'>
+      <div class='container'>
+        <h1 class='note-header-title'>
+          <a href=''>🔥기초튼튼 이가탄🔥</a>
+        </h1>
+
+        <nav class='note-header-nav'>
+          <h2 class='sr-only note-header-nav-title'>다른 페이지로 이동</h2>
+          <ol class='note-header-nav-list'>
+            <li class='note-header-nav-list-items'><a href=''>html</a></li>
+            <li class='note-header-nav-list-items'><a href=''>css</a></li>
+            <li class='note-header-nav-list-items'><a href=''>javascript</a></li>
+          </ol>
+        </nav>
+
+        <div class='toggle-button-group'>
+          <strong class='toggle-button-title'>Day/Night Switch</strong>
+          <button class='toggle-button' type='button'></button>
+        </div>
+      </div>
+    </header>
+
+    <main class='note-main'>
+      <section class='container'>
+        <h1 class='main-title'>
+          <strong>🙋토글 (Toggle)🙋</strong>
+        </h1>
+
+        <article class=''>
+          <h1 class='main-article-title'>👶토글하는 방법</h1>
+          <div class=''>
+            <h2>🌚HTML</h2>
+            <p>
+              꼭 지켜야 하는게 있다면, 태그에 클래스 선언할 때 규칙을 세우는 것.
+            </p>
+          </div>
+
+          <div class=''>
+            <h2>🌞CSS</h2>
+            <p>
+              웹 페이지를 만들 때, <strong>반복되는 스타일은 별개의 파일을 만들어서 그 파일에 작성</strong>하고 관리한다.(나는 common.css에 작성)<br/>
+              토글되었을 때 보여질 스타일도 common.css 파일에 작성
+            </p>
+            <pre>
+              <code>
+                .background-toggled{
+                  background-color: #525252;
+                  color: #FFFFFF;
+                }
+              </code>
+            </pre>
+          </div>
+
+          <div class=''>
+            <h2>🌝Javascript</h2>
+            <p>
+              작성한 스타일을 추가하는 함수(toggled();)를 만든다.
+              핸들러(toggleHandler)에 함수(toggled();)를 선언한다.
+              이벤트를 줄 요소에 addEventListener 메소드를 선언한다.
+            </p>
+            <pre>
+              <code>
+                function toggled () {
+                  document.body.classList.add('background-toggled');
+                }
+
+                let toggleHandler = function () {
+                  toggled();
+                }
+
+                toggleButton.addEventListener('click', toggleHandler);
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article class=''>
+          <h1 class='main-article-title'>🎉나 사실 토글 잘 못한다!!!</h1>
+
+          <div>
+            <h2>📀내가 토글을 잘 못했던 이유</h2>
+            <ul>
+              <li>common.css를 만들지 않았다</li>
+              <li>클래스명이 자유분방했다</li>
+              <li>어떻게하면 원하는 DOM 요소만 선택할 수 있는지 고민하지 않았다</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>📢그래서 어떻게 했냐면</h2>
+            <ul>
+              <li>common 스타일을 작성했다</li>
+              <li>클래스명에 통일감/규칙을 세웠다</li>
+              <li>대입연산자를 사용해서 DOM 요소를 선택했다</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>🎬토글을 연습하면서 배운 점</h2>
+            <ul>
+              <li>classList.add()는 진짜 편하다</li>
+              <li>현재 상태를 저장할 변수가 필요하다</li>
+              <li>부모요소에 이벤트를 지정하면 반복문의 사용을 줄일 수 있다</li>
+              <li>두렵다고 피하면 그 상황이 오래갈 뿐이다. 조금 망하면 어때 라는 마음가짐으로 몸통박치기를 해보자. 홀가분하당</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class='note-footer'>
+      <div class='container'>
+        <blockquote class='note-footer-reference'
+          cite='https://gist.github.com/rxaviers/7360908'>
+          <strong class='note-footer-reference-name'>
+            이모티콘 출처: "rxaviers github / gist:7360908 repository", github, 2020년 12월 29일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://gist.github.com/rxaviers/7360908'>
+              https://gist.github.com/rxaviers/7360908
+            </a>
+          </cite>
+        </blockquote>
+      </div>
+    </footer>
+
+    <script src='../../assets/app/app.js'></script>
+  </body>
+</html>
