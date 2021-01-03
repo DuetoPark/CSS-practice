@@ -4,6 +4,9 @@ max-width < 576px */
 body{
   background-color: #F0F0F3;
   color: #1F1F1F;
+  transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
 }
 
 /* Header */
@@ -200,7 +203,23 @@ dfn.main-article-dt,
 
 /* Article - Preformatted Text */
 .main-article-pre{
+  position: relative;
+  top: 0;
+  left: 0;
   padding: 0 20px;
+}
+
+.main-article-pre::before{
+  content: '✂️코드복사 원하면 클릭!✂️';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.main-article-pre:hover::before{
+  opacity: 0.7;
 }
 
 .main-article-pre > code{
