@@ -1,0 +1,30 @@
+/* Tablet Style
+min-width >=576px  */
+@media screen and (min-width:576px) {
+  /* Javascript-1-Pseudo-Style.html */
+  /* Article - Pseudo-Style */
+  .pseudo-style > div{
+    margin-bottom: 24px;
+  }
+
+  .pseudo-style-solution > p,
+  .pseudo-style-solution > pre{
+    margin-bottom: 24px;
+  }
+}
+
+
+/* Desktop Style
+min-width >=768px  */
+@media screen and (min-width:768px) {
+  /* Javascript-1-Pseudo-Style.html */
+  /* Article - Pseudo-Style */
+  .pseudo-style > div{
+    margin-bottom: 36px;
+  }
+
+  .pseudo-style-solution > p,
+  .pseudo-style-solution > pre{
+    margin-bottom: 36px;
+  }
+}
