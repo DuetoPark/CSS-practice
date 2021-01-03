@@ -51,24 +51,24 @@
           <strong>🙈클릭 이벤트 진행 중, 가상요소의 스타일 변화🙈</strong>
         </h1>
 
-        <article class=''>
+        <article class='pseudo-style'>
           <h1 class='main-article-title'>문제와 해결</h1>
-          <div>
-            <h2 class=''>💩문제</h2>
+          <div class='pseudo-style-problem'>
+            <h2 class='main-article-subtitle'>💩문제</h2>
             <p>
               css의 가상요소는(::after, ::before) DOM의 일부가 아니므로 직접 선택하여 조작할 수 없다.
             </p>
           </div>
 
-          <div>
-            <h2 class=''>😎해결</h2>
+          <div class='pseudo-style-solution'>
+            <h2 class='main-article-subtitle'>😎해결</h2>
             <p>
               CSS- 해당 요소에 새로운 스타일의 클래스를 재정의<br/>
               Javascript- 해당 요소에 새로운 클래스 추가
             </p>
 
-            <h3 class=''>CSS</h3>
-            <pre class=''>
+            <h3 class='main-article-subtitle'>CSS</h3>
+            <pre class='main-article-pre background-white-radius'>
               <code>
                 p::before {
                   /* 스타일 */
@@ -80,8 +80,8 @@
               </code>
             </pre>
 
-            <h3 class=''>Javascript</h3>
-            <pre class=''>
+            <h3 class='main-article-subtitle'>Javascript</h3>
+            <pre class='main-article-pre background-white-radius'>
               <code>
                 function toggle () {
                   document.querySelector('p').classList.add('special');
