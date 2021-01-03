@@ -1,7 +1,8 @@
-let toggleButton = document.querySelector('.toggle-button');
-let toggleButtonAfter = document.querySelector('.toggle-button::after');
-let typeElements = document.querySelectorAll('.type');
-let backgroundWhiteElements = document.querySelectorAll('[class*=background-white]');
+// Toggle ClickEvent
+const toggleButton = document.querySelector('.toggle-button');
+const toggleButtonAfter = document.querySelector('.toggle-button::after');
+const typeElements = document.querySelectorAll('.type');
+const backgroundWhiteElements = document.querySelectorAll('[class*=background-white]');
 let current = null;
 
 function toggled () {
@@ -40,3 +41,26 @@ let toggleHandler = function () {
 }
 
 toggleButton.addEventListener('click', toggleHandler);
+
+
+// Copy ClickEvent
+let noteMain = document.querySelector('.note-main');
+
+
+function copyData (elem) {
+  let dummy = document.createElement('textarea');
+  document.body.appendChild(dummy);
+  dummy.value = elem.target.innerText;
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
+  alert(dummy.value + '복사됨');
+}
+
+function copyHandler (e) {
+  if (e.target.tagName === "PRE") {
+    copyData(e);
+  }
+}
+
+noteMain.addEventListener('click', copyHandler);
