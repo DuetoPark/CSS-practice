@@ -11,6 +11,29 @@ min-width >=576px  */
   .pseudo-style-solution > pre{
     margin-bottom: 24px;
   }
+
+
+  /* Javascript-2-Toggle.html */
+  .how-to-toggle > div,
+  .my-top-secret > div{
+    margin-bottom: 24px;
+  }
+
+
+  /* Article - How-To-Toggle */
+  .how-to-toggle > div > p{
+    margin-bottom: 24px;
+  }
+
+  .how-to-toggle > div:last-child > pre{
+    overflow-x: hidden;
+  }
+
+
+  /* Article - My-Top-Secret */
+  .my-top-secret > div > ul.main-article-list.background-white-radius{
+    padding: 20px 40px;
+  }
 }
 
 
@@ -25,6 +48,20 @@ min-width >=768px  */
 
   .pseudo-style-solution > p,
   .pseudo-style-solution > pre{
+    margin-bottom: 36px;
+  }
+
+
+
+  /* Javascript-2-Toggle.html */
+  .how-to-toggle > div,
+  .my-top-secret > div{
+    margin-bottom: 36px;
+  }
+
+
+  /* Article - How-To-Toggle */
+  .how-to-toggle > div > p{
     margin-bottom: 36px;
   }
 }
