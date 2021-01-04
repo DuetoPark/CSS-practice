@@ -6,7 +6,7 @@
 
     <!-- 페이지 설명 -->
     <meta name="author" content="dueto park"/>
-    <meta name="keywords" content="자바스크립트, javascript, 복사, copy, how to copy to clipboard copy"/>
+    <meta name="keywords" content="자바스크립트, javascript, 복사, copy, how to copy to clipboard"/>
     <meta name="description" content="자바스트립트 클립보드 복사하기 공부합시다!"/>
     <meta name="Location" content="포도와 고구마의 고장"/>
 
@@ -51,7 +51,7 @@
           <strong>클립보드 복사</strong>
         </h1>
 
-        <article class=''>
+        <article class='clipboard-copy-code'>
           <h1 class='main-article-title'>클립보드 복사 코드</h1>
           <p>
             웹 페이지의 코드를 손쉽게 복사하는 방법이 궁금해서 찾아봤다.<br/>
@@ -63,10 +63,11 @@
             사람들 생각하는 건 다 비슷하다는 것을 또 한번 느낀 시간이었다.
           </p>
 
-          <button class='show-code-button' type="button">예시 코드 보기</button>
-
-          <div>
-            <pre>
+          <div class='main-article-modal-group'>
+            <button class='show-code-button' type="button">
+              예시 코드 보기
+            </button>
+            <pre class='main-article-pre background-white-radius'>
               <code>
                 // Copy ClickEvent
                 let parentElement = document.querySelector('.div');
@@ -91,40 +92,51 @@
           </div>
         </article>
 
-        <article class=''>
-          <h1>클립보드 복사하는 방법</h1>
+        <article class='how-to-copy'>
+          <h1 class='main-article-title'>클립보드 복사하는 방법</h1>
 
-          <ol>
-            <li><a href=''>textarea 임시로 생성하여 복사</a></li>
-            <li><a href=''>input에서 복사</a></li>
-            <li><a href=''>구식IE</a></li>
-            <li><a href=''>구식 자동/수동 혼합</a></li>
+          <ol class='main-article-list'>
+            <li class='main-article-list-items hyphen'>
+              <a href=''>textarea 임시로 생성하여 복사</a>
+            </li>
+            <li class='main-article-list-items hyphen'>
+              <a href=''>input에서 복사</a>
+            </li>
+            <li class='main-article-list-items hyphen'>
+              <a href=''>구식IE</a>
+            </li>
+            <li class='main-article-list-items hyphen'>
+              <a href=''>구식 자동/수동 혼합</a>
+            </li>
           </ol>
         </article>
 
-        <article class=''>
-          <h1>textarea 임시로 생성하여 복사</h1>
+        <article class='how-to-copy-textarea'>
+          <h1 class='main-article-title'>
+            textarea 임시로 생성하여 복사
+          </h1>
 
-          <h2>사용 메소드</h2>
-          <ol>
-            <li>createElement</li>
-            <li>select();</li>
-            <li>execCommand();</li>
-            <li>addEventListener</li>
+          <h2 class='main-article-subtitle'>사용 메소드</h2>
+          <ol class='main-article-list'>
+            <li class='main-article-list-items hyphen'>createElement</li>
+            <li class='main-article-list-items hyphen'>select();</li>
+            <li class='main-article-list-items hyphen'>execCommand();</li>
+            <li class='main-article-list-items hyphen'>addEventListener</li>
           </ol>
 
-          <h2>처리하는 순서</h2>
-          <ol>
-            <li>요소 생성</li>
-            <li>요소.value에 텍스트 저장</li>
-            <li>select로 텍스트 선택</li>
-            <li>execCommand로 선택된 텍스트 편집(복사)</li>
+          <h2 class='main-article-subtitle'>처리하는 순서</h2>
+          <ol class='main-article-list'>
+            <li class='main-article-list-items order'>요소 생성</li>
+            <li class='main-article-list-items order'>요소.value에 텍스트 저장</li>
+            <li class='main-article-list-items order'>select로 텍스트 선택</li>
+            <li class='main-article-list-items order'>execCommand로 선택된 텍스트 편집(복사)</li>
           </ol>
 
-          <button class='show-code-button' type="button">예시 코드 보기</button>
-
-          <div>
-            <pre>
+          <div class='main-article-modal-group'>
+            <button class='show-code-button' type="button">
+              예시 코드 보기
+            </button>
+            <pre class='main-article-pre background-white-radius'>
               <code>
                 // Copy ClickEvent
                 let parentElement = document.querySelector('.div');
@@ -148,20 +160,24 @@
             </pre>
           </div>
 
-          <div>
-            <h2>Document.createElement()</h2>
+          <div class='createElement-desc'>
+            <h2 class='main-article-subtitle'>
+              Document.createElement()
+            </h2>
             <p>
               HTML문서에서, 지정한 tagName의 HTML 요소를 만들어 반환하는 메소드
             </p>
 
-            <h3>syntax</h3>
-            <pre>
+            <h3 class='main-article-subtitle'>syntax</h3>
+            <pre class='main-article-pre'>
               <code>
                 let element = document.createElement(tagName[, options]);
               </code>
             </pre>
 
-            <h2>createElement를 하는 이유</h2>
+            <h2 class='main-article-subtitle'>
+              createElement를 하는 이유
+            </h2>
             <p>
               처음에, 변수만 필요하면 될 줄 알았는데, execCommand메소드가 변수의 데이터를 인식하지 못했다. 대상을 명시적으로 표현하는 장치가 필요하다는 말인데, 이 때 필요한 게 select 메소드다. execCommand메소드를 선언하기 이전에 select메소드를 선언하면 된다.<br/>
               하지만 인생이 이렇게 잘 풀릴리가 없다<br/>
@@ -169,28 +185,42 @@
               select메소드는 textarea나 input(type=text 또는 type=url)에서만 제 역할을 한다. input말고 다른 요소의 텍스트 가져다 쓰고싶다면, createElement메소드를 이용하면 된다.
             </p>
 
-            <ol>
-              <li>createElement메소드로 태그 만들고</li>
-              <li>append로 태그 추가하고</li>
-              <li>input.value에 텍스트를 저장하고</li>
-              <li>select를 input에 선언하고</li>
-              <li>removeChild로 태그 삭제한다</li>
+            <ol class='main-article-list'>
+              <li class='main-article-list-items order'>
+                createElement메소드로 태그 만들고
+              </li>
+              <li class='main-article-list-items order'>
+                append로 태그 추가하고
+              </li>
+              <li class='main-article-list-items order'>
+                input.value에 텍스트를 저장하고
+              </li>
+              <li class='main-article-list-items order'>
+                select를 input에 선언하고
+              </li>
+              <li class='main-article-list-items order'>
+                removeChild로 태그 삭제한다
+              </li>
             </ol>
           </div>
 
-          <div>
-            <h2>HTMLInputElement.select()</h2>
-            <p>textarea나 input(text, url 등 텍스트를 담아내는 타입)의 모든 텍스트를 선택하는 메소드</p>
+          <div class='select-desc'>
+            <h2 class='main-article-subtitle'>
+              HTMLInputElement.select()
+            </h2>
+            <p>
+              textarea나 input(text, url 등 텍스트를 담아내는 타입)의 모든 텍스트를 선택하는 메소드
+            </p>
 
-            <h3>syntax</h3>
-            <pre>
+            <h3 class='main-article-subtitle'>syntax</h3>
+            <pre class='main-article-pre'>
               <code>
                 element.select();
               </code>
             </pre>
 
-            <h3>select가 먹히지 않는 브라우저에서 사용할 메소드</h3>
-            <pre>
+            <h3 class='main-article-subtitle'>select가 먹히지 않는 브라우저에서 사용할 메소드</h3>
+            <pre class='main-article-pre'>
               <code>
                 HTMLInputElement.setSelectionRange();
               </code>
@@ -200,38 +230,38 @@
               예시) this.setSelectionRange(0, this.value.length);
             </p>
 
-            <h3>대상</h3>
-            <ul>
-              <li>textarea - 여백 유지</li>
-              <li>input - 여백 취합</li>
+            <h3 class='main-article-subtitle'>대상</h3>
+            <ul class='main-article-list select-target-type'>
+              <li class='main-article-list-items type'>textarea - 여백 유지</li>
+              <li class='main-article-list-items type'>input - 여백 취합</li>
             </ul>
           </div>
 
-          <div>
-            <h2>Document.execCommand();</h2>
+          <div class='execCommand-desc'>
+            <h2 class='main-article-subtitle'>Document.execCommand();</h2>
             <p>선택된 텍스트를 편집하는 메소드</p>
 
-            <h3>syntax</h3>
-            <pre>
+            <h3 class='main-article-subtitle'>syntax</h3>
+            <pre class='main-article-pre'>
               <code>
                 document.execCommand(aCommandName, aShowDefaultUI, aValueArgument)
               </code>
             </pre>
-
           </div>
         </article>
 
-        <article class=''>
+        <article class='how-to-copy-input'>
           <h1 class='main-article-title'>input에서 복사</h1>
           <p>
             HTML의 input요소의 텍스트를 가져온다.<br/>
             IE 10+, Chrome 43+, Opera 29+, Firefox 가능
           </p>
 
-          <button class='show-code-button' type="button">예시 코드 보기</button>
-
-          <div>
-            <pre>
+          <div class='main-article-modal-group'>
+            <button class='show-code-button' type="button">
+              예시 코드 보기
+            </button>
+            <pre class='main-article-pre background-white-radius'>
               <code>
                 function copy_to_clipboard() {
                   const dummy = document.querySelector("input");
@@ -243,17 +273,18 @@
           </div>
         </article>
 
-        <article class=''>
+        <article class='how-to-copy-old-IE'>
           <h1 class='main-article-title'>구식IE</h1>
           <p>
             인터넷 익스플로러만 가능<br/>
             Chrome 브라우저 같은 경우 보안상의 이유로 사용할 수 없다.
           </p>
 
-          <button class='show-code-button' type="button">예시 코드 보기</button>
-
-          <div>
-            <pre>
+          <div class='main-article-modal-group'>
+            <button class='show-code-button' type="button">
+              예시 코드 보기
+            </button>
+            <pre class='main-article-pre background-white-radius'>
               <code>
                 function copy_to_clipboard(str) {
                   let dummy = document.querySelector('input').innerHTML;
@@ -265,23 +296,26 @@
           </div>
 
           <div>
-            <h2>window.clipboardData.getData('Text')</h2>
+            <h2 class='main-article-subtitle'>
+              window.clipboardData.getData('Text')
+            </h2>
             <p>
               cut과 copy 이벤트 핸들러로부터 어떤 데이터가 클립보드에 들어있는지, 일반적으로 setData(format, data) 함수를 호출하여 확인한다.
             </p>
           </div>
         </article>
 
-        <article class=''>
+        <article class='how-to-copy-mix'>
           <h1 class='main-article-title'>구식 자동/수동 혼합</h1>
           <p>
             익스플로러가 아닐 경우 prompt를 띄워 수동으로 복사 하도록 함
           </p>
 
-          <button class='show-code-button' type="button">예시 코드 보기</button>
-
-          <div>
-            <pre>
+          <div class='main-article-modal-group'>
+            <button class='show-code-button' type="button">
+              예시 코드 보기
+            </button>
+            <pre class='main-article-pre background-white-radius'>
               <code>
                 function is_ie() {
                   if(navigator.userAgent.toLowerCase().indexOf("chrome") != -1) return false;
@@ -302,18 +336,20 @@
             </pre>
           </div>
 
-          <div>
-            <h2>navigator</h2>
+          <div class='navigator-desc'>
+            <h2 class='main-article-subtitle'>navigator</h2>
             <p>
               브라우저의 종류와 버전 등 웹브라우저 전반에 대한 정보를 제공하는 객체
             </p>
 
-            <h2>navigator.userAgent</h2>
+            <h2 class='main-article-subtitle'>navigator.userAgent</h2>
             <p>
               navigator.userAgent : 브라우저가 User-Agent HTTP 헤더에 넣어 전송하는 문자열로 appName과 appVersion의 모든 정보를 포함하며 더 자세한 정보를 추가로 담고 있다.
             </p>
 
-            <h2>navigator.userAgent.toLowerCase().indexOf()</h2>
+            <h2 class='main-article-subtitle'>
+              navigator.userAgent.toLowerCase().indexOf()
+            </h2>
             <p>
               브라우저 종류 확인
             </p>
