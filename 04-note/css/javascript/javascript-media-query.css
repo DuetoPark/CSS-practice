@@ -34,6 +34,52 @@ min-width >=576px  */
   .my-top-secret > div > ul.main-article-list.background-white-radius{
     padding: 20px 40px;
   }
+
+
+
+  /* Javascript-3-Pseudo-Style.html */
+  /* Common */
+  .main-article-modal-group > .show-code-button{
+    margin-bottom: 24px;
+  }
+
+  .main-article-modal-group > pre{
+    overflow-x: hidden;
+  }
+
+
+  /* Article - Clipboard-Copy-Code */
+  .clipboard-copy-code > p{
+    margin-bottom: 24px;
+  }
+
+
+  /* Article - How-To-Copy-Textarea */
+  .createElement-desc > p,
+  .select-desc > p,
+  .execCommand-desc > p,
+  /* Article - How-To-Copy-input */
+  .how-to-copy-input > p,
+  /* Article - How-To-Copy-old-IE */
+  .how-to-copy-old-IE > p,
+  /* Article - How-To-Copy-Mix */
+  .how-to-copy-mix > p,
+  .navigator-desc > p{
+    margin-bottom: 24px;
+  }
+
+
+  /* Article - How-To-Copy-Textarea */
+  .how-to-copy-textarea > ol,
+  .createElement-desc,
+  .select-desc{
+    margin-bottom: 24px;
+  }
+
+  .how-to-copy-textarea p.background-white-radius{
+    padding: 20px 40px;
+    overflow-x: hidden;
+  }
 }
 
 
@@ -64,4 +110,41 @@ min-width >=768px  */
   .how-to-toggle > div > p{
     margin-bottom: 36px;
   }
+
+
+
+    /* Javascript-3-Pseudo-Style.html */
+    /* Common */
+    .main-article-modal-group > .show-code-button{
+      margin-bottom: 36px;
+    }
+
+
+    /* Article - Clipboard-Copy-Code */
+    .clipboard-copy-code > p{
+      margin-bottom: 36px;
+    }
+
+
+    /* Article - How-To-Copy-Textarea */
+    .createElement-desc > p,
+    .select-desc > p,
+    .execCommand-desc > p,
+    /* Article - How-To-Copy-input */
+    .how-to-copy-input > p,
+    /* Article - How-To-Copy-old-IE */
+    .how-to-copy-old-IE > p,
+    /* Article - How-To-Copy-Mix */
+    .how-to-copy-mix > p,
+    .navigator-desc > p{
+      margin-bottom: 36px;
+    }
+
+
+    /* Article - How-To-Copy-Textarea */
+    .how-to-copy-textarea > ol,
+    .createElement-desc,
+    .select-desc{
+      margin-bottom: 36px;
+    }
 }
