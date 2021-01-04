@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- 페이지 설명 -->
+    <meta name="author" content="dueto park"/>
+    <meta name="keywords" content="자바스크립트, javascript, 복사, copy, how to copy to clipboard copy"/>
+    <meta name="description" content="자바스트립트 클립보드 복사하기 공부합시다!"/>
+    <meta name="Location" content="포도와 고구마의 고장"/>
+
+    <title>클립보드 복사 | Javascript</title>
+
+    <!-- Style -->
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/default/reset-css.css">
+    <link rel="stylesheet" href="../../css/common/grid.min.css">
+    <link rel="stylesheet" href="../../css/common/common.css">
+    <link rel="stylesheet" href="../../css/common/common-media-query.css">
+    <link rel="stylesheet" href="../../css/javascript/javascript.css">
+    <link rel="stylesheet" href="../../css/javascript/javascript-media-query.css">
+  </head>
+
+  <body>
+    <header class='note-header'>
+      <div class='container'>
+        <h1 class='note-header-title'>
+          <a href=''>🔥기초튼튼 이가탄🔥</a>
+        </h1>
+
+        <nav class='note-header-nav'>
+          <h2 class='sr-only note-header-nav-title'>다른 페이지로 이동</h2>
+          <ol class='note-header-nav-list'>
+            <li class='note-header-nav-list-items'><a href=''>html</a></li>
+            <li class='note-header-nav-list-items'><a href=''>css</a></li>
+            <li class='note-header-nav-list-items'><a href=''>javascript</a></li>
+          </ol>
+        </nav>
+
+        <div class='toggle-button-group'>
+          <strong class='toggle-button-title'>Day/Night Switch</strong>
+          <button class='toggle-button' type='button'></button>
+        </div>
+      </div>
+    </header>
+
+    <main class='note-main'>
+      <section class='container'>
+        <h1 class='main-title'>
+          <strong>클립보드 복사</strong>
+        </h1>
+
+        <article class=''>
+          <h1 class='main-article-title'>클립보드 복사 코드</h1>
+          <p>
+            웹 페이지의 코드를 손쉽게 복사하는 방법이 궁금해서 찾아봤다.<br/>
+            드래그만 하면 자동으로 복사되는 기능이 있을까?ㅎㅎ<br/>
+            2009년 개발자: 됩니다.<br/>
+            클릭만 해도 복사되는 기능도 있을까?ㅎㅎ<br/>
+            2015년 개발자: 되용.<br/>
+            <br/>
+            사람들 생각하는 건 다 비슷하다는 것을 또 한번 느낀 시간이었다.
+          </p>
+
+          <button class='show-code-button' type="button">예시 코드 보기</button>
+
+          <div>
+            <pre>
+              <code>
+                // Copy ClickEvent
+                let parentElement = document.querySelector('.div');
+
+                function copyData (elem) {
+                  let dummy = document.createElement('textarea');
+                  document.body.appendChild(dummy);
+                  dummy.value = elem.target.innerText;
+                  dummy.select();
+                  document.execCommand('copy');
+                  document.body.removeChild(dummy);
+                  alert(dummy.value + '복사됨');
+                }
+
+                function copyHandler (e) {
+                  copyData(e);
+                }
+
+                parentElement.addEventListener('click', copyHandler);
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article class=''>
+          <h1>클립보드 복사하는 방법</h1>
+
+          <ol>
+            <li><a href=''>textarea 임시로 생성하여 복사</a></li>
+            <li><a href=''>input에서 복사</a></li>
+            <li><a href=''>구식IE</a></li>
+            <li><a href=''>구식 자동/수동 혼합</a></li>
+          </ol>
+        </article>
+
+        <article class=''>
+          <h1>textarea 임시로 생성하여 복사</h1>
+
+          <h2>사용 메소드</h2>
+          <ol>
+            <li>createElement</li>
+            <li>select();</li>
+            <li>execCommand();</li>
+            <li>addEventListener</li>
+          </ol>
+
+          <h2>처리하는 순서</h2>
+          <ol>
+            <li>요소 생성</li>
+            <li>요소.value에 텍스트 저장</li>
+            <li>select로 텍스트 선택</li>
+            <li>execCommand로 선택된 텍스트 편집(복사)</li>
+          </ol>
+
+          <button class='show-code-button' type="button">예시 코드 보기</button>
+
+          <div>
+            <pre>
+              <code>
+                // Copy ClickEvent
+                let parentElement = document.querySelector('.div');
+
+                function copyData (elem) {
+                  const dummy = document.createElement('textarea');
+                  document.body.appendChild(dummy);
+                  dummy.value = elem.target.innerText;
+                  dummy.select();
+                  document.execCommand('copy');
+                  document.body.removeChild(dummy);
+                  alert(dummy.value + '복사됨');
+                }
+
+                function copyHandler (e) {
+                  copyData(e);
+                }
+
+                parentElement.addEventListener('click', copyHandler);
+              </code>
+            </pre>
+          </div>
+
+          <div>
+            <h2>Document.createElement()</h2>
+            <p>
+              HTML문서에서, 지정한 tagName의 HTML 요소를 만들어 반환하는 메소드
+            </p>
+
+            <h3>syntax</h3>
+            <pre>
+              <code>
+                let element = document.createElement(tagName[, options]);
+              </code>
+            </pre>
+
+            <h2>createElement를 하는 이유</h2>
+            <p>
+              처음에, 변수만 필요하면 될 줄 알았는데, execCommand메소드가 변수의 데이터를 인식하지 못했다. 대상을 명시적으로 표현하는 장치가 필요하다는 말인데, 이 때 필요한 게 select 메소드다. execCommand메소드를 선언하기 이전에 select메소드를 선언하면 된다.<br/>
+              하지만 인생이 이렇게 잘 풀릴리가 없다<br/>
+              <br/>
+              select메소드는 textarea나 input(type=text 또는 type=url)에서만 제 역할을 한다. input말고 다른 요소의 텍스트 가져다 쓰고싶다면, createElement메소드를 이용하면 된다.
+            </p>
+
+            <ol>
+              <li>createElement메소드로 태그 만들고</li>
+              <li>append로 태그 추가하고</li>
+              <li>input.value에 텍스트를 저장하고</li>
+              <li>select를 input에 선언하고</li>
+              <li>removeChild로 태그 삭제한다</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2>HTMLInputElement.select()</h2>
+            <p>textarea나 input(text, url 등 텍스트를 담아내는 타입)의 모든 텍스트를 선택하는 메소드</p>
+
+            <h3>syntax</h3>
+            <pre>
+              <code>
+                element.select();
+              </code>
+            </pre>
+
+            <h3>select가 먹히지 않는 브라우저에서 사용할 메소드</h3>
+            <pre>
+              <code>
+                HTMLInputElement.setSelectionRange();
+              </code>
+            </pre>
+            <p>
+              괄호 안에는 (시작점, 끝점) 입력한다.<br/>
+              예시) this.setSelectionRange(0, this.value.length);
+            </p>
+
+            <h3>대상</h3>
+            <ul>
+              <li>textarea - 여백 유지</li>
+              <li>input - 여백 취합</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Document.execCommand();</h2>
+            <p>선택된 텍스트를 편집하는 메소드</p>
+
+            <h3>syntax</h3>
+            <pre>
+              <code>
+                document.execCommand(aCommandName, aShowDefaultUI, aValueArgument)
+              </code>
+            </pre>
+
+          </div>
+        </article>
+
+        <article class=''>
+          <h1 class='main-article-title'>input에서 복사</h1>
+          <p>
+            HTML의 input요소의 텍스트를 가져온다.<br/>
+            IE 10+, Chrome 43+, Opera 29+, Firefox 가능
+          </p>
+
+          <button class='show-code-button' type="button">예시 코드 보기</button>
+
+          <div>
+            <pre>
+              <code>
+                function copy_to_clipboard() {
+                  const dummy = document.querySelector("input");
+                  dummy.select();
+                  document.execCommand("Copy");
+                }
+              </code>
+            </pre>
+          </div>
+        </article>
+
+        <article class=''>
+          <h1 class='main-article-title'>구식IE</h1>
+          <p>
+            인터넷 익스플로러만 가능<br/>
+            Chrome 브라우저 같은 경우 보안상의 이유로 사용할 수 없다.
+          </p>
+
+          <button class='show-code-button' type="button">예시 코드 보기</button>
+
+          <div>
+            <pre>
+              <code>
+                function copy_to_clipboard(str) {
+                  let dummy = document.querySelector('input').innerHTML;
+                  window.clipboardData.setData('Text', dummy);
+                  alert("복사되었습니다.");
+                }
+              </code>
+            </pre>
+          </div>
+
+          <div>
+            <h2>window.clipboardData.getData('Text')</h2>
+            <p>
+              cut과 copy 이벤트 핸들러로부터 어떤 데이터가 클립보드에 들어있는지, 일반적으로 setData(format, data) 함수를 호출하여 확인한다.
+            </p>
+          </div>
+        </article>
+
+        <article class=''>
+          <h1 class='main-article-title'>구식 자동/수동 혼합</h1>
+          <p>
+            익스플로러가 아닐 경우 prompt를 띄워 수동으로 복사 하도록 함
+          </p>
+
+          <button class='show-code-button' type="button">예시 코드 보기</button>
+
+          <div>
+            <pre>
+              <code>
+                function is_ie() {
+                  if(navigator.userAgent.toLowerCase().indexOf("chrome") != -1) return false;
+                  if(navigator.userAgent.toLowerCase().indexOf("msie") != -1) return true;
+                  if(navigator.userAgent.toLowerCase().indexOf("windows nt") != -1) return true;
+                  return false;
+                }
+
+                function copy_to_clipboard(str) {
+                  if( is_ie() ) {
+                    window.clipboardData.setData("Text", str);
+                    alert("복사되었습니다.");
+                    return;
+                  }
+                  prompt("Ctrl+C를 눌러 복사하세요.", str);
+                }
+              </code>
+            </pre>
+          </div>
+
+          <div>
+            <h2>navigator</h2>
+            <p>
+              브라우저의 종류와 버전 등 웹브라우저 전반에 대한 정보를 제공하는 객체
+            </p>
+
+            <h2>navigator.userAgent</h2>
+            <p>
+              navigator.userAgent : 브라우저가 User-Agent HTTP 헤더에 넣어 전송하는 문자열로 appName과 appVersion의 모든 정보를 포함하며 더 자세한 정보를 추가로 담고 있다.
+            </p>
+
+            <h2>navigator.userAgent.toLowerCase().indexOf()</h2>
+            <p>
+              브라우저 종류 확인
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class='note-footer'>
+      <div class='container'>
+        <blockquote class='note-footer-reference'
+          cite='https://www.w3schools.com/howto/howto_js_copy_clipboard.asp'>
+          <strong class='note-footer-reference-name'>
+            자료 출처: "w3schools - How TO - Copy Text to Clipboard", w3school, 2021년 1월 3일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://www.w3schools.com/howto/howto_js_copy_clipboard.asp'>
+              https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+            </a>
+          </cite>
+        </blockquote>
+
+        <blockquote class='note-footer-reference'
+          cite='https://zetawiki.com/wiki/JavaScript_%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C%EB%A1%9C_%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0'>
+          <strong class='note-footer-reference-name'>
+            자료 출처: "ZETAWIKI - JavaScript 클립보드로 복사하기", ZETAWIKI(개인페이지), 2021년 1월 3일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://zetawiki.com/wiki/JavaScript_%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C%EB%A1%9C_%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0'>
+              https://zetawiki.com/wiki/JavaScript_%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C%EB%A1%9C_%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0
+            </a>
+          </cite>
+        </blockquote>
+
+        <blockquote class='note-footer-reference'
+          cite='https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select'>
+          <strong class='note-footer-reference-name'>
+            자료 출처: "MDN - HTMLInputElement.select()", MDN, 2021년 1월 3일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select'>
+              https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select
+            </a>
+          </cite>
+        </blockquote>
+
+        <blockquote class='note-footer-reference'
+          cite='https://developer.mozilla.org/ko/docs/Web/API/Document/execCommand'>
+          <strong class='note-footer-reference-name'>
+            자료 출처: "MDN - Document.execCommand()", MDN, 2021년 1월 3일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://developer.mozilla.org/ko/docs/Web/API/Document/execCommand'>
+              https://developer.mozilla.org/ko/docs/Web/API/Document/execCommand
+            </a>
+          </cite>
+        </blockquote>
+
+        <blockquote class='note-footer-reference'
+          cite='https://gist.github.com/rxaviers/7360908'>
+          <strong class='note-footer-reference-name'>
+            이모티콘 출처: "rxaviers github / gist:7360908 repository", github, 2020년 1월 3일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://gist.github.com/rxaviers/7360908'>
+              https://gist.github.com/rxaviers/7360908
+            </a>
+          </cite>
+        </blockquote>
+      </div>
+    </footer>
+
+    <script src='../../assets/app/app.js'></script>
+  </body>
+</html>
