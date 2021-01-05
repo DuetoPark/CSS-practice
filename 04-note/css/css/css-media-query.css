@@ -115,6 +115,18 @@ min-width >=576px  */
   .white-space > div{
     margin-bottom: 32px; /* 미디어쿼리 변형 */
   }
+
+
+  /* CSS-5-Pseudo-Opacity.html */
+  /* Article - How-To-Set-Pseudo-Opacity */
+  .pseudo-attribute-type,
+  .how-to-set-pseudo-opacity .main-article-dl{
+    margin-bottom: 24px;
+  }
+
+  .pseudo-opacity-learned > ul.main-article-list.background-white-radius{
+    padding: 15px 20px;
+  }
 }
 
 /* Desktop Style
@@ -230,5 +242,18 @@ min-width >=768px  */
 
   .white-space > div{
     margin-bottom: 44px; /* 미디어쿼리 변형 */
+  }
+
+
+
+  /* CSS-5-Pseudo-Opacity.html */
+  /* Article - How-To-Set-Pseudo-Opacity */
+  .pseudo-attribute-type,
+  .how-to-set-pseudo-opacity .main-article-dl{
+    margin-bottom: 36px;
+  }
+
+  .pseudo-opacity-learned > ul.main-article-list.background-white-radius{
+    padding: 20px 40px;
   }
 }
