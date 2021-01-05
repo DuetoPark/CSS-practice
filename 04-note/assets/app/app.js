@@ -3,6 +3,7 @@ const toggleButton = document.querySelector('.toggle-button');
 const toggleButtonAfter = document.querySelector('.toggle-button::after');
 const typeElements = document.querySelectorAll('.type');
 const backgroundWhiteElements = document.querySelectorAll('[class*=background-white]');
+let transparentButton = document.querySelectorAll('.transparent-button');
 let current = null;
 
 function toggled () {
@@ -22,6 +23,12 @@ function toggled () {
       backgroundWhiteElements[i].style.color = '#1F1F1F';
     }
   }
+
+  if(transparentButton.length>0) {
+    for (let i=0; i<transparentButton.length; i++) {
+      transparentButton[i].classList.add('toggled-button');
+    }
+  }
 }
 
 function toggleInactive () {
@@ -29,6 +36,10 @@ function toggleInactive () {
   toggleButton.classList.remove('new-style');
   current = null;
   toggleButton.style.background = '#525252';
+
+  for (let i=0; i<transparentButton.length; i++) {
+    transparentButton[i].classList.remove('toggled-button');
+  }
 }
 
 
@@ -49,7 +60,7 @@ let noteMain = document.querySelector('.note-main');
 
 function copyData (elem) {
   let dummy = document.createElement('textarea');
-  document.body.appendChild(dummy);
+  document.body.append(dummy);
   dummy.value = elem.target.innerText;
   dummy.select();
   document.execCommand('copy');
@@ -64,3 +75,43 @@ function copyHandler (e) {
 }
 
 noteMain.addEventListener('click', copyHandler);
+
+
+
+//Modal
+let modalGroups = document.querySelectorAll('.main-article-modal-group');
+let modalDiv = document.querySelectorAll('.modal-code');
+let showCodeButton = document.querySelector('.show-code-button');
+let modalCloseButton = document.querySelector('.modal-close-button');
+
+
+function openModal (target){
+  modalDiv[0].style.display = 'block';
+}
+
+function closeModal (target){
+  modalDiv[0].style.display = 'none';
+}
+
+function modalHandler (e) {
+  if (e.target.className === showCodeButton.className) {
+    openModal();
+  } else if (e.target.className === modalCloseButton.className) {
+    closeModal();
+  }
+}
+
+for(let i=0; i<modalGroups.length; i++){
+  modalGroups[i].addEventListener('click', modalHandler);
+}
+
+
+
+// Scroll
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 750);
+});
