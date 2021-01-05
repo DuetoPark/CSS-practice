@@ -86,18 +86,17 @@ let modalCloseButton = document.querySelector('.modal-close-button');
 
 
 function openModal (target){
-  modalDiv[0].style.display = 'block';
+  target.parentElement.children[1].style.display = 'block';
 }
-
 function closeModal (target){
-  modalDiv[0].style.display = 'none';
+  target.style.display = 'none';
 }
 
 function modalHandler (e) {
   if (e.target.className === showCodeButton.className) {
-    openModal();
-  } else if (e.target.className === modalCloseButton.className) {
-    closeModal();
+    openModal(e.target);
+  } else {
+    closeModal(e.target);
   }
 }
 
