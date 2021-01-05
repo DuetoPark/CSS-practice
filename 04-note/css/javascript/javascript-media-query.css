@@ -37,13 +37,14 @@ min-width >=576px  */
 
 
 
-  /* Javascript-3-Pseudo-Style.html */
+  /* Javascript-3-Copy.html */
   /* Common */
   .main-article-modal-group > .show-code-button{
     margin-bottom: 24px;
   }
 
-  .main-article-modal-group > pre{
+  .modal-code > pre.main-article-pre.background-white-radius{
+    width: 80%;
     overflow-x: hidden;
   }
 
@@ -51,6 +52,13 @@ min-width >=576px  */
   /* Article - Clipboard-Copy-Code */
   .clipboard-copy-code > p{
     margin-bottom: 24px;
+  }
+
+
+  /* Article - How-To-Copy */
+  .how-to-copy li.main-article-list-items.hyphen:hover::after{
+    left: 20%;
+    transform: translate(-50%, 100%);
   }
 
 
@@ -119,10 +127,22 @@ min-width >=768px  */
       margin-bottom: 36px;
     }
 
+    .modal-code > pre.main-article-pre.background-white-radius{
+      width: 50%;
+      overflow-x: hidden;
+    }
+
 
     /* Article - Clipboard-Copy-Code */
     .clipboard-copy-code > p{
       margin-bottom: 36px;
+    }
+
+
+    /* Article - How-To-Copy */
+    .how-to-copy li.main-article-list-items.hyphen:hover::after{
+      left: 15%;
+      transform: translate(-50%, 100%);
     }
 
 

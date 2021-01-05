@@ -48,15 +48,36 @@
 
 
 
-/* Javascript-3-Pseudo-Style.html */
+/* Javascript-3-Copy.html */
 /* Common */
 .main-article-modal-group > .show-code-button{
   margin-bottom: 16px;
 }
 
-.main-article-modal-group > pre{
+.main-article-modal-group .modal-code{
   display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation-name: opacity-magic-100;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+}
+
+.modal-code > pre.main-article-pre.background-white-radius{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
   overflow-x: scroll;
+  animation-name: transformY-5px;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
 }
 
 .clipboardData-desc .main-article-subtitle,
@@ -72,6 +93,34 @@
 
 .clipboard-copy-code .show-code-button{
   margin-bottom: 0;
+}
+
+
+/* Article - How-To-Copy */
+.how-to-copy li.main-article-list-items.hyphen{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.how-to-copy li.main-article-list-items.hyphen::after{
+  content: '';
+  opacity: 0;
+}
+
+.how-to-copy li.main-article-list-items.hyphen:hover::after{
+  content: '👇해당 영역으로 이동👇';
+  position: absolute;
+  z-index: 1;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  padding: 4px;
+  white-space: nowrap;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  opacity: 1;
+  transition: opacity 250ms ease-in;
 }
 
 
