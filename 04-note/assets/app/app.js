@@ -89,7 +89,9 @@ function openModal (target){
   target.parentElement.children[1].style.display = 'block';
 }
 function closeModal (target){
-  target.style.display = 'none';
+  if (target.tagName === 'DIV') {
+    target.style.display = 'none';
+  }
 }
 
 function modalHandler (e) {
