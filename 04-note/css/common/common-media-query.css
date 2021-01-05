@@ -104,6 +104,14 @@ min-width >=576px  */
     padding: 8px 12px;
   }
 
+  /* Article - button */
+  /* Common-Button */
+  .transparent-button{
+    width: 200px;
+    padding: 10px 0;
+  }
+
+
 
   /* Footer */
   .note-footer-reference{
