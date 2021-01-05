@@ -64,31 +64,34 @@
           </p>
 
           <div class='main-article-modal-group'>
-            <button class='transparent-button show-code-button' type="button">
+            <button class='transparent-button show-code-button' type='button'>
               예시 코드 보기
             </button>
-            <pre class='main-article-pre background-white-radius'>
-              <code>
-                // Copy ClickEvent
-                let parentElement = document.querySelector('.div');
+            <div class='modal-code'>
+              <button class='modal-close-button' type='button'></button>
+              <pre class='main-article-pre background-white-radius'>
+                <code>
+                  // Copy ClickEvent
+                  let parentElement = document.querySelector('.div');
 
-                function copyData (elem) {
-                  let dummy = document.createElement('textarea');
-                  document.body.appendChild(dummy);
-                  dummy.value = elem.target.innerText;
-                  dummy.select();
-                  document.execCommand('copy');
-                  document.body.removeChild(dummy);
-                  alert(dummy.value + '복사됨');
-                }
+                  function copyData (elem) {
+                    let dummy = document.createElement('textarea');
+                    document.body.appendChild(dummy);
+                    dummy.value = elem.target.innerText;
+                    dummy.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(dummy);
+                    alert(dummy.value + '복사됨');
+                  }
 
-                function copyHandler (e) {
-                  copyData(e);
-                }
+                  function copyHandler (e) {
+                    copyData(e);
+                  }
 
-                parentElement.addEventListener('click', copyHandler);
-              </code>
-            </pre>
+                  parentElement.addEventListener('click', copyHandler);
+                </code>
+              </pre>
+            </div>
           </div>
         </article>
 
@@ -97,21 +100,21 @@
 
           <ol class='main-article-list'>
             <li class='main-article-list-items hyphen'>
-              <a href=''>textarea 임시로 생성하여 복사</a>
+              <a href='#textarea'>textarea 임시로 생성하여 복사</a>
             </li>
             <li class='main-article-list-items hyphen'>
-              <a href=''>input에서 복사</a>
+              <a href='#input'>input에서 복사</a>
             </li>
             <li class='main-article-list-items hyphen'>
-              <a href=''>구식IE</a>
+              <a href='#old-IE'>구식IE</a>
             </li>
             <li class='main-article-list-items hyphen'>
-              <a href=''>구식 자동/수동 혼합</a>
+              <a href='#mix'>구식 자동/수동 혼합</a>
             </li>
           </ol>
         </article>
 
-        <article class='how-to-copy-textarea'>
+        <article class='how-to-copy-textarea' id='textarea'>
           <h1 class='main-article-title'>
             👸textarea 임시로 생성하여 복사
           </h1>
@@ -136,28 +139,31 @@
             <button class='transparent-button show-code-button' type="button">
               예시 코드 보기
             </button>
-            <pre class='main-article-pre background-white-radius'>
-              <code>
-                // Copy ClickEvent
-                let parentElement = document.querySelector('.div');
+            <div class='modal-code'>
+              <button class='modal-close-button' type='button'></button>
+              <pre class='main-article-pre background-white-radius'>
+                <code>
+                  // Copy ClickEvent
+                  let parentElement = document.querySelector('.div');
 
-                function copyData (elem) {
-                  const dummy = document.createElement('textarea');
-                  document.body.appendChild(dummy);
-                  dummy.value = elem.target.innerText;
-                  dummy.select();
-                  document.execCommand('copy');
-                  document.body.removeChild(dummy);
-                  alert(dummy.value + '복사됨');
-                }
+                  function copyData (elem) {
+                    const dummy = document.createElement('textarea');
+                    document.body.appendChild(dummy);
+                    dummy.value = elem.target.innerText;
+                    dummy.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(dummy);
+                    alert(dummy.value + '복사됨');
+                  }
 
-                function copyHandler (e) {
-                  copyData(e);
-                }
+                  function copyHandler (e) {
+                    copyData(e);
+                  }
 
-                parentElement.addEventListener('click', copyHandler);
-              </code>
-            </pre>
+                  parentElement.addEventListener('click', copyHandler);
+                </code>
+              </pre>
+            </div>
           </div>
 
           <div class='createElement-desc'>
@@ -247,7 +253,7 @@
           </div>
         </article>
 
-        <article class='how-to-copy-input'>
+        <article class='how-to-copy-input' id='input'>
           <h1 class='main-article-title'>👶input에서 복사</h1>
           <p>
             HTML의 input요소의 텍스트를 가져온다.<br/>
@@ -258,19 +264,22 @@
             <button class='transparent-button show-code-button' type="button">
               예시 코드 보기
             </button>
-            <pre class='main-article-pre background-white-radius'>
-              <code>
-                function copy_to_clipboard() {
-                  const dummy = document.querySelector("input");
-                  dummy.select();
-                  document.execCommand("Copy");
-                }
-              </code>
-            </pre>
+            <div class='modal-code'>
+              <button class='modal-close-button' type='button'></button>
+              <pre class='main-article-pre background-white-radius'>
+                <code>
+                  function copy_to_clipboard() {
+                    const dummy = document.querySelector("input");
+                    dummy.select();
+                    document.execCommand("Copy");
+                  }
+                </code>
+              </pre>
+            </div>
           </div>
         </article>
 
-        <article class='how-to-copy-old-IE'>
+        <article class='how-to-copy-old-IE' id='old-IE'>
           <h1 class='main-article-title'>👲구식IE</h1>
           <p>
             인터넷 익스플로러만 가능<br/>
@@ -281,15 +290,18 @@
             <button class='transparent-button show-code-button' type="button">
               예시 코드 보기
             </button>
-            <pre class='main-article-pre background-white-radius'>
-              <code>
-                function copy_to_clipboard(str) {
-                  let dummy = document.querySelector('input').innerHTML;
-                  window.clipboardData.setData('Text', dummy);
-                  alert("복사되었습니다.");
-                }
-              </code>
-            </pre>
+            <div class='modal-code'>
+              <button class='modal-close-button' type='button'></button>
+              <pre class='main-article-pre background-white-radius'>
+                <code>
+                  function copy_to_clipboard(str) {
+                    let dummy = document.querySelector('input').innerHTML;
+                    window.clipboardData.setData('Text', dummy);
+                    alert("복사되었습니다.");
+                  }
+                </code>
+              </pre>
+            </div>
           </div>
 
           <div class='clipboardData-desc'>
@@ -302,7 +314,7 @@
           </div>
         </article>
 
-        <article class='how-to-copy-mix'>
+        <article class='how-to-copy-mix' id='mix'>
           <h1 class='main-article-title'>👷구식 자동/수동 혼합</h1>
           <p>
             익스플로러가 아닐 경우 prompt를 띄워 수동으로 복사 하도록 함
@@ -312,25 +324,28 @@
             <button class='transparent-button show-code-button' type="button">
               예시 코드 보기
             </button>
-            <pre class='main-article-pre background-white-radius'>
-              <code>
-                function is_ie() {
-                  if(navigator.userAgent.toLowerCase().indexOf("chrome") != -1) return false;
-                  if(navigator.userAgent.toLowerCase().indexOf("msie") != -1) return true;
-                  if(navigator.userAgent.toLowerCase().indexOf("windows nt") != -1) return true;
-                  return false;
-                }
-
-                function copy_to_clipboard(str) {
-                  if( is_ie() ) {
-                    window.clipboardData.setData("Text", str);
-                    alert("복사되었습니다.");
-                    return;
+            <div class='modal-code'>
+              <button class='modal-close-button' type='button'></button>
+              <pre class='main-article-pre background-white-radius'>
+                <code>
+                  function is_ie() {
+                    if(navigator.userAgent.toLowerCase().indexOf("chrome") != -1) return false;
+                    if(navigator.userAgent.toLowerCase().indexOf("msie") != -1) return true;
+                    if(navigator.userAgent.toLowerCase().indexOf("windows nt") != -1) return true;
+                    return false;
                   }
-                  prompt("Ctrl+C를 눌러 복사하세요.", str);
-                }
-              </code>
-            </pre>
+
+                  function copy_to_clipboard(str) {
+                    if( is_ie() ) {
+                      window.clipboardData.setData("Text", str);
+                      alert("복사되었습니다.");
+                      return;
+                    }
+                    prompt("Ctrl+C를 눌러 복사하세요.", str);
+                  }
+                </code>
+              </pre>
+            </div>
           </div>
 
           <div class='navigator-desc'>
@@ -419,6 +434,7 @@
       </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='../../assets/app/app.js'></script>
   </body>
 </html>
