@@ -86,7 +86,7 @@ let modalCloseButton = document.querySelector('.modal-close-button');
 
 
 function openModal (target){
-  target.parentElement.children[1].style.display = 'block';
+  target.nextElementSibling.style.display = 'block';
 }
 function closeModal (target){
   if (target.tagName === 'DIV') {
