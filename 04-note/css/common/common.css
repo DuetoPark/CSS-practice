@@ -332,6 +332,12 @@ button.toggle-button.new-style::after{
   transition: transform 250ms ease-in;
 }
 
+/* Can I Use Image */
+.can-i-use-image{
+  width: 100%;
+  border-radius: 10px;
+}
+
 
 
 /* ETC */
