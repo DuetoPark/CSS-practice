@@ -29,6 +29,21 @@ min-width >=576px  */
   .p-tag-image{
     width: 400px; /* 미티어쿼리 변경값*/
   }
+
+
+  /* HTML-4-Picture.html */
+  /* common */
+  .picture > p,
+  .picture-syntax > p,
+  .picture-operating-principle > p,
+  .picture-example > pre {
+    margin-bottom: 24px;
+  }
+
+  /* Article - Picture-Syntax */
+  .picture-syntax ul{
+    padding: 15px 20px;
+  }
 }
 
 /* Desktop Style
@@ -48,5 +63,20 @@ min-width >=768px  */
   /* Article - Block-Element */
   .block-element > p{
     margin-bottom: 16px; /* 미티어쿼리 변경값*/
+  }
+
+
+  /* HTML-4-Picture.html */
+  /* common */
+  .picture > p,
+  .picture-syntax > p,
+  .picture-operating-principle > p,
+  .picture-example > pre {
+    margin-bottom: 36px;
+  }
+
+  /* Article - Picture-Syntax */
+  .picture-syntax ul{
+    padding: 20px 40px;
   }
 }
