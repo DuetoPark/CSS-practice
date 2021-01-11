@@ -30,6 +30,20 @@ min-width >=576px  */
     width: 400px; /* 미티어쿼리 변경값*/
   }
 
+  /* Article - Inline-Element */
+  .inline-element p{
+    margin-bottom: 16px; /* 미티어쿼리 변경값*/
+  }
+
+  .inline-element > p{
+    margin-bottom: 24px; /* 미티어쿼리 변경값*/
+  }
+
+  .inline-element-image-group{
+    overflow-x: hidden;
+    margin-bottom: 16px;
+  }
+
 
   /* HTML-4-Picture.html */
   /* common */
@@ -62,8 +76,22 @@ min-width >=768px  */
   /* HTML-3-inline-block.html */
   /* Article - Block-Element */
   .block-element > p{
-    margin-bottom: 16px; /* 미티어쿼리 변경값*/
+    margin-bottom: 32px; /* 미티어쿼리 변경값*/
   }
+
+  /* Article - Inline-Element */
+  .inline-element p{
+    margin-bottom: 24px; /* 미티어쿼리 변경값*/
+  }
+
+  .inline-element > p{
+    margin-bottom: 32px; /* 미티어쿼리 변경값*/
+  }
+
+  .inline-element-image-group{
+    margin-bottom: 24px;
+  }
+
 
 
   /* HTML-4-Picture.html */

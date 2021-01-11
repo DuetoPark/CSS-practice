@@ -191,6 +191,21 @@
 }
 
 
+/* Article - Inline-Element */
+.inline-element p{
+  margin-bottom: 8px; /* 미티어쿼리 변경값*/
+}
+
+.inline-element > p{
+  margin-bottom: 16px; /* 미티어쿼리 변경값*/
+}
+
+.inline-element-image-group{
+  overflow-x: scroll;
+  margin-bottom: 8px;
+}
+
+
 
 /* HTML-4-Picture.html */
 /* Common */
