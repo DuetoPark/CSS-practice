@@ -151,6 +151,19 @@ min-width >=576px  */
     margin: 0 auto;
     margin-bottom: 24px;
   }
+
+
+
+  /* CSS-7-main-tag-IE.html */
+  /* Article - Main-tag-max-width */
+  .main-tag-max-width > p,
+  .main-tag-max-width > ul{
+    margin-bottom: 16px;
+  }
+
+  .main-tag-max-width > ul{
+    padding: 15px 20px;
+  }
 }
 
 /* Desktop Style
@@ -302,5 +315,18 @@ min-width >=768px  */
   .width-calc-image{
     height: 200px;
     margin-bottom: 32px;
+  }
+
+
+
+  /* CSS-7-main-tag-IE.html */
+  /* Article - Main-tag-max-width */
+  .main-tag-max-width > p,
+  .main-tag-max-width > ul{
+    margin-bottom: 24px;
+  }
+
+  .main-tag-max-width > ul{
+    padding: 20px 40px;
   }
 }
