@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- 페이지 설명 -->
+    <meta name="author" content="dueto park"/>
+    <meta name="keywords" content="메인 태그, main 태그, main tag, margin auto, 인터넷 익스플로어, IE, 크로스 브라우징"/>
+    <meta name="description" content="인터넷 익스플로어의 메인태그에는 {margin: 0 auto;}가 안 먹히는 이유를 알아봅시다!"/>
+    <meta name="Location" content="포도와 고구마의 고장"/>
+
+    <title>IE와 main 태그 | CSS</title>
+
+    <!-- Style -->
+    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/default/reset-css.css">
+    <link rel="stylesheet" href="../../css/common/grid.min.css">
+    <link rel="stylesheet" href="../../css/common/common.css">
+    <link rel="stylesheet" href="../../css/common/common-media-query.css">
+    <link rel="stylesheet" href="../../css/css/css-style.css">
+    <link rel="stylesheet" href="../../css/css/css-media-query.css">
+  </head>
+
+  <body>
+    <header class='note-header'>
+      <div class='container'>
+        <h1 class='note-header-title'>
+          <a href=''>🔥기초튼튼 이가탄🔥</a>
+        </h1>
+
+        <nav class='note-header-nav'>
+          <h2 class='sr-only note-header-nav-title'>다른 페이지로 이동</h2>
+          <ol class='note-header-nav-list'>
+            <li class='note-header-nav-list-items'><a href=''>html</a></li>
+            <li class='note-header-nav-list-items'><a href=''>css</a></li>
+            <li class='note-header-nav-list-items'><a href=''>javascript</a></li>
+          </ol>
+        </nav>
+
+        <div class='toggle-button-group'>
+          <strong class='toggle-button-title'>Day/Night Switch</strong>
+          <button class='toggle-button' type='button'></button>
+        </div>
+      </div>
+    </header>
+
+    <main class='note-main'>
+      <section class='container'>
+        <h1 class='main-title'>
+          <strong>😇IE와 main 태그😇</strong>
+        </h1>
+
+        <article class='main-tag-max-width-summary'>
+          <h2 class='main-article-title'>😈개요</h2>
+
+          <p>
+            클론 코딩을 하던 중, 문득 궁금해졌다.<br/>
+            크롬은 잘 나오는데 인터넷 익스플로어는 잘 나올까?<br/>
+            인터넷 익스플로어에 들어갔고,<br/>
+            내 페이지는 의외로 멀쩡했다.<br/>
+            main 태그에 max-width 안 먹힌거 빼고<br/>
+            <br/>
+            인터넷 익스플로어의 메인태그에 max-width가 먹히지 않는 이유를 알아보자!
+          </p>
+        </article>
+
+        <article class='main-tag-max-width'>
+          <h2 class='main-article-title'>😎IE와 main 태그</h2>
+
+          <p>
+            결론부터 말하자면, max-width문제가 아니다.<br/>
+            그렇다면, 원인은 뭘까.<br/>
+            바로 IE11가 main 태그를 지원하지 않기 때문이었다.<br/>
+            <br/>
+            해결법은,
+          </p>
+
+          <ul class='main-article-list background-white-radius'>
+            <li class='main-article-list-items hyphen'>
+              main 태그를 div 태그로 변경한다
+            </li>
+            <li class='main-article-list-items hyphen'>
+              또는, main{display: block;}을 선언한다.
+            </li>
+          </ul>
+
+          <p>
+            스택오버플로우 최고최고
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class='note-footer'>
+      <div class='container'>
+        <blockquote class='note-footer-reference'
+          cite='https://stackoverflow.com/questions/28794718/max-width-not-working-for-ie-11'>
+          <strong class='note-footer-reference-name'>
+            자료 출처: "stackoverflow - max-width not sorking for IE 11", stackoverflow, 2021년 1월 14일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://stackoverflow.com/questions/28794718/max-width-not-working-for-ie-11'>
+              https://stackoverflow.com/questions/28794718/max-width-not-working-for-ie-11
+            </a>
+          </cite>
+        </blockquote>
+
+        <blockquote class='note-footer-reference'
+          cite='https://gist.github.com/rxaviers/7360908'>
+          <strong class='note-footer-reference-name'>
+            이모티콘 출처: "rxaviers github / gist:7360908 repository", github, 2021년 1월 14일 접속,
+          </strong>
+          <cite class='note-footer-reference-url'>
+            <a href='https://gist.github.com/rxaviers/7360908'>
+              https://gist.github.com/rxaviers/7360908
+            </a>
+          </cite>
+        </blockquote>
+      </div>
+    </footer>
+
+    <script src='../../assets/app/app.js'></script>
+  </body>
+</html>
