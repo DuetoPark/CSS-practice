@@ -124,6 +124,30 @@ min-width >=576px  */
   .develop-tools-property > ul.main-article-list.background-white-radius{
     padding: 15px 20px;
   }
+
+
+
+  /* Javascript-5-switch.html */
+  /* common */
+  .switch ul,
+  .switch-syntax > p:first-of-type,
+  .switch-precautions > ul{
+    padding: 15px 20px;
+  }
+
+
+  /* Article - Switch-syntax */
+  .switch-syntax > p:first-of-type,
+  .switch-precautions > p,
+  .switch-precautions > ul{
+    margin-bottom: 16px;
+  }
+
+
+  /* Article - Switch */
+  .switch > p{
+    margin-bottom: 24px;
+  }
 }
 
 
@@ -247,4 +271,26 @@ min-width >=768px  */
     .develop-tools-property > ul.main-article-list.background-white-radius{
       padding: 20px 40px;
     }
+
+  /* Javascript-5-switch.html */
+  /* common */
+  .switch ul,
+  .switch-syntax > p:first-of-type,
+  .switch-precautions > ul{
+    padding: 20px 40px;
+  }
+
+
+  /* Article - Switch-syntax */
+  .switch-syntax > p:first-of-type,
+  .switch-precautions > p,
+  .switch-precautions > ul{
+    margin-bottom: 24px;
+  }
+
+
+  /* Article - Switch */
+  .switch > p{
+    margin-bottom: 36px;
+  }
 }
