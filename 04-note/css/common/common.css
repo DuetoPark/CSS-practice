@@ -388,3 +388,7 @@ button.toggle-button.new-style::after{
 .background-white-square{
   background-color: #FFFFFF;
 }
+
+.error{
+  color: #DC7646;
+}
