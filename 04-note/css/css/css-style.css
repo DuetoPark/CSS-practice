@@ -307,3 +307,34 @@
   background-color: #FFFFFF;
   opacity: 1;
 }
+
+
+
+/* CSS-6-width.html */
+/* common */
+.width-calc > p,
+.width-calc-image-group,
+.width-group > p,
+.width-group > ul{
+  margin-bottom: 8px;
+}
+
+.width-calc-image:last-child{
+  margin-bottom: 0;
+}
+
+.width-calc > ol,
+.width-group > ul,
+.width-group > ol{
+  padding: 10px 20px;
+}
+
+/* Article - width-calc */
+.width-calc-image-group{
+  overflow-x: auto;
+}
+
+.width-calc-image{
+  height: 150px;
+  margin-bottom: 16px;
+}

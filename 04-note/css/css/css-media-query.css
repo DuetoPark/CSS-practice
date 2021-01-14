@@ -127,6 +127,30 @@ min-width >=576px  */
   .pseudo-opacity-learned > ul.main-article-list.background-white-radius{
     padding: 15px 20px;
   }
+
+
+
+  /* CSS-6-width.html */
+  /* common */
+  .width-calc > p,
+  .width-calc-image-group,
+  .width-group > p,
+  .width-group > ul{
+    margin-bottom: 16px;
+  }
+
+  .width-calc > ol,
+  .width-group > ul,
+  .width-group > ol{
+    padding: 15px 20px;
+  }
+
+  /* Article - width-calc */
+  .width-calc-image{
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 }
 
 /* Desktop Style
@@ -250,10 +274,33 @@ min-width >=768px  */
   /* Article - How-To-Set-Pseudo-Opacity */
   .pseudo-attribute-type,
   .how-to-set-pseudo-opacity .main-article-dl{
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
 
   .pseudo-opacity-learned > ul.main-article-list.background-white-radius{
     padding: 20px 40px;
+  }
+
+
+
+  /* CSS-6-width.html */
+  /* common */
+  .width-calc > p,
+  .width-calc-image-group,
+  .width-group > p,
+  .width-group > ul{
+    margin-bottom: 24px;
+  }
+
+  .width-calc > ol,
+  .width-group > ul,
+  .width-group > ol{
+    padding: 20px 40px;
+  }
+
+  /* Article - width-calc */
+  .width-calc-image{
+    height: 200px;
+    margin-bottom: 32px;
   }
 }
