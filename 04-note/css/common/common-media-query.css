@@ -151,6 +151,12 @@ min-width >=768px  */
   }
 
 
+  /* Header - Modal - go-to-pages*/
+  .go-to-pages{
+    width: 300px;
+  }
+
+
   /* Main */
   .note-main{
     margin-bottom: 72px;

@@ -47,25 +47,25 @@ body{
   justify-content: space-between;
 }
 
-.note-header-nav-list-items{
+.note-header-nav-list-items > button{
   position: relative;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.note-header-nav-list-items:first-child::after{
+.note-header-nav-list-items:first-child > button::after{
   content: 'html';
 }
 
-.note-header-nav-list-items:nth-child(2)::after{
+.note-header-nav-list-items:nth-child(2) > button::after{
   content: 'css';
 }
 
-.note-header-nav-list-items:last-child::after{
+.note-header-nav-list-items:last-child > button::after{
   content: 'javascript';
 }
 
-.note-header-nav-list-items::after{
+.note-header-nav-list-items > button::after{
   content: '';
   position: absolute;
   top: 0;
@@ -81,9 +81,90 @@ body{
   transition: width 250ms ease-in-out;
 }
 
-.note-header-nav-list-items:hover::after{
+.note-header-nav-list-items > button:hover::after{
   width: 110%;
 }
+
+/* Header - Modal - go-to-pages*/
+.go-to-pages{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 120px 40px;
+  text-align: left;
+  background-color: #FFF;
+}
+
+.go-to-pages-close{
+  position: relative;
+  top: 0;
+  left: 100%;
+  width: 48px;
+  height: 48px;
+  margin-top: 8px;
+  cursor: pointer;
+  transform: translateX(-100%);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.go-to-pages-close::before,
+.go-to-pages-close::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: 23px 15px;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+
+.go-to-pages-close::after{
+  transform: rotate(-45deg);
+}
+
+.go-to-page-div{
+  display: none;
+}
+
+.go-to-page-title{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  margin-bottom: 8px;
+}
+
+.go-to-page-list{
+  padding-left: 8px;
+}
+
+.go-to-page-anchor{
+  line-height: 2.142857142857143;
+}
+
+/* 모달효과 */
+.modal-active,
+.show-element{
+  display: block;
+}
+
+.modal-active{
+  animation-name: modal-open;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+
+.modal-inactive{
+  animation-name: modal-close;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+
 
 
 /* Header - Toggle-Button */
