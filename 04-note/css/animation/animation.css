@@ -79,3 +79,22 @@
     transform: translate(-50%, -50%);
   }
 }
+
+
+@keyframes rotate-45deg {
+  0%{
+    transform: rotate(0);
+  }
+  20%{
+    transform: rotate(360deg) scale(1);
+  }
+  40%{
+    transform: rotate(720deg) scale(2);
+  }
+  60%{
+    transform: rotate(360deg) scale(3);
+  }
+  100%{
+    transform: rotate(0) scale(1);
+  }
+}
