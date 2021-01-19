@@ -164,6 +164,26 @@ min-width >=576px  */
   .main-tag-max-width > ul{
     padding: 15px 20px;
   }
+
+
+
+  /* CSS-8-transform-origin.html */
+  /* Article - transform-origin */
+  .transform-origin > p,
+  .transform-origin-syntax,
+  .transform-origin-example > div,
+  .transform-origin-example-start{
+    margin-bottom: 24px;
+  }
+
+  .transform-origin-example > div{
+    text-align: center;
+  }
+
+  /* Article - transform-origin-example */
+  .transform-origin-image{
+    width: 300px;
+  }
 }
 
 /* Desktop Style
@@ -328,5 +348,22 @@ min-width >=768px  */
 
   .main-tag-max-width > ul{
     padding: 20px 40px;
+  }
+
+
+
+  /* CSS-8-transform-origin.html */
+  /* Article - transform-origin */
+  .transform-origin > p,
+  .transform-origin-syntax,
+  .transform-origin-example > div,
+  .transform-origin-example-start{
+    margin-bottom: 36px;
+  }
+
+
+  /* Article - transform-origin-example */
+  .transform-origin-image{
+    width: 400px;
   }
 }
