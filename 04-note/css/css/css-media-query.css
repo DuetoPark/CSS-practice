@@ -184,6 +184,12 @@ min-width >=576px  */
   .transform-origin-image{
     width: 300px;
   }
+
+
+  /* CSS-8-transform-origin.html */
+  .padding-top-100 > p{
+    margin-bottom: 24px;
+  }
 }
 
 /* Desktop Style
@@ -365,5 +371,11 @@ min-width >=768px  */
   /* Article - transform-origin-example */
   .transform-origin-image{
     width: 400px;
+  }
+
+
+  /* CSS-8-transform-origin.html */
+  .padding-top-100 > p{
+    margin-bottom: 36px;
   }
 }
