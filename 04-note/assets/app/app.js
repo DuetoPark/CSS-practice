@@ -44,7 +44,7 @@ function toggleInactive () {
   document.body.classList.remove('background-toggled');
   toggleButton.classList.remove('new-style');
 
-  for (let i=0; i<pageMenu.length; i++) {
+  for (let i=0; i<pageMenus.length; i++) {
     pageMenus[i].classList.remove('menu-toggled');
   }
 
