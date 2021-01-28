@@ -4,11 +4,20 @@ const toggleButtonAfter = document.querySelector('.toggle-button::after');
 const typeElements = document.querySelectorAll('.type');
 const backgroundWhiteElements = document.querySelectorAll('[class*=background-white]');
 let transparentButton = document.querySelectorAll('.transparent-button');
+const pageMenus = document.querySelectorAll('.note-header-nav-list-items > button');
+const goToPageAnchors = document.querySelectorAll('.go-to-page-anchor');
 let current = null;
 
 function toggled () {
   document.body.classList.add('background-toggled');
   toggleButton.classList.add('new-style');
+  for (let i=0; i<pageMenus.length; i++) {
+    pageMenus[i].classList.add('menu-toggled');
+  }
+  for (let i=0; i<goToPageAnchors.length; i++) {
+    goToPageAnchors[i].style.color = "#000";
+  }
+
   current = document.body.classList.value;
   toggleButton.style.background = '#FFFFFF';
 
@@ -34,6 +43,11 @@ function toggled () {
 function toggleInactive () {
   document.body.classList.remove('background-toggled');
   toggleButton.classList.remove('new-style');
+
+  for (let i=0; i<pageMenu.length; i++) {
+    pageMenus[i].classList.remove('menu-toggled');
+  }
+
   current = null;
   toggleButton.style.background = '#525252';
 
