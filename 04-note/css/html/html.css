@@ -232,3 +232,25 @@
   width: 100%;
   border-radius: 4px;
 }
+
+
+
+/* HTML-5-list-child-element.html */
+.main-title > strong > span{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.list-child-element > p,
+.list-child-element > ul{
+  margin-bottom: 8px;
+}
+
+.list-child-element > p:last-child{
+  margin-bottom: 0;
+}
+
+.list-child-element > ul{
+  padding: 10px 20px;
+}
