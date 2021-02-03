@@ -415,7 +415,22 @@
 }
 
 
-/* CSS-8-transform-origin.html */
+/* CSS-9-padding-top.html */
 .padding-top-100 > p{
   margin-bottom: 16px;
+}
+
+/* CSS-10-direction.html */
+.direction > p,
+.direction > ol{
+  margin-bottom: 8px;
+}
+
+.direction > p:last-child{
+  margin-bottom: 0;
+  direction : rtl;
+}
+
+.direction > ol{
+  padding: 10px 20px;
 }

@@ -186,9 +186,20 @@ min-width >=576px  */
   }
 
 
-  /* CSS-8-transform-origin.html */
+  /* CSS-9-padding-top.html */
   .padding-top-100 > p{
     margin-bottom: 24px;
+  }
+
+
+  /* CSS-10-direction.html */
+  .direction > p,
+  .direction > ol{
+    margin-bottom: 16px;
+  }
+
+  .direction > ol{
+    padding: 15px 20px;
   }
 }
 
@@ -374,8 +385,18 @@ min-width >=768px  */
   }
 
 
-  /* CSS-8-transform-origin.html */
+  /* CSS-9-padding-top.html */
   .padding-top-100 > p{
     margin-bottom: 36px;
+  }
+
+  /* CSS-10-direction.html */
+  .direction > p,
+  .direction > ol{
+    margin-bottom: 24px;
+  }
+
+  .direction > ol{
+    padding: 20px 40px;
   }
 }
