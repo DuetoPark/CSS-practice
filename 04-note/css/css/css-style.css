@@ -420,6 +420,7 @@
   margin-bottom: 16px;
 }
 
+
 /* CSS-10-direction.html */
 .direction > p,
 .direction > ol{
@@ -433,4 +434,21 @@
 
 .direction > ol{
   padding: 10px 20px;
+}
+
+
+/* CSS-11-텍스트숨기기.html */
+/* Article - no-SEO-hidden */
+.no-SEO-hidden-list-items{
+  margin-bottom: 24px;
+}
+
+.no-SEO-hidden-list-items:last-child,
+.SEO-hidden-zero-pixel > div:last-child{
+  margin-bottom: 0;
+}
+
+.no-SEO-hidden-list-items > div > pre,
+.SEO-hidden-zero-pixel > div{
+  margin-bottom: 8px;
 }

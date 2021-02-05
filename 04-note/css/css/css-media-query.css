@@ -201,6 +201,18 @@ min-width >=576px  */
   .direction > ol{
     padding: 15px 20px;
   }
+
+
+  /* CSS-11-텍스트숨기기.html */
+  /* Article - no-SEO-hidden */
+  .no-SEO-hidden-list-items{
+    margin-bottom: 32px;
+  }
+
+  .no-SEO-hidden-list-items > div > pre,
+  .SEO-hidden-zero-pixel > div{
+    margin-bottom: 16px;
+  }
 }
 
 /* Desktop Style
@@ -398,5 +410,17 @@ min-width >=768px  */
 
   .direction > ol{
     padding: 20px 40px;
+  }
+
+
+  /* CSS-11-텍스트숨기기.html */
+  /* Article - no-SEO-hidden */
+  .no-SEO-hidden-list-items{
+    margin-bottom: 48px;
+  }
+
+  .no-SEO-hidden-list-items > div > pre,
+  .SEO-hidden-zero-pixel > div{
+    margin-bottom: 24px;
   }
 }
